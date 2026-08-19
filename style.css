@@ -352,12 +352,18 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  .account_container {
+    max-width: calc(100% - 48px);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .account_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .hero_left {
+    padding: 64px 24px;
   }
 }
 
@@ -719,6 +725,11 @@ body {
     flex-direction: column;
     gap: 16px;
     justify-content: center;
+    max-width: 536px;
+  }
+
+  .tarif_card_wrap {
+    margin-top: 48px;
   }
 
   .use_card img {
@@ -880,112 +891,149 @@ body {
 /*freedom styles*/
 
 .freedom {
-  padding: 80px 0px;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(242, 242, 242, 1);
 }
-
 .freedom_container {
+  width: 100%;
   max-width: 1280px;
   margin: 0 24px;
 }
-
 .freedom_cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   padding-top: 80px;
 }
-
 .freedom_card {
-  width: 416;
-  height: 574;
-  opacity: 1;
+  width: 100%;
+  min-width: 0;
+  height: 574px;
   border-radius: 28px;
-
-  background: rgba(255, 255, 255, 1);
+  background: #fff;
   display: flex;
-  gap: 32px;
   flex-direction: column;
+  gap: 32px;
+  overflow: hidden;
 }
-
-@media screen and (max-width: 1280px) {
-  .freedom_cards {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .freedom_container {
-    width: calc(100vw - 48px);
-  }
-
-  .freedom_card:last-child {
-    /* grid-column: 1 / 3;
-        display: flex;
-        flex-direction: row-reverse; */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .freedom_cards {
-    max-width: calc(100vw - 48px);
-    grid-template-columns: 1fr;
-  }
-
-  .freedom_card:last-child {
-    /* grid-column: 1 / 3;
-        display: flex;
-        flex-direction: row-reverse; */
-  }
-}
-
 .freedom_card_icon {
+  width: 100%;
 }
-
 .freedom_card_icon_img {
+  display: block;
+  width: 100%;
+  height: auto;
   max-width: 100%;
 }
-
 .freedom_card_content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 16px;
+  height: 100%;
 }
-
 .freedom_card_title {
-  /* font-family: Roboto; */
+  margin: 0;
   font-weight: 700;
-  font-style: Bold;
   font-size: var(--main-sub-text);
   line-height: 130%;
-  letter-spacing: 0%;
   color: rgba(26, 28, 31, 1);
 }
-
 .freedom_card_text {
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 150%;
-  letter-spacing: 0%;
   color: rgba(26, 28, 31, 1);
 }
-
 .freedom_link {
-  width: 40;
-  height: 40;
-  gap: 12px;
-  opacity: 1;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
   border-radius: 8px;
   padding: 8px;
-  border-width: 1px;
   background: rgba(26, 28, 31, 1);
   display: flex;
-  justify-self: flex-end;
-  align-self: flex-end;
-  margin-top: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-left: auto;
+}
+.freedom_link_icon {
+  width: 24px;
+  height: 24px;
+} /* ========================= КНОПКИ ========================= */
+.freedom_controls {
+  display: none;
+}
+.freedom_arrow {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(26, 28, 31, 0.15);
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1c1f;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /* ========================= 1080px ДВЕ КАРТОЧКИ ========================= */
+@media screen and (max-width: 1080px) {
+  .freedom_cards {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding-top: 60px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .freedom_cards::-webkit-scrollbar {
+    display: none;
+  }
+  .freedom_card {
+    flex: 0 0 calc((100% - 16px) / 2);
+    scroll-snap-align: start;
+  }
+  .freedom_controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+  }
+} /* ========================= 768px ОДНА КАРТОЧКА ========================= */
+@media screen and (max-width: 768px) {
+  .freedom {
+    padding: 60px 0;
+  }
+  .freedom_container {
+    width: calc(100% - 48px);
+    margin: 0 24px;
+  }
+  .freedom_cards {
+    padding-top: 40px;
+    gap: 16px;
+  }
+  .freedom_card {
+    flex: 0 0 100%;
+    height: 560px;
+    border-radius: 24px;
+  }
+  .freedom_card_text {
+    font-size: 16px;
+  }
+  .freedom_controls {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .freedom_arrow {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 /* tarif styles */
@@ -2782,4 +2830,102 @@ body {
   .err_title {
     font-size: 36px;
   }
+}
+
+.main {
+  background: #ffffff;
+}
+
+.security_hero {
+  background: #f2f2f2;
+}
+
+.security_hero .hero_title {
+  color: #1a1c1f;
+}
+
+.security_hero_wrap {
+  background: #fff;
+}
+
+.security_hero .hero_list {
+  color: #1a1c1f;
+}
+
+.account_table {
+  width: 1064px;
+  max-width: calc(100vw - 48px);
+  opacity: 1;
+  border-collapse: collapse;
+}
+
+.account_table_header {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+}
+.account_table_tr {
+}
+.account_table_td {
+  /* border-top-left-radius: 28px;
+  border-top-right-radius: 28px; */
+  gap: 8px;
+  opacity: 1;
+  padding: 24px;
+  border-width: 1px;
+  border: 1px solid #d4d6d9;
+  text-align: start;
+}
+
+.account_table_header_img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.account_table_title {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: start;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.account_table_subtitle {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.account_table_tbody {
+}
+
+.account_table_text {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.account_table_tr {
+}
+.account_table_td {
+}
+
+.account_table_thead .account_table_td {
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
 }
