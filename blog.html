@@ -17,8 +17,12 @@
                     <img src="/public/logo/logo1.png" alt="" class="header_logo_img">
                 </a>
             </div>
-            <div class="header_right">
 
+            <button class="header_burger" id="headerBurger" aria-label="Открыть меню">
+                <img src="/public/icon/menu.png" alt="">
+            </button>
+
+            <div class="header_right" id="headerRight">
                 <nav class="header_nav">
                     <ul class="header_nav_list">
                         <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a></li>
@@ -251,100 +255,104 @@
                         Почему популярность прокси-клиентов продолжает расти
                     </h3>
 
-                    <table class="blog_content_table">
-                        <thead class="blog_content_table_head">
-                            <tr class="blog_content_table_hear_tr">
-                                <th class="blog_content_table_th">Возможность</th>
-                                <th class="blog_content_table_th blue-bg">Happ</th>
-                                <th class="blog_content_table_th">Clash Verge</th>
-                                <th class="blog_content_table_th">Hiddify Next</th>
-                                <th class="blog_content_table_th">Nekoray</th>
-                            </tr>
-                        </thead>
-                        <tbody class="blog_content_table_body">
-                            <tr class="blog_content_table_body_tr">
-                                <td class="blog_content_table_body_td">Кроссплатформенность</td>
-                                <td class="blog_content_table_body_td blue-bg">
-                                    <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    <img src="/public/icon/check-black.png" alt=""
-                                        class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    <img src="/public/icon/check-black.png" alt=""
-                                        class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                            </tr>
-                            <tr class="blog_content_table_body_tr">
-                                <td class="blog_content_table_body_td">Импорт подписок</td>
-                                <td class="blog_content_table_body_td blue-bg">
-                                    <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    <img src="/public/icon/check-black.png" alt=""
-                                        class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                            </tr>
-                            <tr class="blog_content_table_body_tr">
-                                <td class="blog_content_table_body_td">Управление конфигурациями</td>
-                                <td class="blog_content_table_body_td blue-bg">
-                                    <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    <img src="/public/icon/check-black.png" alt=""
-                                        class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    <img src="/public/icon/check-black.png" alt=""
-                                        class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                            </tr>
-                            <tr class="blog_content_table_body_tr">
-                                <td class="blog_content_table_body_td">Современный интерфейс</td>
-                                <td class="blog_content_table_body_td blue-bg">
-                                    <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    <img src="/public/icon/check-black.png" alt=""
-                                        class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                            </tr>
-                            <tr class="blog_content_table_body_tr">
-                                <td class="blog_content_table_body_td">Простота настройки</td>
-                                <td class="blog_content_table_body_td blue-bg">
-                                    <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                                <td class="blog_content_table_body_td">
-                                    Частично
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="blog_content_table_scroll" id="tableScroll">
+                        <table class="blog_content_table">
+                            <thead class="blog_content_table_head">
+                                <tr class="blog_content_table_hear_tr">
+                                    <th class="blog_content_table_th blog_content_table_th_label">Возможность</th>
+                                    <th class="blog_content_table_th blue-bg">Happ</th>
+                                    <th class="blog_content_table_th">Clash Verge</th>
+                                    <th class="blog_content_table_th">Hiddify Next</th>
+                                    <th class="blog_content_table_th">Nekoray</th>
+                                </tr>
+                            </thead>
+                            <tbody class="blog_content_table_body">
+                                <tr class="blog_content_table_body_tr">
+                                    <td class="blog_content_table_body_td blog_content_table_body_td_label">
+                                        Кроссплатформенность</td>
+                                    <td class="blog_content_table_body_td blue-bg">
+                                        <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">
+                                        <img src="/public/icon/check-black.png" alt=""
+                                            class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">
+                                        <img src="/public/icon/check-black.png" alt=""
+                                            class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                </tr>
+                                <tr class="blog_content_table_body_tr">
+                                    <td class="blog_content_table_body_td blog_content_table_body_td_label">Импорт
+                                        подписок</td>
+                                    <td class="blog_content_table_body_td blue-bg">
+                                        <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">
+                                        <img src="/public/icon/check-black.png" alt=""
+                                            class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                </tr>
+                                <tr class="blog_content_table_body_tr">
+                                    <td class="blog_content_table_body_td blog_content_table_body_td_label">Управление
+                                        конфигурациями</td>
+                                    <td class="blog_content_table_body_td blue-bg">
+                                        <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">
+                                        <img src="/public/icon/check-black.png" alt=""
+                                            class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">
+                                        <img src="/public/icon/check-black.png" alt=""
+                                            class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                </tr>
+                                <tr class="blog_content_table_body_tr">
+                                    <td class="blog_content_table_body_td blog_content_table_body_td_label">Современный
+                                        интерфейс</td>
+                                    <td class="blog_content_table_body_td blue-bg">
+                                        <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                    <td class="blog_content_table_body_td">
+                                        <img src="/public/icon/check-black.png" alt=""
+                                            class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                </tr>
+                                <tr class="blog_content_table_body_tr">
+                                    <td class="blog_content_table_body_td blog_content_table_body_td_label">Простота
+                                        настройки</td>
+                                    <td class="blog_content_table_body_td blue-bg">
+                                        <img src="/public/icon/check.png" alt="" class="blog_content_table_body_td_img">
+                                    </td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                    <td class="blog_content_table_body_td">Частично</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="blog_content_table_nav" id="tableNav">
+                        <button class="blog_content_table_nav_btn" id="tablePrev" aria-label="Назад">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="blog_content_table_nav_btn" id="tableNext" aria-label="Вперёд">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
 
                 </div>
             </div>
@@ -521,6 +529,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
