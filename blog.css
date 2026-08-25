@@ -24,8 +24,7 @@
   border-radius: 28px;
 }
 
-.blog_hero_content {
-}
+.blog_hero_content {}
 
 .breadcrumbs {
   display: flex;
@@ -70,8 +69,7 @@
   margin-top: 80px;
 }
 
-.breadcrumbs_item {
-}
+.breadcrumbs_item {}
 
 .blog_header {
   padding-top: 24px;
@@ -131,8 +129,7 @@
   letter-spacing: 0%;
 }
 
-.user_date {
-}
+.user_date {}
 
 .table-contents {
   width: 352px;
@@ -162,8 +159,7 @@
   letter-spacing: 0%;
 }
 
-.table-contents_img {
-}
+.table-contents_img {}
 
 .table-contents_list {
   display: grid;
@@ -180,17 +176,13 @@
   letter-spacing: 0%;
 }
 
-.article_card_content_period {
-}
+.article_card_content_period {}
 
-.article_card_content_date {
-}
+.article_card_content_date {}
 
-.article_card_content_read {
-}
+.article_card_content_read {}
 
-.user_right {
-}
+.user_right {}
 
 .user_right_icons {
   display: flex;
@@ -198,8 +190,7 @@
   align-items: center;
 }
 
-.user_right_icon {
-}
+.user_right_icon {}
 
 .blog_content {
   padding: 72px 0;
@@ -266,8 +257,7 @@
   letter-spacing: 0%;
 }
 
-.blog_content_fact {
-}
+.blog_content_fact {}
 
 .blog_content_fact_num {
   font-family: Inter;
@@ -342,11 +332,9 @@
   gap: 16px;
 }
 
-.blog_content_list_li {
-}
+.blog_content_list_li {}
 
-.blog_content_text {
-}
+.blog_content_text {}
 
 .blog_content_table_wrap {
   display: grid;
@@ -518,7 +506,7 @@
     gap: 64px;
   }
 
-  .blog_hero_wrap > * {
+  .blog_hero_wrap>* {
     width: 100%;
   }
 
@@ -555,6 +543,7 @@
 .login_body {
   background: #f2f2f2;
 }
+
 .login_header {
   width: 1280px;
   height: 72px;
@@ -565,18 +554,22 @@
   align-items: center;
   margin: 0 auto;
 }
+
 .login_header_logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login_header_logo_img {
-}
+
+.login_header_logo_img {}
 
 .signup_wrap {
-  padding: 0px 24px;
-  height: calc(100vh - (72px + 72px));
+  padding: 80px 24px;
+  /* height: calc(100vh - (72px + 72px)); */
+  overflow: auto;
+
 }
+
 .signup_wrap_container {
   max-width: calc(100vw - 48px);
   display: flex;
@@ -584,12 +577,13 @@
   justify-content: center;
   height: 100%;
 }
+
 .signup {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 480px;
-  height: 518px;
+  /* height: 518px; */
   max-width: calc(100vw - 48px);
   opacity: 1;
   border-radius: 28px;
@@ -598,16 +592,19 @@
   background: #ffffff;
   border-top: 1px solid #d4d6d9;
 }
+
 .signup_container {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
 .signup_header {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .signup_header_title {
   font-family: Roboto;
   font-weight: 700;
@@ -618,6 +615,7 @@
   text-align: center;
   color: #1a1c1f;
 }
+
 .signup_heaer_text {
   font-family: Inter;
   font-weight: 400;
@@ -628,11 +626,13 @@
   text-align: center;
   color: #616366;
 }
+
 .signup_center {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
 .signup_btns {
   display: flex;
   border: 1px solid #d4d6d9;
@@ -643,6 +643,7 @@
   border-radius: 8px;
   border-width: 1px;
 }
+
 .signup_btn {
   width: 190px;
   height: 48px;
@@ -658,18 +659,22 @@
   justify-content: center;
   border: none;
   outline: none;
+  cursor: pointer;
 }
+
 .signup_btn_fill {
   background: #dfd9ff;
 }
+
 .signup_form_group {
   display: flex;
   flex-direction: column;
   width: 384px;
-  height: 80px;
+  /* height: 80px; */
   gap: 8px;
   opacity: 1;
 }
+
 .signup_form_label {
   font-family: Inter;
   font-weight: 400;
@@ -678,6 +683,7 @@
   line-height: 150%;
   letter-spacing: 0%;
 }
+
 .signup_form_inp {
   width: 384px;
   height: 48px;
@@ -688,7 +694,16 @@
   padding: 12px;
   background: #ffffff;
   border: 1px solid #d4d6d9;
+  outline: none;
 }
+
+.signup_form_inp_err {
+  background: rgba(255, 217, 222, 1);
+  border: 1px solid rgba(204, 41, 63, 1);
+  color: rgba(178, 36, 55, 1);
+
+}
+
 .signup_btn_dark {
   border: 1px solid #1a1c1f;
   color: #ffffff;
@@ -708,6 +723,7 @@
   width: 100%;
   border-width: 1px;
 }
+
 .signup_footer {
   font-family: Inter;
   font-weight: 400;
@@ -718,8 +734,9 @@
   text-align: center;
   color: #1a1c1f;
 }
-.signup_footer_text {
-}
+
+.signup_footer_text {}
+
 .signup_footer_link {
   color: #1a1c1f;
 }
@@ -736,6 +753,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .login_footer_container {
   display: flex;
   justify-content: center;
@@ -744,6 +762,7 @@
   row-gap: 8px;
   flex-wrap: wrap;
 }
+
 .login_footer_text {
   font-family: Inter;
   font-weight: 400;
@@ -753,6 +772,7 @@
   letter-spacing: 0%;
   color: #1a1c1f;
 }
+
 .login_footer_link {
   font-family: Inter;
   font-weight: 400;
@@ -765,3 +785,145 @@
   text-decoration-thickness: 0%;
   color: #1a1c1f;
 }
+
+.signup_form_group_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup_form_group_header_forgot {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+
+}
+
+.signup_form_inp_wrap {
+  width: 384px;
+  /* height: 48px; */
+  gap: 8px;
+  opacity: 1;
+  border-radius: 8px;
+  border-width: 1px;
+  position: relative;
+}
+
+.signup_form_inp_icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.signup_form_inp_icon_img {}
+
+.err_message {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+
+}
+
+.err_message_img {}
+
+.err_message_text {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(178, 36, 55, 1);
+
+
+}
+
+.confirm_wrong_link {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 4px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  color: rgba(26, 28, 31, 1);
+
+}
+
+.confirm_email {
+  margin: 0 auto;
+  width: 155px;
+  height: 36px;
+  opacity: 1;
+  border-radius: 100px;
+  border-width: 1px;
+  padding: 8px;
+  border: 1px solid rgba(212, 214, 217, 1);
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(26, 28, 31, 1);
+}
+
+.confirm_wrong {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(26, 28, 31, 1);
+}
+
+.signup_form_group {}
+
+.confirm {}
+
+.confirm_codes {
+  width: 384px;
+  height: 48px;
+  gap: 8px;
+  opacity: 1;
+  display: flex;
+
+}
+
+.confirm_code_inp {
+  width: 58px;
+  height: 48px;
+  padding-top: 12px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  gap: 8px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  border-radius: 8px;
+  border-width: 1px;
+  border: 1px solid rgba(26, 28, 31, 1);
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+
+.confirm_code_inp {}
