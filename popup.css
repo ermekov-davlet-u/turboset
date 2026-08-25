@@ -1,170 +1,162 @@
 @font-face {
-    font-family: "Inter";
-    src: url("/public/font/static/Inter_18pt-Regular.ttf") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("/assets/font/static/Inter_18pt-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url("/public/font/static/Inter_18pt-Medium.ttf") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("/assets/font/static/Inter_18pt-Medium.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url("/public/font/static/Inter_18pt-SemiBold.ttf") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("/assets/font/static/Inter_18pt-SemiBold.ttf") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url("/public/font/static/Inter_18pt-Bold.ttf") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("/assets/font/static/Inter_18pt-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 body,
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
 }
 
 .popup-welcome {
-    width: 100vw;
-    height: 100vh;
-    /* border-radius: 36px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 32px;
-    gap: 48px;
-    opacity: 1;
-    background: rgba(67, 45, 179, 1);
-
+  width: 100vw;
+  height: 100vh;
+  /* border-radius: 36px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  gap: 48px;
+  opacity: 1;
+  background: rgba(67, 45, 179, 1);
 }
 
 .popup-welcome_container {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
 }
 
 .popup-welcome_icon {
-    width: 100%;
-    max-width: 530px;
+  width: 100%;
+  max-width: 530px;
 }
 
 .popup-welcome_img {
-    width: 100%;
-
+  width: 100%;
 }
 
 .popup-welcome_content {
-    display: grid;
-    gap: 32px;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup-welcome_center {
-    display: grid;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 1);
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
 }
 
 .popup-welcome_title {
-    font-family: Inter;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: center;
-
-
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .popup-welcome_text {
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .popup-welcome_footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .popup-welcome_button {
-    width: 303px;
-    height: 64px;
-    border-radius: 8px;
-    gap: 8px;
-    opacity: 1;
-    padding-top: 18px;
-    padding-right: 32px;
-    padding-bottom: 18px;
-    padding-left: 32px;
-    border-width: 1px;
-    font-family: Inter;
-    font-weight: 600;
-    font-style: Semi Bold;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-
+  width: 303px;
+  height: 64px;
+  border-radius: 8px;
+  gap: 8px;
+  opacity: 1;
+  padding-top: 18px;
+  padding-right: 32px;
+  padding-bottom: 18px;
+  padding-left: 32px;
+  border-width: 1px;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 @media screen and (max-width: 768px) {
-    .popup-welcome_title {
-        font-family: Inter;
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 32px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        text-align: center;
+  .popup-welcome_title {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 
-    }
+  .popup-welcome_text {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 
-    .popup-welcome_text {
-        font-family: Inter;
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0%;
-        text-align: center;
-
-    }
-
-    .popup-welcome_button {
-        width: 261;
-        height: 48;
-        border-radius: 8px;
-        gap: 8px;
-        opacity: 1;
-        padding-top: 12px;
-        padding-right: 24px;
-        padding-bottom: 12px;
-        padding-left: 24px;
-        border-width: 1px;
-        font-size: 16px;
-    }
+  .popup-welcome_button {
+    width: 261;
+    height: 48;
+    border-radius: 8px;
+    gap: 8px;
+    opacity: 1;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border-width: 1px;
+    font-size: 16px;
+  }
 }
