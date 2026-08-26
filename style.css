@@ -2079,7 +2079,7 @@ body {
   max-width: 100%;
   display: flex;
   gap: 8px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .article_li {
@@ -2128,6 +2128,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .article_ul {
+    overflow-x: auto;
+    padding-bottom: 4px;
   }
 
   .article {
