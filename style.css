@@ -9,6 +9,7 @@
   --site-max-width: 1920px;
   --container-max-width: 1920px;
   --container-padding: 80px;
+  --container-vertical-padding: 80px;
   --site-content-width: calc(
     100vw - (var(--container-padding) * 2)
   ); /* calc(100vw - 160px) */
@@ -20,7 +21,7 @@
     --main-title: 40px;
     --main-text: 20px;
     --main-sub-text: 24px;
-
+    --container-vertical-padding: 64px;
     /* Переопределение отступов для планшетов и небольших ноутбуков */
     --container-padding: 24px;
     --site-content-width: calc(
@@ -34,7 +35,7 @@
     --title-font-size: 36px;
     --main-title: 40px;
     --font-size: 18px;
-
+    --container-vertical-padding: 48px;
     --container-padding: 16px;
     --site-content-width: calc(
       100vw - (var(--container-padding) * 2)
@@ -121,7 +122,7 @@ body {
   box-sizing: border-box;
   font-family: "Inter";
   background: rgba(242, 242, 242, 1);
-  max-width: var(--site-max-width);
+  /* max-width: var(--site-max-width); */
   margin-left: auto;
   margin-right: auto;
 }
@@ -227,6 +228,9 @@ body {
   align-items: center;
   font-family: "Arial", sans-serif;
   text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .header_nav_link {
@@ -245,10 +249,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  height: 40px;
 }
 
 .header_button {
-  width: 100%;
+  width: 112px;
   background-color: #fff;
   display: flex;
   border-radius: 8px;
@@ -261,6 +266,13 @@ body {
   text-decoration: none;
   color: rgba(26, 28, 31, 1);
   cursor: pointer;
+  font-weight: 600;
+  height: 40px;
+  font-family: Inter;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 .header_button_fill {
@@ -297,6 +309,11 @@ body {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+    justify-content: space-between;
+  }
+
+  .header_right.active .header_buttons {
+    height: auto;
   }
 
   .header_nav_list {
@@ -307,6 +324,9 @@ body {
 
   .header_nav_item {
     width: 100%;
+  }
+
+  .header_nav_link_img {
   }
 
   .header_buttons {
@@ -325,15 +345,13 @@ body {
   display: flex;
   justify-content: center;
   background: rgba(242, 242, 242, 1);
-  padding: 0 var(--container-padding);
+  padding: var(--container-vertical-padding) var(--container-padding);
 }
 
 .hero {
   width: 100%;
   max-width: var(--container-max-width);
   border-radius: 48px;
-  margin-top: 80px;
-  margin-bottom: 80px;
   background: rgba(67, 45, 179, 1);
   color: white;
 }
@@ -477,11 +495,21 @@ body {
   gap: 24px;
   padding: 16px;
   border-radius: 16px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   background: rgba(255, 255, 255, 1);
+
+  border: 2px solid transparent;
+  transition: border-color 0.25s ease;
+}
+
+.account_list_item:hover {
+  border-color: black;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1280px) {
@@ -519,7 +547,7 @@ body {
 /*security styles*/
 
 .security {
-  margin: 80px auto;
+  /* margin: 80px auto; */
   padding: 112px var(--container-padding);
   background: #fff;
   display: flex;
@@ -672,6 +700,7 @@ body {
 
 .payment {
   padding: 48px var(--container-padding);
+  background-color: #fff;
 }
 
 .payment_title {
@@ -1049,6 +1078,14 @@ body {
   flex-direction: column;
   gap: 32px;
   overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.25s ease;
+  padding: 16px;
+}
+
+.freedom_card:hover {
+  border-color: black;
+  cursor: pointer;
 }
 
 .freedom_card_icon {
@@ -1384,7 +1421,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
-  max-width: 324px;
+  /* max-width: 324px; */
 }
 
 .tarif_cost_wrap {
@@ -1469,48 +1506,61 @@ body {
   line-height: 120%;
   letter-spacing: 0%;
 }
-
-.faq_right {
-}
-
-.faq_list {
-}
-
-.faq_list_item:first-child {
-  border-top: 1px solid #ccc;
-}
-
 .faq_list_item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
   padding: 20px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d4d6d9;
+}
+
+.faq_list_item:first-child {
+  border-top: 1px solid #d4d6d9;
 }
 
 .faq_list_item_top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .faq_list_item_title {
   font-family: Inter;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 150%;
-  letter-spacing: 0%;
-  vertical-align: middle;
+  color: #1a1c1f;
 }
 
 .faq_list_item_img {
   display: block;
   width: 18px;
+  margin-right: 12px;
   height: 11px;
+  transition: transform 0.3s ease;
 }
 
 .faq_list_item_text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  color: #1a1c1f;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* Открытый пункт */
+.faq_list_item.active .faq_list_item_text {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.faq_list_item.active .faq_list_item_img {
+  transform: rotate(180deg);
 }
 
 .question {
@@ -1566,6 +1616,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .faq_list_item_title {
+    font-size: 16px;
   }
 }
 
@@ -1785,6 +1839,11 @@ body {
   display: flex;
   align-items: center;
   height: 36px;
+  color: #aaadb2;
+}
+
+.footer_top_list_item:hover {
+  color: white;
 }
 
 .hero_buttons .tur-button {

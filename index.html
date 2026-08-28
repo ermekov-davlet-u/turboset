@@ -6,6 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "TURBOSET",
+          "url": "https://turboset.example.com",
+          "logo": "https://turboset.example.com/assets/logo/logo1.png",
+          "sameAs": [
+            "https://t.me/turboset"
+          ]
+        }
+        </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "TURBOSET",
+          "url": "https://turboset.example.com"
+        }
+        </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "VPN / прокси-сервис",
+          "provider": {
+            "@type": "Organization",
+            "name": "TURBOSET"
+          },
+          "areaServed": "RU",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Тарифы TURBOSET",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Тариф 1 месяц",
+                "price": "300",
+                "priceCurrency": "RUB",
+                "url": "https://turboset.example.com/tarif.html"
+              },
+              {
+                "@type": "Offer",
+                "name": "Тариф 1 месяц (популярный)",
+                "price": "450",
+                "priceCurrency": "RUB",
+                "url": "https://turboset.example.com/tarif.html"
+              },
+              {
+                "@type": "Offer",
+                "name": "Тариф 1 месяц (расширенный)",
+                "price": "590",
+                "priceCurrency": "RUB",
+                "url": "https://turboset.example.com/tarif.html"
+              }
+            ]
+          }
+        }
+        </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Можно ли протестировать сервис бесплатно?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Из каких стран можно подключаться к интернету?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать любые нужные сайты и сервисы."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Как оплатить подписку из России?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Мы принимаем любые российские банковские карты (включая Мир), оплату по СБП и электронные кошельки."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Видит ли кто-то, какие сайты я посещаю?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем, не записываем и никому не передаем историю ваших действий в интернете."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "На скольких устройствах будет работать одна подписка?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на компьютерах и ноутбуках с Windows и macOS. Вы можете подключить все свои гаджеты одновременно."
+              }
+            }
+          ]
+        }
+        </script>
 </head>
 
 <body>
@@ -13,7 +123,7 @@
         <div class="header_container">
             <div class="header_logo">
                 <a href="popup-welcome.html">
-                    <img src="/assets/logo/logo1.png" alt="" class="header_logo_img">
+                    <img src="/assets/logo/logo.svg" alt="" class="header_logo_img">
                 </a>
             </div>
 
@@ -24,13 +134,19 @@
             <div class="header_right" id="headerRight">
                 <nav class="header_nav">
                     <ul class="header_nav_list">
-                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/security.html">Безопасность</a>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a>
-                        </li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a><img
+                                src="/assets/icon/arrow-bottom.png" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a><img
+                                src="/assets/icon/arrow-bottom.png" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a><img
+                                src="/assets/icon/arrow-bottom.png" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a><img
+                                src="/assets/icon/arrow-bottom.png" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link"
+                                href="/security.html">Безопасность</a><img src="/assets/icon/arrow-bottom.png" alt=""
+                                class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a><img
+                                src="/assets/icon/arrow-bottom.png" alt="" class="header_nav_link_img"></li>
                     </ul>
                 </nav>
                 <div class="header_buttons">
@@ -46,9 +162,9 @@
                 <div class="hero_left">
                     <h1 class="hero_title">Безопасный доступ к глобальному интернету</h1>
                     <div class="hero_list">
-                        <div class="hero_list_item">Шифрование трафика</div>
-                        <div class="hero_list_item">Защита приватности</div>
-                        <div class="hero_list_item">Стабильное соединение в 13 странах</div>
+                        <p class="hero_list_item">Шифрование трафика</p>
+                        <p class="hero_list_item">Защита приватности</p>
+                        <p class="hero_list_item">Стабильное соединение в 13 странах</p>
                     </div>
                     <div class="hero_buttons">
                         <button class="tur-button tur-button_fill">Получить 3 дня бесплатно</button>
@@ -72,23 +188,23 @@
             <div class="account_list">
                 <div class="account_list_item">
                     <img src="/assets/icon/android.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">Android</div>
+                    <p class="account_list_item_text">Android</p>
                 </div>
                 <div class="account_list_item">
                     <img src="/assets/icon/windows.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">Windows</div>
+                    <p class="account_list_item_text">Windows</p>
                 </div>
                 <div class="account_list_item">
                     <img src="/assets/icon/apple.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">MacOS</div>
+                    <p class="account_list_item_text">MacOS</p>
                 </div>
                 <div class="account_list_item">
                     <img src="/assets/icon/linux.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">Linux</div>
+                    <p class="account_list_item_text">Linux</p>
                 </div>
                 <div class="account_list_item">
                     <img src="/assets/icon/apple.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">IOS</div>
+                    <p class="account_list_item_text">IOS</p>
                 </div>
             </div>
         </div>
@@ -108,8 +224,8 @@
                         <div class="security_card_top_val">серверов</div>
                     </div>
                     <div class="security_card_bottom" style="padding: 32px;">
-                        <div class="security_card_bottom_text">Сеть построена с учётом требований к информационной
-                            безопасности и обеспечивает стабильное, защищённое соединение без потери скорости</div>
+                        <p class="security_card_bottom_text">Сеть построена с учётом требований к информационной
+                            безопасности и обеспечивает стабильное, защищённое соединение без потери скорости</p>
                     </div>
                 </div>
                 <div class="security_card security_card_country">
@@ -175,31 +291,31 @@
                         <img src="/assets/picture/instruction1.png" alt="" class="use_card_img">
                         <div class="use_card_content">
                             <h4 class="use_card_title">1. Получите ключ</h4>
-                            <div class="use_card_text">Войдите в личный кабинет и получить пробный ключ.</div>
+                            <p class="use_card_text">Войдите в личный кабинет и получить пробный ключ.</p>
                         </div>
                     </div>
                     <div class="use_card">
                         <img src="/assets/picture/instruction2.png" alt="" class="use_card_img">
                         <div class="use_card_content">
                             <h4 class="use_card_title">2. Установите приложение</h4>
-                            <div class="use_card_text">Скачайте Happ - Proxy Utility и откройте его. Разрешите
-                                приложению доступ к сети.</div>
+                            <p class="use_card_text">Скачайте Happ - Proxy Utility и откройте его. Разрешите
+                                приложению доступ к сети.</p>
                         </div>
                     </div>
                     <div class="use_card">
                         <img src="/assets/picture/instruction3.png" alt="" class="use_card_img">
                         <div class="use_card_content">
                             <h4 class="use_card_title">3. Скопируйте ключ</h4>
-                            <div class="use_card_text">Вставьте скопированный ключ, который вам выдал сервис. После
-                                этого приложение готово к подключению.</div>
+                            <p class="use_card_text">Вставьте скопированный ключ, который вам выдал сервис. После
+                                этого приложение готово к подключению.</p>
                         </div>
                     </div>
                     <div class="use_card">
                         <img src="/assets/picture/instruction4.png" alt="" class="use_card_img">
                         <div class="use_card_content">
                             <h4 class="use_card_title">4. 4. Выполните подключение</h4>
-                            <div class="use_card_text">Откройте список серверов и выберите подходящий вариант. Затем
-                                нажмите кнопку подключения.</div>
+                            <p class="use_card_text">Откройте список серверов и выберите подходящий вариант. Затем
+                                нажмите кнопку подключения.</p>
                         </div>
                     </div>
                 </div>
@@ -217,9 +333,9 @@
 
             <div class="functions_header">
                 <div class="functions_title">Функции, которым можно доверять</div>
-                <div class="function_subtitle">Полная анонимность, надежное шифрование и быстрая поддержка для всех
+                <p class="function_subtitle">Полная анонимность, надежное шифрование и быстрая поддержка для всех
                     ваших
-                    устройств</div>
+                    устройств</p>
             </div>
             <div class="functions_cards">
                 <div class="function_card">
@@ -229,9 +345,9 @@
                         </div>
                     </div>
                     <h5 class="functions_card_title">Шифрование вашего трафика в интернете</h5>
-                    <div class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
+                    <p class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
                         оставалось
-                        безопасным и менее заметным для посторонних </div>
+                        безопасным и менее заметным для посторонних </p>
                 </div>
                 <div class="function_card">
                     <div class="functions_card_top">
@@ -240,9 +356,9 @@
                         </div>
                     </div>
                     <h5 class="functions_card_title">Шифрование вашего трафика в интернете</h5>
-                    <div class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
+                    <p class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
                         оставалось
-                        безопасным и менее заметным для посторонних </div>
+                        безопасным и менее заметным для посторонних </p>
                 </div>
                 <div class="function_card">
                     <div class="functions_card_top">
@@ -251,9 +367,9 @@
                         </div>
                     </div>
                     <h5 class="functions_card_title">Шифрование вашего трафика в интернете</h5>
-                    <div class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
+                    <p class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
                         оставалось
-                        безопасным и менее заметным для посторонних </div>
+                        безопасным и менее заметным для посторонних </p>
                 </div>
                 <div class="function_card">
                     <div class="functions_card_top">
@@ -262,9 +378,9 @@
                         </div>
                     </div>
                     <h5 class="functions_card_title">Шифрование вашего трафика в интернете</h5>
-                    <div class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
+                    <p class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
                         оставалось
-                        безопасным и менее заметным для посторонних </div>
+                        безопасным и менее заметным для посторонних </p>
                 </div>
                 <div class="function_card function_card_last">
                     <div class="function_card_left">
@@ -274,9 +390,9 @@
                             </div>
                         </div>
                         <h5 class="functions_card_title">Шифрование вашего трафика в интернете</h5>
-                        <div class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
+                        <p class="functions_card_text">Обеспечивает защиту данных при передаче, чтобы соединение
                             оставалось
-                            безопасным и менее заметным для посторонних </div>
+                            безопасным и менее заметным для посторонних </p>
                     </div>
                     <div class="function_card_right">
                         <img src="/assets/picture/support.png" alt="" class="function_card_right_img">
@@ -359,26 +475,26 @@
                             возврата</div>
                     </div>
                     <div class="tarif_card_list">
-                        <div class="tarif_card_list_item">
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Шифрование Reality и TLS
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             No-logs политика
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Мультиплатформа
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Быстрые сервера
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Поддержка
-                        </div>
+                        </p>
                     </div>
                 </div>
                 <div class="tarif_card_wrap">
@@ -401,26 +517,26 @@
                                 возврата</div>
                         </div>
                         <div class="tarif_card_list">
-                            <div class="tarif_card_list_item">
+                            <p class="tarif_card_list_item">
                                 <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                                 Шифрование Reality и TLS
-                            </div>
-                            <div class="tarif_card_list_item">
+                            </p>
+                            <p class="tarif_card_list_item">
                                 <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                                 No-logs политика
-                            </div>
-                            <div class="tarif_card_list_item">
+                            </p>
+                            <p class="tarif_card_list_item">
                                 <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                                 Мультиплатформа
-                            </div>
-                            <div class="tarif_card_list_item">
+                            </p>
+                            <p class="tarif_card_list_item">
                                 <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                                 Быстрые сервера
-                            </div>
-                            <div class="tarif_card_list_item">
+                            </p>
+                            <p class="tarif_card_list_item">
                                 <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                                 Поддержка
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -438,26 +554,26 @@
                             возврата</div>
                     </div>
                     <div class="tarif_card_list">
-                        <div class="tarif_card_list_item">
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Шифрование Reality и TLS
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             No-logs политика
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Мультиплатформа
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Быстрые сервера
-                        </div>
-                        <div class="tarif_card_list_item">
+                        </p>
+                        <p class="tarif_card_list_item">
                             <img src="/assets/icon/okey.png" alt="" class="tarif_card_list_icon">
                             Поддержка
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -507,10 +623,10 @@
                             </div>
                             <img src="/assets/icon/arrowtop.png" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
+                        <p class="faq_list_item_text">
                             Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы.
                             Никаких скрытых платежей и привязки карт.
-                        </div>
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
@@ -519,10 +635,10 @@
                             </div>
                             <img src="/assets/icon/arrowtop.png" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
+                        <p class="faq_list_item_text">
                             Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик,
                             чтобы открывать любые нужные сайты и сервисы.
-                        </div>
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
@@ -531,10 +647,10 @@
                             </div>
                             <img src="/assets/icon/arrowtop.png" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
+                        <p class="faq_list_item_text">
                             Мы принимаем любые российские банковские карты (включая Мир), оплату по СБП и электронные
                             кошельки.
-                        </div>
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
@@ -543,10 +659,10 @@
                             </div>
                             <img src="/assets/icon/arrowtop.png" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
+                        <p class="faq_list_item_text">
                             Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем,
                             не записываем и никому не передаем историю ваших действий в интернете.
-                        </div>
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
@@ -555,11 +671,11 @@
                             </div>
                             <img src="/assets/icon/arrowtop.png" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
+                        <p class="faq_list_item_text">
                             Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на
                             компьютерах и ноутбуках с Windows и macOs. Вы можете подключить все свои гаджеты
                             одновременно.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>

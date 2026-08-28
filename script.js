@@ -33,16 +33,36 @@ function updateButtons() {
     console.log(1222);
 }
 
-prevBtn.addEventListener('click', () => {
-    scrollEl.scrollBy({ left: -getColWidth(), behavior: 'smooth' });
-    console.log(222222);
-});
+if (prevBtn) {
+    prevBtn?.addEventListener('click', () => {
+        scrollEl.scrollBy({ left: -getColWidth(), behavior: 'smooth' });
+        console.log(222222);
+    });
+}
 
-nextBtn.addEventListener('click', () => {
-    scrollEl.scrollBy({ left: getColWidth(), behavior: 'smooth' });
-    console.log(33332);
-});
+if (nextBtn) {
+    nextBtn?.addEventListener('click', () => {
+        scrollEl.scrollBy({ left: getColWidth(), behavior: 'smooth' });
+        console.log(33332);
+    });
+}
 
-scrollEl.addEventListener('scroll', updateButtons);
-window.addEventListener('resize', updateButtons);
-updateButtons();
+if (scrollEl) {
+    scrollEl?.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+    updateButtons();
+}
+
+document.querySelectorAll('.faq_list_item_top').forEach((item) => {
+    item.addEventListener('click', () => {
+        const faqItem = item.closest('.faq_list_item');
+
+        document.querySelectorAll('.faq_list_item').forEach((otherItem) => {
+            if (otherItem !== faqItem) {
+                otherItem.classList.remove('active');
+            }
+        });
+
+        faqItem.classList.toggle('active');
+    });
+});
