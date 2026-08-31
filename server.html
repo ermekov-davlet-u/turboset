@@ -1,37 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Серверы TURBOSET — быстрые и безопасные локации</title>
+    <meta name="description"
+        content="200+ серверов TURBOSET в 13 странах. Выбирайте подходящие локации для стабильного соединения, доступа к сервисам и защиты данных.">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blog.css">
+
+    <!-- JSON-LD микроразметка -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "name": "Серверы TURBOSET",
+                "description": "200+ серверов TURBOSET в 13 странах для стабильного соединения, доступа к сервисам и защиты данных.",
+                "inLanguage": "ru-RU",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "TURBOSET"
+                }
+            },
+            {
+                "@type": "Organization",
+                "name": "TURBOSET"
+            },
+            {
+                "@type": "Service",
+                "name": "Серверы TURBOSET",
+                "description": "Сервис TURBOSET предоставляет доступ к серверам в различных странах для стабильного соединения и защиты данных.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "TURBOSET"
+                },
+                "areaServed": "Worldwide"
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body class="server-body">
+
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
                 <a href="popup-welcome.html">
-                    <img src="/assets/logo/logo1.png" alt="" class="header_logo_img">
+                    <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
 
             <button class="header_burger" id="headerBurger" aria-label="Открыть меню">
-                <img src="/public/icon/menu.png" alt="">
+                <img src="/assets/icon/menu.svg" alt="">
             </button>
 
             <div class="header_right" id="headerRight">
                 <nav class="header_nav">
                     <ul class="header_nav_list">
-                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/security.html">Безопасность</a>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a>
-                        </li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link"
+                                href="/security.html">Безопасность</a><img src="/assets/icon/arrow-bottom.svg" alt=""
+                                class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
                     </ul>
                 </nav>
                 <div class="header_buttons">
@@ -42,355 +86,516 @@
         </div>
     </header>
 
-    <div class="server">
-        <div class="server_hero">
+
+    <main class="server">
+
+        <!-- Главный блок страницы -->
+        <section class="server_hero" aria-labelledby="server-title">
+
             <div class="server_hero_top">
+
                 <div class="speed">
                     <div class="speed_left">
-                        <h4 class="speed_title">Высокая скорость</h4>
+
+                        <h2 class="speed_title">Высокая скорость</h2>
+
                         <div class="speed_left_count">
                             <p class="speed_left_count_title">200+</p>
                             <p class="speed_left_count_text">Серверов</p>
                         </div>
+
                     </div>
+
                     <div class="speed_right">
-                        <img src="/assets/picture/speed.png" alt="" class="speed_img">
+                        <img
+                            src="/assets/picture/speed.svg"
+                            alt="Высокая скорость серверов"
+                            class="speed_img">
                     </div>
                 </div>
+
                 <div class="server_hero_icon">
-                    <img src="/assets/picture/countries.png" alt="" class="server_hero_icon_img">
+                    <img
+                        src="/assets/picture/countries.svg"
+                        alt="Расположение серверов TURBOSET по странам"
+                        class="server_hero_icon_img">
                 </div>
+
             </div>
+
+
             <div class="server_hero_footer">
+
                 <div class="server_hero_footer_left">
-                    <h2 class="server_hero_footer_title">
+                    <h1 class="server_hero_footer_title" id="server-title">
                         200+ серверов в 13 странах
-                    </h2>
+                    </h1>
                 </div>
+
                 <div class="server_hero_footer_right">
-                    <p class="server_hero_footer_text">Открывайте любые нужные вам сервисы и приложения. Сеть
-                        гарантирует стабильную связь и надежную защиту ваших данных на смартфонах и ПК. Заберите три дня
-                        полного доступа бесплатно и убедитесь в качестве сами.</p>
+
+                    <p class="server_hero_footer_text">
+                        Открывайте любые нужные вам сервисы и приложения. Сеть
+                        гарантирует стабильную связь и надежную защиту ваших данных на
+                        смартфонах и ПК. Заберите три дня полного доступа бесплатно и
+                        убедитесь в качестве сами.
+                    </p>
+
                     <div class="server_hero_footer_buttons">
-                        <button class="tur-button">Получить 3 дня бесплатно</button>
+                        <button class="tur-button">
+                            Получить 3 дня бесплатно
+                        </button>
+
                         <button class="dark-button">
-                            <img src="/assets/icon/14garentee.png" alt="" class="tur-button_img">
-                            14 дней гарантия возврата</button>
+                            <img
+                                src="/assets/icon/14garentee.svg"
+                                alt=""
+                                class="tur-button_img">
+                            14 дней гарантия возврата
+                        </button>
                     </div>
+
                 </div>
+
             </div>
-        </div>
-    </div>
 
-    <div class="countries-wrap">
-        <div class="countries-wrap_container">
-            <h3 class="countries-wrap_title">
-                Выбирайте подходящие локации без долгих поисков и настроек
-            </h3>
+        </section>
 
-            <div class="countries">
-                <div class="countries_left">
-                    <h2 class="countries_title">
-                        Стриминг и медиаконтент
-                    </h2>
-                    <div class="countries_text">
-                        Смотрите фильмы и сериалы в полной библиотеке Netflix, BBC iPlayer, Disney+, HBO, Amazon Prime
+
+        <!-- Локации серверов -->
+        <section class="countries-wrap" aria-labelledby="countries-title">
+
+            <div class="countries-wrap_container">
+
+                <h2 class="countries-wrap_title" id="countries-title">
+                    Выбирайте подходящие локации без долгих поисков и настроек
+                </h2>
+
+
+                <!-- Стриминг -->
+                <section class="countries" aria-labelledby="streaming-title-1">
+
+                    <div class="countries_left">
+
+                        <h3 class="countries_title" id="streaming-title-1">
+                            Стриминг и медиаконтент
+                        </h3>
+
+                        <p class="countries_text">
+                            Смотрите фильмы и сериалы в полной библиотеке Netflix,
+                            BBC iPlayer, Disney+, HBO, Amazon Prime
+                        </p>
+
                     </div>
-                </div>
-                <div class="countries_right">
-                    <div class="countries_list">
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/usa.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">США</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/uk.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Великобритания</p>
 
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/canada.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Канада</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/germany.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Германия</p>
+                    <div class="countries_right">
 
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/france.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Франция</p>
+                        <ul class="countries_list">
 
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/polsha.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Нидерланды</p>
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img
+                                        src="/assets/picture/usa.svg"
+                                        alt="США"
+                                        class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">США</p>
+                            </li>
 
-                        </div>
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img
+                                        src="/assets/picture/uk.svg"
+                                        alt="Великобритания"
+                                        class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Великобритания</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img
+                                        src="/assets/picture/canada.svg"
+                                        alt="Канада"
+                                        class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Канада</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img
+                                        src="/assets/picture/germany.svg"
+                                        alt="Германия"
+                                        class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Германия</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img
+                                        src="/assets/picture/france.svg"
+                                        alt="Франция"
+                                        class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Франция</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img
+                                        src="/assets/picture/polsha.svg"
+                                        alt="Нидерланды"
+                                        class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Нидерланды</p>
+                            </li>
+
+                        </ul>
+
                     </div>
-                </div>
+
+                </section>
+
+
+                <!-- Дополнительный блок локаций -->
+                <section class="countries" aria-labelledby="streaming-title-2">
+
+                    <div class="countries_left">
+
+                        <h3 class="countries_title" id="streaming-title-2">
+                            Стриминг и медиаконтент
+                        </h3>
+
+                        <p class="countries_text">
+                            Смотрите фильмы и сериалы в полной библиотеке Netflix,
+                            BBC iPlayer, Disney+, HBO, Amazon Prime
+                        </p>
+
+                    </div>
+
+                    <div class="countries_right">
+
+                        <ul class="countries_list">
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/usa.svg" alt="США" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">США</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/uk.svg" alt="Великобритания" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Великобритания</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/canada.svg" alt="Канада" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Канада</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/germany.svg" alt="Германия" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Германия</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/france.svg" alt="Франция" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Франция</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/polsha.svg" alt="Нидерланды" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Нидерланды</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+
+                <section class="countries" aria-labelledby="streaming-title-3">
+
+                    <div class="countries_left">
+
+                        <h3 class="countries_title" id="streaming-title-3">
+                            Стриминг и медиаконтент
+                        </h3>
+
+                        <p class="countries_text">
+                            Смотрите фильмы и сериалы в полной библиотеке Netflix,
+                            BBC iPlayer, Disney+, HBO, Amazon Prime
+                        </p>
+
+                    </div>
+
+                    <div class="countries_right">
+
+                        <ul class="countries_list">
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/usa.svg" alt="США" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">США</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/uk.svg" alt="Великобритания" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Великобритания</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/canada.svg" alt="Канада" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Канада</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/germany.svg" alt="Германия" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Германия</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/france.svg" alt="Франция" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Франция</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/polsha.svg" alt="Нидерланды" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Нидерланды</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+
+                <section class="countries" aria-labelledby="streaming-title-4">
+
+                    <div class="countries_left">
+
+                        <h3 class="countries_title" id="streaming-title-4">
+                            Стриминг и медиаконтент
+                        </h3>
+
+                        <p class="countries_text">
+                            Смотрите фильмы и сериалы в полной библиотеке Netflix,
+                            BBC iPlayer, Disney+, HBO, Amazon Prime
+                        </p>
+
+                    </div>
+
+                    <div class="countries_right">
+
+                        <ul class="countries_list">
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/usa.svg" alt="США" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">США</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/uk.svg" alt="Великобритания" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Великобритания</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/canada.svg" alt="Канада" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Канада</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/germany.svg" alt="Германия" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Германия</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/france.svg" alt="Франция" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Франция</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/polsha.svg" alt="Нидерланды" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Нидерланды</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+
+                <section class="countries" aria-labelledby="streaming-title-5">
+
+                    <div class="countries_left">
+
+                        <h3 class="countries_title" id="streaming-title-5">
+                            Стриминг и медиаконтент
+                        </h3>
+
+                        <p class="countries_text">
+                            Смотрите фильмы и сериалы в полной библиотеке Netflix,
+                            BBC iPlayer, Disney+, HBO, Amazon Prime
+                        </p>
+
+                    </div>
+
+                    <div class="countries_right">
+
+                        <ul class="countries_list">
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/usa.svg" alt="США" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">США</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/uk.svg" alt="Великобритания" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Великобритания</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/canada.svg" alt="Канада" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Канада</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/germany.svg" alt="Германия" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Германия</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/france.svg" alt="Франция" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Франция</p>
+                            </li>
+
+                            <li class="countries_item">
+                                <div class="countries_item_icon">
+                                    <img src="/assets/picture/polsha.svg" alt="Нидерланды" class="countries_item_img">
+                                </div>
+                                <p class="countries_item_text">Нидерланды</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Помощь с выбором локации -->
+                <section class="location_hero_wrap" aria-labelledby="location-title">
+
+                    <div class="location_hero">
+
+                        <div class="location_hero_left">
+
+                            <div class="location_hero_left_content">
+
+                                <h2 class="location_hero_left_title" id="location-title">
+                                    Поможем подобрать локацию
+                                </h2>
+
+                                <p class="location_hero_left_text">
+                                    Напишите нашей поддержке на почту или в Telegram,
+                                    и мы поможем с выбором локации под ваши задачи
+                                </p>
+
+                            </div>
+
+                            <div class="location_hero_left_buttons">
+                                <button class="tur-button">
+                                    Написать на E-mail
+                                </button>
+
+                                <button class="tur-button">
+                                    Написать в Telegram
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="location_hero_right">
+
+                            <div class="location_hero_right_icon">
+                                <img
+                                    src="/assets/picture/country-support.svg"
+                                    alt="Помощь с выбором локации сервера"
+                                    class="location_hero_right_icon_img">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
             </div>
-            <div class="countries">
-                <div class="countries_left">
-                    <h2 class="countries_title">
-                        Стриминг и медиаконтент
-                    </h2>
-                    <div class="countries_text">
-                        Смотрите фильмы и сериалы в полной библиотеке Netflix, BBC iPlayer, Disney+, HBO, Amazon Prime
-                    </div>
-                </div>
-                <div class="countries_right">
-                    <div class="countries_list">
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/usa.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">США</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/uk.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Великобритания</p>
 
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/canada.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Канада</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/germany.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Германия</p>
+        </section>
 
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/france.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Франция</p>
+    </main>
 
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/polsha.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Нидерланды</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="countries">
-                <div class="countries_left">
-                    <h2 class="countries_title">
-                        Стриминг и медиаконтент
-                    </h2>
-                    <div class="countries_text">
-                        Смотрите фильмы и сериалы в полной библиотеке Netflix, BBC iPlayer, Disney+, HBO, Amazon Prime
-                    </div>
-                </div>
-                <div class="countries_right">
-                    <div class="countries_list">
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/usa.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">США</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/uk.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Великобритания</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/canada.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Канада</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/germany.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Германия</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/france.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Франция</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/polsha.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Нидерланды</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="countries">
-                <div class="countries_left">
-                    <h2 class="countries_title">
-                        Стриминг и медиаконтент
-                    </h2>
-                    <div class="countries_text">
-                        Смотрите фильмы и сериалы в полной библиотеке Netflix, BBC iPlayer, Disney+, HBO, Amazon Prime
-                    </div>
-                </div>
-                <div class="countries_right">
-                    <div class="countries_list">
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/usa.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">США</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/uk.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Великобритания</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/canada.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Канада</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/germany.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Германия</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/france.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Франция</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/polsha.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Нидерланды</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="countries">
-                <div class="countries_left">
-                    <h2 class="countries_title">
-                        Стриминг и медиаконтент
-                    </h2>
-                    <div class="countries_text">
-                        Смотрите фильмы и сериалы в полной библиотеке Netflix, BBC iPlayer, Disney+, HBO, Amazon Prime
-                    </div>
-                </div>
-                <div class="countries_right">
-                    <div class="countries_list">
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/usa.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">США</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/uk.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Великобритания</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/canada.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Канада</p>
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/germany.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Германия</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/france.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Франция</p>
-
-                        </div>
-                        <div class="countries_item">
-                            <div class="countries_item_icon">
-                                <img src="/assets/picture/polsha.png" alt="" class="countries_item_img">
-                            </div>
-                            <p class="countries_item_text">Нидерланды</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="location_hero_wrap">
-                <div class="location_hero">
-                    <div class="location_hero_left">
-                        <div class="location_hero_left_content">
-                            <h3 class="location_hero_left_title">Поможем подобрать локацию</h3>
-                            <div class="location_hero_left_text">Напишите нашей поддержке на почту или в telegram,
-                                и мы поможем с выбором локации под ваши задачи</div>
-                        </div>
-                        <div class="location_hero_left_buttons">
-                            <button class="tur-button">Написать на E-mail</button>
-                            <button class="tur-button">Написать в Telegram</button>
-                        </div>
-                    </div>
-                    <div class="location_hero_right">
-                        <div class="location_hero_right_icon">
-                            <img src="/assets/picture/country-support.png" alt="" class="location_hero_right_icon_img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_top">
                 <div class="footer_top_left">
                     <div class="footer_top_left_icon">
-                        <img src="/assets/logo/Logo white.png" alt="" class="footer_top_left_icon_img">
+                        <img src="/assets/logo/Logo white.svg" alt="TURBOSET" class="footer_top_left_icon_img">
                     </div>
-                    <h3 class="footer_top_left_title">Готовы начать?</h3>
-                    <p class="footer_top_left_text">Попробуйте сервис бесплатно в течение 3 дней или сразу
-                        переходите к тарифам для долгосрочной защиты</p>
+                    <h2 class="footer_top_left_title">Готовы начать?</h2>
+                    <p class="footer_top_left_text">Попробуйте сервис бесплатно в течение 3 дней или сразу
+                        переходите к тарифам для долгосрочной защиты</p>
                     <div class="hero_buttons">
                         <button class="tur-button tur-button_fill">Получить 3 дня бесплатно</button>
                         <button class="tur-button">Выбрать тариф</button>
@@ -398,92 +603,95 @@
                 </div>
                 <div class="footer_top_right">
                     <div class="footer_top_list_wrap">
-                        <h5 class="footer_top_list_title">Решения</h5>
-                        <div class="footer_top_list">
-                            <div class="footer_top_list_item">Для Android</div>
-                            <div class="footer_top_list_item">Для iPhone / iPad</div>
-                            <div class="footer_top_list_item"> Для Windows</div>
-                            <div class="footer_top_list_item"> Для macOS</div>
-                            <div class="footer_top_list_item"> Для Linux</div>
-                            <div class="footer_top_list_item"> Для Стриминга</div>
-                            <div class="footer_top_list_item"> Для Соцсетей </div>
-                            <div class="footer_top_list_item"> Для Игр</div>
-                        </div>
+                        <h3 class="footer_top_list_title">Решения</h3>
+                        <ul class="footer_top_list">
+                            <li class="footer_top_list_item">Для Android</li>
+                            <li class="footer_top_list_item">Для iPhone / iPad</li>
+                            <li class="footer_top_list_item"> Для Windows</li>
+                            <li class="footer_top_list_item"> Для macOS</li>
+                            <li class="footer_top_list_item"> Для Linux</li>
+                            <li class="footer_top_list_item"> Для Стриминга</li>
+                            <li class="footer_top_list_item"> Для Соцсетей </li>
+                            <li class="footer_top_list_item"> Для Игр</li>
+                        </ul>
                     </div>
                     <div class="footer_top_list_wrap">
-                        <h5 class="footer_top_list_title">Подробнее</h5>
-                        <div class="footer_top_list">
-                            <div class="footer_top_list_item">Блог</div>
-                            <div class="footer_top_list_item">Инструкции</div>
-                            <div class="footer_top_list_item"> FAQ</div>
-                            <div class="footer_top_list_item"> О нас</div>
-                            <div class="footer_top_list_item"> Серверы</div>
-                        </div>
+                        <h3 class="footer_top_list_title">Подробнее</h3>
+                        <ul class="footer_top_list">
+                            <li class="footer_top_list_item">Блог</li>
+                            <li class="footer_top_list_item">Инструкции</li>
+                            <li class="footer_top_list_item"> FAQ</li>
+                            <li class="footer_top_list_item"> О нас</li>
+                            <li class="footer_top_list_item"> Серверы</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="footer_bottom">
-                <div class="footer_bottom_devices">
-                    <div class="footer_bottom_device">
-                        <img src="/assets/icon/android-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">Android</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/assets/icon/apple-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">MacOS</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/assets/icon/windows-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">Windows</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/assets/icon/apple-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">MacOS</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/assets/icon/linux-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">Linux</div>
-                    </div>
-                </div>
+                <ul class="footer_bottom_devices">
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/android-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">Android</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">MacOS</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/windows-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">Windows</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">MacOS</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/linux-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">Linux</p>
+                    </li>
+                </ul>
                 <div class="footer_bottom_setting">
                     <p class="footer_bottom_prava_text">
                         © 2026 TURBOSET. Все права защищены.
                     </p>
-                    <div class="footer_bottom_prava_links">
+                    <nav class="footer_bottom_prava_links">
                         <a href="/" class="footer_bottom_prava_link">Безлоговая политика</a>
                         <a href="/" class="footer_bottom_prava_link">Условия предоставления услуг</a>
                         <a href="/" class="footer_bottom_prava_link">Настройки конфиденциальности</a>
-                    </div>
+                    </nav>
                     <div class="footer_bottom_soc">
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
 
-                            <img src="/assets/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
                     </div>
                 </div>
 
 
             </div>
-            <div class="footer_bottom_text">
+            <p class="footer_bottom_text">
                 Сервис TURBOSET предоставляет инструменты для обеспечения информационной безопасности
-                и конфиденциальности бизнеса и частных пользователей. Мы уважаем законодательство всех юрисдикций
-                и не поощряем использование наших инструментов для нарушения авторских прав или местных законов.
-            </div>
+                и конфиденциальности бизнеса и частных пользователей. Мы уважаем законодательство всех юрисдикций
+                и не поощряем использование наших инструментов для нарушения авторских прав или местных законов.
+            </p>
         </div>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
+

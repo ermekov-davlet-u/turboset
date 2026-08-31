@@ -1,36 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+<title>VPN для смартфона — безопасный интернет на Android и iOS | TURBOSET</title>
+
+<meta name="description"
+    content="VPN для Android и iOS от TURBOSET. Защитите интернет-соединение, выбирайте сервер в нужной стране и пользуйтесь сайтами и приложениями безопасно из любой сети.">
+
+<link rel="canonical" href="https://turboset.ru/smartphone.html">
+<link rel="stylesheet" href="style.css">
+
+<!-- JSON-LD: организация и сайт -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://turboset.ru/#organization",
+            "name": "TURBOSET",
+            "url": "https://turboset.ru/",
+            "logo": "https://turboset.ru/assets/logo/logo1.svg"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://turboset.ru/#website",
+            "url": "https://turboset.ru/",
+            "name": "TURBOSET",
+            "publisher": {
+                "@id": "https://turboset.ru/#organization"
+            },
+            "inLanguage": "ru-RU"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://turboset.ru/smartphone.html#webpage",
+            "url": "https://turboset.ru/smartphone.html",
+            "name": "VPN для смартфона — безопасный интернет на Android и iOS",
+            "description": "VPN для Android и iOS от TURBOSET. Защитите интернет-соединение, выбирайте сервер в нужной стране и пользуйтесь интернетом безопасно из любой сети.",
+            "isPartOf": {
+                "@id": "https://turboset.ru/#website"
+            },
+            "publisher": {
+                "@id": "https://turboset.ru/#organization"
+            },
+            "inLanguage": "ru-RU"
+        }
+    ]
+}
+</script>
+
+<!-- JSON-LD: FAQ -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Можно ли протестировать сервис бесплатно?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Из каких стран можно подключаться к интернету?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать нужные сайты и сервисы."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Как оплатить подписку из России?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Мы принимаем российские банковские карты, оплату по СБП и электронные кошельки."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Видит ли кто-то, какие сайты я посещаю?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Нет. Наш сервис работает по политике конфиденциальности. Мы не сохраняем, не записываем и не передаем историю действий пользователей в интернете."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "На скольких устройствах будет работать одна подписка?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Одна подписка работает на ваших устройствах: смартфонах iPhone и Android, а также компьютерах и ноутбуках с Windows и macOS."
+            }
+        }
+    ]
+}
+</script>
+```
+
 </head>
 
 <body>
-    <header class="header">
+
+<header class="header">
         <div class="header_container">
             <div class="header_logo">
                 <a href="popup-welcome.html">
-                    <img src="/public/logo/logo1.png" alt="" class="header_logo_img">
+                    <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
 
             <button class="header_burger" id="headerBurger" aria-label="Открыть меню">
-                <img src="/public/icon/menu.png" alt="">
+                <img src="/assets/icon/menu.svg" alt="">
             </button>
 
             <div class="header_right" id="headerRight">
                 <nav class="header_nav">
                     <ul class="header_nav_list">
-                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/security.html">Безопасность</a>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a>
-                        </li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link"
+                                href="/security.html">Безопасность</a><img src="/assets/icon/arrow-bottom.svg" alt=""
+                                class="header_nav_link_img"></li>
+                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a><img
+                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
                     </ul>
                 </nav>
                 <div class="header_buttons">
@@ -41,164 +147,390 @@
         </div>
     </header>
 
-    <div class="hero_wrap security_hero_wrap">
+
+<main>
+
+    <!-- Hero -->
+    <section class="hero_wrap security_hero_wrap" aria-labelledby="hero-title">
         <div class="hero security_hero">
             <div class="hero_container">
+
                 <div class="hero_left">
-                    <h1 class="hero_title">Безопасный интернет на вашем смартфоне с VPN</h1>
-                    <div class="hero_list">
-                        Защитите соединение на Android и iOS, получайте доступ к нужным приложениям и сайтам
-                        и пользуйтесь интернетом безопасно из любой сети. Подключайтесь к VPN в один клик и выбирайте
-                        сервер в подходящей стране
-                    </div>
+
+                    <h1 id="hero-title" class="hero_title">
+                        Безопасный интернет на вашем смартфоне с VPN
+                    </h1>
+
+                    <p class="hero_list">
+                        Защитите соединение на Android и iOS, получайте доступ к нужным приложениям и сайтам
+                        и пользуйтесь интернетом безопасно из любой сети. Подключайтесь к VPN в один клик
+                        и выбирайте сервер в подходящей стране.
+                    </p>
+
                     <div class="hero_buttons">
-                        <button class="tur-button tur-button_fill">Скачать для Смартфона</button>
-                        <button class="tur-button">Выбрать тариф</button>
+                        <button class="tur-button tur-button_fill">
+                            Скачать для смартфона
+                        </button>
+
+                        <button class="tur-button">
+                            Выбрать тариф
+                        </button>
                     </div>
+
                 </div>
+
                 <div class="hero_right">
-                    <img src="/public/picture/smartphone1.png" alt="" class="hero_img">
+                    <img
+                        src="/assets/picture/smartphone1.svg"
+                        alt="VPN TURBOSET на смартфоне"
+                        class="hero_img">
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="account">
-        <div class="account_container">
-            <div class="account_top">
-                <button class="article_blog">Сравните</button>
-            </div>
-            <h2 class="security_title">Почему стоит выбрать наш VPN для Windows</h2>
-            <div class="account_list">
-                <div class="account_list_item">
-                    <img src="/public/icon/android.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">Android</div>
-                </div>
-                <div class="account_list_item">
-                    <img src="/public/icon/windows.png" alt="" class="account_list_item_img">
-                    <div class="account_list_item_text">Windows</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="functions">
-        <div class="functions_container">
-
-            <div class="functions_header">
-                <div class="functions_title">Что дает VPN для стриминга</div>
-                <div class="function_subtitle">Максимальную скорость для просмотра фильмов и сериалов в высоком качестве
-                    без зависаний. Запускайте в один клик любые мировые онлайн-кинотеатры</div>
-            </div>
-            <div class="functions_cards">
-                <div class="function_card">
-                    <div class="functions_card_top">
-                        <div class="functions_card_icon">
-                            <img src="/public/icon/lock.png" alt="" class="functions_card_icon_img">
-                        </div>
-                    </div>
-                    <h5 class="functions_card_title">Доступ к контенту разных регионов</h5>
-                    <div class="functions_card_text">Выбирайте сервер в нужной стране и получайте возможность смотреть
-                        доступный в регионе контент </div>
-                </div>
-                <div class="function_card">
-                    <div class="functions_card_top">
-                        <div class="functions_card_icon">
-                            <img src="/public/icon/lock.png" alt="" class="functions_card_icon_img">
-                        </div>
-                    </div>
-                    <h5 class="functions_card_title">Больше фильмов и сериалов</h5>
-                    <div class="functions_card_text">Открывайте новые каталоги стриминговых платформ </div>
-                </div>
-                <div class="function_card">
-                    <div class="functions_card_top">
-                        <div class="functions_card_icon">
-                            <img src="/public/icon/lock.png" alt="" class="functions_card_icon_img">
-                        </div>
-                    </div>
-                    <h5 class="functions_card_title">Стабильный просмотр</h5>
-                    <div class="functions_card_text">Комфортный просмотр видео без лишних проблем с подключением </div>
-                </div>
-                <div class="function_card">
-                    <div class="functions_card_top">
-                        <div class="functions_card_icon">
-                            <img src="/public/icon/lock.png" alt="" class="functions_card_icon_img">
-                        </div>
-                    </div>
-                    <h5 class="functions_card_title">Работает на разных устройствах</h5>
-                    <div class="functions_card_text">Сервис работает на разных устройствах и системах, поэтому им удобно
-                        пользоваться дома, на работе и в дороге </div>
-                </div>
-                <div class="function_card function_card_last">
-                    <div class="function_card_left">
-                        <div class="functions_card_top">
-                            <div class="functions_card_icon">
-                                <img src="/public/icon/lock.png" alt="" class="functions_card_icon_img">
-                            </div>
-                        </div>
-                        <h5 class="functions_card_title">Поможем, если возникнут вопросы</h5>
-                        <div class="functions_card_text">Если возникнут вопросы, можно быстро получить помощь
-                            и разобраться с настройками </div>
-                    </div>
-                    <div class="function_card_right">
-                        <img src="/public/picture/support.png" alt="" class="function_card_right_img">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <div class="freedom">
-        <div class="freedom_container">
-            <div class="functions_header">
-                <div class="functions_title"> Свобода интернета в любой ситуации </div>
-                <div class="function_subtitle"> Живите в привычном ритме, где бы вы ни находились. Работайте, отдыхайте
-                    и общайтесь без ограничений и тревог за свои данные. </div>
+
+    <!-- Сравнение устройств -->
+    <section class="account" aria-labelledby="account-title">
+        <div class="account_container">
+
+            <div class="account_top">
+                <button class="article_blog" type="button">
+                    Сравните
+                </button>
             </div>
-            <div class="freedom_slider">
-                <div class="freedom_cards">
-                    <div class="freedom_card">
-                        <div class="freedom_card_icon"> <img src="/public/picture/live.png" alt=""
-                                class="freedom_card_icon_img"> </div>
-                        <div class="freedom_card_content">
-                            <h5 class="freedom_card_title"> Стриминг </h5>
-                            <div class="freedom_card_text"> Смотрите любимые сериалы и трансляции в высоком качестве без
-                                долгих загрузок </div>
-                            <div class="freedom_link"> <img src="/public/icon/white-link.png" alt=""
-                                    class="freedom_link_icon"> </div>
+
+            <h2 id="account-title" class="security_title">
+                Почему стоит выбрать наш VPN для смартфона
+            </h2>
+
+            <ul class="account_list">
+                <li class="account_list_item">
+                    <img
+                        src="/assets/icon/android.svg"
+                        alt="Android"
+                        class="account_list_item_img">
+
+                    <span class="account_list_item_text">
+                        Android
+                    </span>
+                </li>
+
+                <li class="account_list_item">
+                    <img
+                        src="/assets/icon/windows.svg"
+                        alt="Windows"
+                        class="account_list_item_img">
+
+                    <span class="account_list_item_text">
+                        Windows
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- Преимущества -->
+    <section class="functions" aria-labelledby="functions-title">
+        <div class="functions_container">
+
+            <header class="functions_header">
+
+                <h2 id="functions-title" class="functions_title">
+                    Что дает VPN для смартфона
+                </h2>
+
+                <p class="function_subtitle">
+                    Защищенное соединение, стабильный доступ к сайтам и приложениям и возможность
+                    выбирать подходящую локацию для подключения.
+                </p>
+
+            </header>
+
+
+            <div class="functions_cards">
+
+                <article class="function_card">
+
+                    <div class="functions_card_top">
+                        <div class="functions_card_icon">
+                            <img
+                                src="/assets/icon/lock.svg"
+                                alt=""
+                                class="functions_card_icon_img">
                         </div>
                     </div>
-                    <div class="freedom_card">
-                        <div class="freedom_card_icon"> <img src="/public/picture/game.png" alt=""
-                                class="freedom_card_icon_img"> </div>
-                        <div class="freedom_card_content">
-                            <h5 class="freedom_card_title"> Игры </h5>
-                            <div class="freedom_card_text"> Доступ к любым мировым играм и обновлениям без ограничений,
-                                зависаний и сбоев в сети </div>
-                            <div class="freedom_link"> <img src="/public/icon/white-link.png" alt=""
-                                    class="freedom_link_icon"> </div>
+
+                    <h3 class="functions_card_title">
+                        Доступ к контенту разных регионов
+                    </h3>
+
+                    <p class="functions_card_text">
+                        Выбирайте сервер в нужной стране и получайте возможность пользоваться
+                        доступными в регионе сайтами и сервисами.
+                    </p>
+
+                </article>
+
+
+                <article class="function_card">
+
+                    <div class="functions_card_top">
+                        <div class="functions_card_icon">
+                            <img
+                                src="/assets/icon/lock.svg"
+                                alt=""
+                                class="functions_card_icon_img">
                         </div>
                     </div>
-                    <div class="freedom_card">
-                        <div class="freedom_card_icon"> <img src="/public/picture/messanger.png" alt=""
-                                class="freedom_card_icon_img"> </div>
-                        <div class="freedom_card_content">
-                            <h5 class="freedom_card_title"> Соцсети </h5>
-                            <div class="freedom_card_text"> Связь с близкими без ограничений. Делитесь фотографиями и
-                                созванивайтесь в мессенджерах </div>
-                            <div class="freedom_link"> <img src="/public/icon/white-link.png" alt=""
-                                    class="freedom_link_icon"> </div>
+
+                    <h3 class="functions_card_title">
+                        Защита интернет-соединения
+                    </h3>
+
+                    <p class="functions_card_text">
+                        Защищайте интернет-соединение при использовании смартфона
+                        в разных сетях и подключайтесь к VPN в один клик.
+                    </p>
+
+                </article>
+
+
+                <article class="function_card">
+
+                    <div class="functions_card_top">
+                        <div class="functions_card_icon">
+                            <img
+                                src="/assets/icon/lock.svg"
+                                alt=""
+                                class="functions_card_icon_img">
                         </div>
                     </div>
-                </div> <!-- Кнопки переключения -->
-                <div class="freedom_controls"> <button class="freedom_arrow freedom_arrow_prev" type="button"
-                        aria-label="Предыдущая"> ← </button> <button class="freedom_arrow freedom_arrow_next"
-                        type="button" aria-label="Следующая"> → </button> </div>
+
+                    <h3 class="functions_card_title">
+                        Стабильное подключение
+                    </h3>
+
+                    <p class="functions_card_text">
+                        Подключайтесь к подходящему VPN-серверу и пользуйтесь интернетом
+                        без лишних проблем с соединением.
+                    </p>
+
+                </article>
+
+
+                <article class="function_card">
+
+                    <div class="functions_card_top">
+                        <div class="functions_card_icon">
+                            <img
+                                src="/assets/icon/lock.svg"
+                                alt=""
+                                class="functions_card_icon_img">
+                        </div>
+                    </div>
+
+                    <h3 class="functions_card_title">
+                        Работает на разных устройствах
+                    </h3>
+
+                    <p class="functions_card_text">
+                        Сервис работает на разных устройствах и системах, поэтому им удобно
+                        пользоваться дома, на работе и в дороге.
+                    </p>
+
+                </article>
+
+
+                <article class="function_card function_card_last">
+
+                    <div class="function_card_left">
+
+                        <div class="functions_card_top">
+                            <div class="functions_card_icon">
+                                <img
+                                    src="/assets/icon/lock.svg"
+                                    alt=""
+                                    class="functions_card_icon_img">
+                            </div>
+                        </div>
+
+                        <h3 class="functions_card_title">
+                            Поможем, если возникнут вопросы
+                        </h3>
+
+                        <p class="functions_card_text">
+                            Если возникнут вопросы, можно быстро получить помощь
+                            и разобраться с настройками.
+                        </p>
+
+                    </div>
+
+                    <div class="function_card_right">
+                        <img
+                            src="/assets/picture/support.svg"
+                            alt="Поддержка пользователей TURBOSET"
+                            class="function_card_right_img">
+                    </div>
+
+                </article>
+
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="faq">
+
+    <!-- Сценарии использования -->
+    <section class="freedom" aria-labelledby="freedom-title">
+
+        <div class="freedom_container">
+
+            <header class="functions_header">
+
+                <h2 id="freedom-title" class="functions_title">
+                    Свобода интернета в любой ситуации
+                </h2>
+
+                <p class="function_subtitle">
+                    Живите в привычном ритме, где бы вы ни находились. Работайте, отдыхайте
+                    и общайтесь без ограничений и тревог за свои данные.
+                </p>
+
+            </header>
+
+
+            <div class="freedom_slider">
+
+                <div class="freedom_cards">
+
+                    <article class="freedom_card">
+
+                        <div class="freedom_card_icon">
+                            <img
+                                src="/assets/picture/live.svg"
+                                alt="Стриминг"
+                                class="freedom_card_icon_img">
+                        </div>
+
+                        <div class="freedom_card_content">
+
+                            <h3 class="freedom_card_title">
+                                Стриминг
+                            </h3>
+
+                            <p class="freedom_card_text">
+                                Смотрите любимые сериалы и трансляции в высоком качестве
+                                без долгих загрузок.
+                            </p>
+
+                            <div class="freedom_link">
+                                <img
+                                    src="/assets/icon/white-link.svg"
+                                    alt=""
+                                    class="freedom_link_icon">
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="freedom_card">
+
+                        <div class="freedom_card_icon">
+                            <img
+                                src="/assets/picture/game.svg"
+                                alt="Игры"
+                                class="freedom_card_icon_img">
+                        </div>
+
+                        <div class="freedom_card_content">
+
+                            <h3 class="freedom_card_title">
+                                Игры
+                            </h3>
+
+                            <p class="freedom_card_text">
+                                Доступ к мировым играм и обновлениям без лишних ограничений
+                                и сбоев в сети.
+                            </p>
+
+                            <div class="freedom_link">
+                                <img
+                                    src="/assets/icon/white-link.svg"
+                                    alt=""
+                                    class="freedom_link_icon">
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="freedom_card">
+
+                        <div class="freedom_card_icon">
+                            <img
+                                src="/assets/picture/messanger.svg"
+                                alt="Социальные сети и мессенджеры"
+                                class="freedom_card_icon_img">
+                        </div>
+
+                        <div class="freedom_card_content">
+
+                            <h3 class="freedom_card_title">
+                                Соцсети
+                            </h3>
+
+                            <p class="freedom_card_text">
+                                Связь с близкими без ограничений. Делитесь фотографиями
+                                и общайтесь в социальных сетях и мессенджерах.
+                            </p>
+
+                            <div class="freedom_link">
+                                <img
+                                    src="/assets/icon/white-link.svg"
+                                    alt=""
+                                    class="freedom_link_icon">
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="freedom_controls">
+
+                    <button
+                        class="freedom_arrow freedom_arrow_prev"
+                        type="button"
+                        aria-label="Предыдущая карточка">
+                        ←
+                    </button>
+
+                    <button
+                        class="freedom_arrow freedom_arrow_next"
+                        type="button"
+                        aria-label="Следующая карточка">
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq">
         <div class="faq_container">
             <div class="faq_left">
                 <h2 class="faq_title">
@@ -209,103 +541,147 @@
                 <div class="faq_list">
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Можно ли протестировать сервис бесплатно?
-                            </div>
-                            <img src="/public/icon/arrowtop.png" alt="" class="faq_list_item_img">
+                            <h3 class="faq_list_item_title">
+                                Можно ли протестировать сервис бесплатно?
+                            </h3>
+                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
-                            Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство
-                            работы.
-                            Никаких скрытых платежей и привязки карт.
-                        </div>
+                        <p class="faq_list_item_text">
+                            Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы.
+                            Никаких скрытых платежей и привязки карт.
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Из каких стран можно подключаться к интернету?
-                            </div>
-                            <img src="/public/icon/arrowtop.png" alt="" class="faq_list_item_img">
+                            <h3 class="faq_list_item_title">
+                                Из каких стран можно подключаться к интернету?
+                            </h3>
+                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
-                            Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один
-                            клик,
-                            чтобы открывать любые нужные сайты и сервисы.
-                        </div>
+                        <p class="faq_list_item_text">
+                            Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик,
+                            чтобы открывать любые нужные сайты и сервисы.
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Как оплатить подписку из России?
-                            </div>
-                            <img src="/public/icon/arrowtop.png" alt="" class="faq_list_item_img">
+                            <h3 class="faq_list_item_title">
+                                Как оплатить подписку из России?
+                            </h3>
+                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
-                            Мы принимаем любые российские банковские карты (включая Мир), оплату по СБП
-                            и электронные
+                        <p class="faq_list_item_text">
+                            Мы принимаем любые российские банковские карты (включая Мир), оплату по СБП и электронные
                             кошельки.
-                        </div>
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Видит ли кто-то, какие сайты я посещаю?
-                            </div>
-                            <img src="/public/icon/arrowtop.png" alt="" class="faq_list_item_img">
+                            <h3 class="faq_list_item_title">
+                                Видит ли кто-то, какие сайты я посещаю?
+                            </h3>
+                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
-                            Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем,
-                            не записываем и никому не передаем историю ваших действий в интернете.
-                        </div>
+                        <p class="faq_list_item_text">
+                            Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем,
+                            не записываем и никому не передаем историю ваших действий в интернете.
+                        </p>
                     </div>
                     <div class="faq_list_item">
                         <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                На скольких устройствах будет работать одна подписка?
-                            </div>
-                            <img src="/public/icon/arrowtop.png" alt="" class="faq_list_item_img">
+                            <h3 class="faq_list_item_title">
+                                На скольких устройствах будет работать одна подписка?
+                            </h3>
+                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
                         </div>
-                        <div class="faq_list_item_text">
-                            Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также
-                            на
+                        <p class="faq_list_item_text">
+                            Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на
                             компьютерах и ноутбуках с Windows и macOs. Вы можете подключить все свои гаджеты
                             одновременно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    
+
+    <section class="question">
+        <div class="question_container">
+            <div class="question_left">
+                <h2 class="faq_title">
+                    Остались вопросы?
+                </h2>
+                <p class="question_left_subtitle">
+                    Помощь в чате Telegram или по E-mail
+                </p>
+            </div>
+            <div class="question_right">
+                <div class="question_cards">
+                    <div class="question_card">
+                        <div class="question_card_top">
+
+                            <div class="question_card_icon">
+                                <img src="/assets/icon/markunread_mailbox.svg" alt="" class="question_card_img">
+                            </div>
+                            <h3 class="question_card_title">E-mail</h3>
+                        </div>
+                        <div class="question_card_bottom">
+                            <button class="tur-button tur-button_sub ">Написать на E-mail</button>
+                        </div>
+                    </div>
+                    <div class="question_card">
+                        <div class="question_card_top">
+
+                            <div class="question_card_icon">
+                                <img src="/assets/icon/telegram.svg" alt="" class="question_card_img">
+                            </div>
+                            <h3 class="question_card_title">Telegram</h3>
+                        </div>
+                        <div class="question_card_bottom">
+                            <button class="tur-button tur-button_sub ">Написать на E-mail</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="free_wrap">
+    <section class="free_wrap">
         <div class="free">
             <div class="free_container">
                 <div class="free_left">
-                    <h1 class="free_title">Начните бесплатно сегодня</h1>
-                    <div class="free_text">
-                        Установите приложение и получите свободу и защиту в сети прямо сейчас
-                    </div>
+                    <h2 class="free_title">Начните бесплатно сегодня</h2>
+                    <p class="free_text">
+                        Установите приложение и получите свободу и защиту в сети прямо сейчас
+                    </p>
                     <div class="free_buttons">
                         <button class="tur-button tur-button_fill">Начать</button>
                     </div>
                 </div>
                 <div class="free_right">
-                    <img src="/public/picture/start-free.png" alt="" class="free_img">
+                    <img src="/assets/picture/start-free.svg" alt="" class="free_img">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer class="footer">
+</main>
+
+
+<footer class="footer">
         <div class="footer_container">
             <div class="footer_top">
                 <div class="footer_top_left">
                     <div class="footer_top_left_icon">
-                        <img src="/public/logo/Logo white.png" alt="" class="footer_top_left_icon_img">
+                        <img src="/assets/logo/Logo white.svg" alt="TURBOSET" class="footer_top_left_icon_img">
                     </div>
-                    <h3 class="footer_top_left_title">Готовы начать?</h3>
-                    <p class="footer_top_left_text">Попробуйте сервис бесплатно в течение 3 дней или сразу
-                        переходите к тарифам для долгосрочной защиты</p>
+                    <h2 class="footer_top_left_title">Готовы начать?</h2>
+                    <p class="footer_top_left_text">Попробуйте сервис бесплатно в течение 3 дней или сразу
+                        переходите к тарифам для долгосрочной защиты</p>
                     <div class="hero_buttons">
                         <button class="tur-button tur-button_fill">Получить 3 дня бесплатно</button>
                         <button class="tur-button">Выбрать тариф</button>
@@ -313,93 +689,94 @@
                 </div>
                 <div class="footer_top_right">
                     <div class="footer_top_list_wrap">
-                        <h5 class="footer_top_list_title">Решения</h5>
-                        <div class="footer_top_list">
-                            <div class="footer_top_list_item">Для Android</div>
-                            <div class="footer_top_list_item">Для iPhone / iPad</div>
-                            <div class="footer_top_list_item"> Для Windows</div>
-                            <div class="footer_top_list_item"> Для macOS</div>
-                            <div class="footer_top_list_item"> Для Linux</div>
-                            <div class="footer_top_list_item"> Для Стриминга</div>
-                            <div class="footer_top_list_item"> Для Соцсетей </div>
-                            <div class="footer_top_list_item"> Для Игр</div>
-                        </div>
+                        <h3 class="footer_top_list_title">Решения</h3>
+                        <ul class="footer_top_list">
+                            <li class="footer_top_list_item">Для Android</li>
+                            <li class="footer_top_list_item">Для iPhone / iPad</li>
+                            <li class="footer_top_list_item"> Для Windows</li>
+                            <li class="footer_top_list_item"> Для macOS</li>
+                            <li class="footer_top_list_item"> Для Linux</li>
+                            <li class="footer_top_list_item"> Для Стриминга</li>
+                            <li class="footer_top_list_item"> Для Соцсетей </li>
+                            <li class="footer_top_list_item"> Для Игр</li>
+                        </ul>
                     </div>
                     <div class="footer_top_list_wrap">
-                        <h5 class="footer_top_list_title">Подробнее</h5>
-                        <div class="footer_top_list">
-                            <div class="footer_top_list_item">Блог</div>
-                            <div class="footer_top_list_item">Инструкции</div>
-                            <div class="footer_top_list_item"> FAQ</div>
-                            <div class="footer_top_list_item"> О нас</div>
-                            <div class="footer_top_list_item"> Серверы</div>
-                        </div>
+                        <h3 class="footer_top_list_title">Подробнее</h3>
+                        <ul class="footer_top_list">
+                            <li class="footer_top_list_item">Блог</li>
+                            <li class="footer_top_list_item">Инструкции</li>
+                            <li class="footer_top_list_item"> FAQ</li>
+                            <li class="footer_top_list_item"> О нас</li>
+                            <li class="footer_top_list_item"> Серверы</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="footer_bottom">
-                <div class="footer_bottom_devices">
-                    <div class="footer_bottom_device">
-                        <img src="/public/icon/android-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">Android</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/public/icon/apple-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">MacOS</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/public/icon/windows-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">Windows</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/public/icon/apple-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">MacOS</div>
-                    </div>
-                    <div class="footer_bottom_device">
-                        <img src="/public/icon/linux-white.png" alt="" class="footer_bottom_device_img">
-                        <div class="footer_bottom_device_text">Linux</div>
-                    </div>
-                </div>
+                <ul class="footer_bottom_devices">
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/android-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">Android</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">MacOS</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/windows-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">Windows</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">MacOS</p>
+                    </li>
+                    <li class="footer_bottom_device">
+                        <img src="/assets/icon/linux-white.svg" alt="" class="footer_bottom_device_img">
+                        <p class="footer_bottom_device_text">Linux</p>
+                    </li>
+                </ul>
                 <div class="footer_bottom_setting">
                     <p class="footer_bottom_prava_text">
                         © 2026 TURBOSET. Все права защищены.
                     </p>
-                    <div class="footer_bottom_prava_links">
+                    <nav class="footer_bottom_prava_links">
                         <a href="/" class="footer_bottom_prava_link">Безлоговая политика</a>
                         <a href="/" class="footer_bottom_prava_link">Условия предоставления услуг</a>
                         <a href="/" class="footer_bottom_prava_link">Настройки конфиденциальности</a>
-                    </div>
+                    </nav>
                     <div class="footer_bottom_soc">
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/public/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/public/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
 
-                            <img src="/public/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/public/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
-                        <div class="footer_bottom_soc_icon">
-                            <img src="/public/icon/google.png" alt="" class="footer_bottom_soc_icon_img">
-                        </div>
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
+                        <a href="#" class="footer_bottom_soc_icon">
+                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
+                        </a>
                     </div>
                 </div>
 
 
             </div>
-            <div class="footer_bottom_text">
+            <p class="footer_bottom_text">
                 Сервис TURBOSET предоставляет инструменты для обеспечения информационной безопасности
-                и конфиденциальности бизнеса и частных пользователей. Мы уважаем законодательство всех юрисдикций
-                и не поощряем использование наших инструментов для нарушения авторских прав или местных законов.
-            </div>
+                и конфиденциальности бизнеса и частных пользователей. Мы уважаем законодательство всех юрисдикций
+                и не поощряем использование наших инструментов для нарушения авторских прав или местных законов.
+            </p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 
