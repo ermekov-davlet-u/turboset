@@ -24,7 +24,8 @@
   border-radius: 28px;
 }
 
-.blog_hero_content {}
+.blog_hero_content {
+}
 
 .breadcrumbs {
   display: flex;
@@ -69,7 +70,8 @@
   margin-top: 80px;
 }
 
-.breadcrumbs_item {}
+.breadcrumbs_item {
+}
 
 .blog_header {
   padding-top: 24px;
@@ -129,7 +131,8 @@
   letter-spacing: 0%;
 }
 
-.user_date {}
+.user_date {
+}
 
 .table-contents {
   width: 352px;
@@ -159,7 +162,8 @@
   letter-spacing: 0%;
 }
 
-.table-contents_img {}
+.table-contents_img {
+}
 
 .table-contents_list {
   display: grid;
@@ -177,13 +181,17 @@
   list-style: none;
 }
 
-.article_card_content_period {}
+.article_card_content_period {
+}
 
-.article_card_content_date {}
+.article_card_content_date {
+}
 
-.article_card_content_read {}
+.article_card_content_read {
+}
 
-.user_right {}
+.user_right {
+}
 
 .user_right_icons {
   display: flex;
@@ -191,7 +199,8 @@
   align-items: center;
 }
 
-.user_right_icon {}
+.user_right_icon {
+}
 
 .blog_content {
   padding: 72px 0;
@@ -258,7 +267,8 @@
   letter-spacing: 0%;
 }
 
-.blog_content_fact {}
+.blog_content_fact {
+}
 
 .blog_content_fact_num {
   font-family: Inter;
@@ -335,9 +345,11 @@
   gap: 16px;
 }
 
-.blog_content_list_li {}
+.blog_content_list_li {
+}
 
-.blog_content_text {}
+.blog_content_text {
+}
 
 .blog_content_table_wrap {
   display: grid;
@@ -509,7 +521,7 @@
     gap: 64px;
   }
 
-  .blog_hero_wrap>* {
+  .blog_hero_wrap > * {
     width: 100%;
   }
 
@@ -564,13 +576,13 @@
   align-items: center;
 }
 
-.login_header_logo_img {}
+.login_header_logo_img {
+}
 
 .signup_wrap {
   padding: 80px 24px;
   /* height: calc(100vh - (72px + 72px)); */
   overflow: auto;
-
 }
 
 .signup_wrap_container {
@@ -609,7 +621,7 @@
 }
 
 .signup_header_title {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-style: Bold;
   font-size: 32px;
@@ -704,7 +716,6 @@
   background: rgba(255, 217, 222, 1);
   border: 1px solid rgba(204, 41, 63, 1);
   color: rgba(178, 36, 55, 1);
-
 }
 
 .signup_btn_dark {
@@ -738,7 +749,8 @@
   color: #1a1c1f;
 }
 
-.signup_footer_text {}
+.signup_footer_text {
+}
 
 .signup_footer_link {
   color: #1a1c1f;
@@ -805,7 +817,6 @@
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
-
 }
 
 .signup_form_inp_wrap {
@@ -825,17 +836,18 @@
   cursor: pointer;
 }
 
-.signup_form_inp_icon_img {}
+.signup_form_inp_icon_img {
+}
 
 .err_message {
   display: flex;
   align-items: center;
   gap: 4px;
   margin-top: 8px;
-
 }
 
-.err_message_img {}
+.err_message_img {
+}
 
 .err_message_text {
   font-family: Inter;
@@ -846,8 +858,6 @@
   line-height: 150%;
   letter-spacing: 0%;
   color: rgba(178, 36, 55, 1);
-
-
 }
 
 .confirm_wrong_link {
@@ -862,7 +872,6 @@
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
   color: rgba(26, 28, 31, 1);
-
 }
 
 .confirm_email {
@@ -894,9 +903,11 @@
   color: rgba(26, 28, 31, 1);
 }
 
-.signup_form_group {}
+.signup_form_group {
+}
 
-.confirm {}
+.confirm {
+}
 
 .confirm_codes {
   width: 384px;
@@ -904,7 +915,6 @@
   gap: 8px;
   opacity: 1;
   display: flex;
-
 }
 
 .confirm_code_inp {
@@ -926,7 +936,36 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
-
 }
 
-.confirm_code_inp {}
+.confirm_code_inp {
+}
+
+@media screen and (max-width: 1080px) {
+  .signup_header_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signup {
+    padding: 24px;
+  }
+
+  .signup_container {
+    width: 100%;
+  }
+
+  .signup_form_inp,
+  .signup_form_group,
+  .signup_form_inp_wrap {
+    width: 100%;
+  }
+
+  .login_footer {
+    width: 1280px;
+    height: 72px;
+    max-width: calc(100vw - 32px);
+    padding: 12px 0;
+  }
+}

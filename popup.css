@@ -30,6 +30,38 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/roboto/static/Roboto-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/roboto/static/Roboto-Medium.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/roboto/static/Roboto-SemiBold.ttf") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/roboto/static/Roboto-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body,
 * {
   box-sizing: border-box;
@@ -67,7 +99,6 @@ body,
   border-radius: 36px;
   padding: 32px;
   gap: 48px;
-
 }
 
 .popup-welcome_container {
@@ -144,7 +175,6 @@ body,
   letter-spacing: 0%;
   border: 1px solid rgba(26, 28, 31, 0.07);
   background: rgba(191, 235, 20, 1);
-
 }
 
 @media screen and (max-width: 768px) {
