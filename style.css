@@ -4,7 +4,7 @@
   --main-title: 56px;
   --main-text: 24px;
   --main-sub-text: 32px;
-
+  --all-container-padding: 80px;
   /* Переменные размеров и отступов макета */
   --site-max-width: 1920px;
   --container-max-width: 1920px;
@@ -18,6 +18,7 @@
   :root {
     --title-font-size: 36px;
     --main-title: 40px;
+    --all-container-padding: 64px;
     --main-text: 20px;
     --main-sub-text: 24px;
     --container-vertical-padding: 64px;
@@ -31,6 +32,7 @@
 @media (max-width: 768px) {
   :root {
     --title-font-size: 36px;
+    --all-container-padding: 48px;
     --main-title: 40px;
     --font-size: 18px;
     --container-vertical-padding: 48px;
@@ -446,7 +448,7 @@ body {
 /*account styles*/
 
 .account {
-  padding: 48px var(--container-padding);
+  padding: var(--all-container-padding) var(--container-padding);
   background: rgba(242, 242, 242, 1);
   display: flex;
   justify-content: center;
@@ -808,7 +810,7 @@ body {
 /*paymeny styles*/
 
 .payment {
-  padding: 48px var(--container-padding);
+  padding: var(--all-container-padding) var(--container-padding);
   background-color: #fff;
 }
 
@@ -829,7 +831,7 @@ body {
 }
 
 .payment_list_item {
-  height: 115px;
+  height: 120px;
   min-width: 200px;
   min-height: 104px;
   opacity: 1;
@@ -1644,7 +1646,7 @@ body {
 
     width: calc((100% - 16px) / 2);
     min-width: calc((100% - 16px) / 2);
-
+    height: 120px;
     scroll-snap-align: start;
   }
 }

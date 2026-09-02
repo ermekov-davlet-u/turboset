@@ -964,8 +964,13 @@
 
   .login_footer {
     width: 1280px;
-    height: 72px;
-    max-width: calc(100vw - 32px);
+    height: 172px;
+    max-width: calc(100vw);
     padding: 12px 0;
+  }
+
+  .signup_wrap {
+    padding: 80px 24px;
+    height: calc(100vh - (72px + 72px));
   }
 }
