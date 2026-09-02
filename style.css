@@ -722,10 +722,9 @@ body {
   .security_card_bottom_img {
     height: 100%;
   }
-
-  .security_card_subtitle {
-    /* margin-bottom: 90px; */
-  }
+}
+.security_card_subtitle {
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width: 768px) {
