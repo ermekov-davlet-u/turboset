@@ -17,6 +17,33 @@ document.querySelectorAll('.header_nav_link').forEach(link => {
     });
 });
 
+// Dropdown меню
+document.querySelectorAll('.header_dropdown_trigger').forEach(trigger => {
+    trigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+
+        const dropdown = trigger.closest('.header_dropdown');
+        const isOpen = dropdown.classList.contains('open');
+
+        // Закрываем остальные dropdown
+        document.querySelectorAll('.header_dropdown.open').forEach(item => {
+            item.classList.remove('open');
+
+            const button = item.querySelector('.header_dropdown_trigger');
+
+            if (button) {
+                button.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Открываем текущий
+        if (!isOpen) {
+            dropdown.classList.add('open');
+            trigger.setAttribute('aria-expanded', 'true');
+        }
+    });
+});
+
 const scrollEl = document.getElementById('tableScroll');
 const prevBtn = document.getElementById('tablePrev');
 const nextBtn = document.getElementById('tableNext');

@@ -1,426 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <header class="header">
-        <div class="header_container">
-            <div class="header_logo">
-                <a href="popup-welcome.html">
-                    <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
-                </a>
-            </div>
+    <body>
+        <header class="header">
+            <div class="header_container">
+                <div class="header_logo">
+                    <a href="popup-welcome.html">
+                        <img src="/assets/logo/logo.svg" alt="TURBOSET"
+                            class="header_logo_img">
+                    </a>
+                </div>
 
-            <button class="header_burger" id="headerBurger" aria-label="Открыть меню">
-                <img src="/assets/icon/menu.svg" alt="">
-            </button>
+                <button class="header_burger" id="headerBurger"
+                    aria-label="Открыть меню">
+                    <img src="/assets/icon/menu.svg" alt>
+                </button>
 
-            <div class="header_right" id="headerRight">
-                <nav class="header_nav">
-                    <ul class="header_nav_list">
-                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link"
-                                href="/security.html">Безопасность</a><img src="/assets/icon/arrow-bottom.svg" alt=""
-                                class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                    </ul>
-                </nav>
-                <div class="header_buttons">
-                    <a href="/sign-up.html" class="header_button">Войти</a>
-                    <button class="header_button header_button_fill">Получить</button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="tarif">
-        <div class="tarif_container">
-            <div class="tarif_top">
-                <h2 class="tarif_title">Тарифы</h2>
-                <div class="tarif_text">Никаких ограничений и скрытых переплат. Получите все функции сразу на нужный вам
-                    срок</div>
-            </div>
-            <div class="tarif_cards">
-                <div class="tarif_card">
-                    <div class="tarif_card_header">
-                        <div class="tarif_period_wrap">
-                            <div class="tarif_period">1 Месяц</div>
-                            <div class="tarif_period_discount" style="visibility: hidden;">-35%</div>
-                        </div>
-                        <h2 class="tarif_cost">300 P</h2>
-                    </div>
-                    <div class="tarif_card_center">
-                        <button class="tur-button tur-button_fill">Начать</button>
-                        <div class="tarif_card_garantee"><img src="/assets/icon/garantee.svg" alt="">14 дней гарантия
-                            возврата</div>
-                    </div>
-                    <div class="tarif_card_list">
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Шифрование Reality и TLS
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            No-logs политика
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Мультиплатформа
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Быстрые сервера
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Поддержка
-                        </div>
-                    </div>
-                </div>
-                <div class="tarif_card_wrap">
-                    <div class="tarif_card_select_user">Выбор пользователей</div>
-                    <div class="tarif_card">
-                        <div class="tarif_card_header">
-                            <div class="tarif_period_wrap">
-                                <div class="tarif_period">1 Месяц</div>
-                                <div class="tarif_period_discount">-25%</div>
-                            </div>
-                            <div class="tarif_cost_wrap">
-                                <h2 class="tarif_cost">450 ₽</h2>
-                                <div class="tarif_cost_econom">Сэкономьте 150 ₽</div>
-                            </div>
-                        </div>
-                        <div class="tarif_card_center">
-                            <button class="tur-button tur-button_fill">Начать</button>
-                            <div class="tarif_card_garantee"><img src="/assets/icon/garantee.svg" alt="">14 дней
-                                гарантия
-                                возврата</div>
-                        </div>
-                        <div class="tarif_card_list">
-                            <div class="tarif_card_list_item">
-                                <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                                Шифрование Reality и TLS
-                            </div>
-                            <div class="tarif_card_list_item">
-                                <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                                No-logs политика
-                            </div>
-                            <div class="tarif_card_list_item">
-                                <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                                Мультиплатформа
-                            </div>
-                            <div class="tarif_card_list_item">
-                                <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                                Быстрые сервера
-                            </div>
-                            <div class="tarif_card_list_item">
-                                <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                                Поддержка
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarif_card">
-                    <div class="tarif_card_header">
-                        <div class="tarif_period_wrap">
-                            <div class="tarif_period">1 Месяц</div>
-                            <div class="tarif_period_discount">-35%</div>
-                        </div>
-                        <h2 class="tarif_cost">590 P</h2>
-                    </div>
-                    <div class="tarif_card_center">
-                        <button class="tur-button tur-button_fill">Начать</button>
-                        <div class="tarif_card_garantee"><img src="/assets/icon/garantee.svg" alt="">14 дней гарантия
-                            возврата</div>
-                    </div>
-                    <div class="tarif_card_list">
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Шифрование Reality и TLS
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            No-logs политика
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Мультиплатформа
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Быстрые сервера
-                        </div>
-                        <div class="tarif_card_list_item">
-                            <img src="/assets/icon/check-black.svg" alt="" class="tarif_card_list_icon">
-                            Поддержка
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="header_right" id="headerRight">
+                    <nav class="header_nav">
+                        <ul class="header_nav_list">
 
-            <div class="tarif_footer">
-                <div class="tarif_footer_card">
-                    <div class="tarif_footer_card_icon">
-                        <img src="/assets/picture/3Days.svg" alt="" class="tarif_footer_card_img">
-                    </div>
-                    <h5 class="tarif_footer_card_text">
-                        3 дня бесплатного использования
-                    </h5>
-                </div>
-                <div class="tarif_footer_card">
-                    <div class="tarif_footer_card_icon">
-                        <img src="/assets/picture/14Days.svg" alt="" class="tarif_footer_card_img">
-                    </div>
-                    <h5 class="tarif_footer_card_text">
-                        14 дней гарантия возврата средств
-                    </h5>
-                </div>
-                <div class="tarif_footer_card">
-                    <div class="tarif_footer_card_icon">
-                        <img src="/assets/picture/Cancelsubscription.svg" alt="" class="tarif_footer_card_img">
-                    </div>
-                    <h5 class="tarif_footer_card_text">
-                        Отмена подписки в любой момент
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </div>
+                            <!-- Тарифы -->
+                            <li class="header_nav_item header_dropdown">
+                                <a class="header_nav_link" href="/tarif.html">
+                                    Тарифы
+                                </a>
 
-    <div class="payment">
-        <h2 class="payment_title">Оплачивайте как удобно вам</h2>
-        <div class="payment_list">
-            <div class="payment_list_item">
-                <img src="/assets/icon/mir.svg" alt="" class="payment_list_item_img">
-                <div class="payment_list_item_text">карты РФ</div>
-            </div>
-            <div class="payment_list_item">
-                <img src="/assets/icon/spb.svg" alt="" class="payment_list_item_img">
-                <div class="payment_list_item_text">СБП</div>
-            </div>
-            <div class="payment_list_item">
-                <img src="/assets/icon/stripe.svg" alt="" class="payment_list_item_img">
-                <div class="payment_list_item_text">Stripe</div>
-            </div>
-            <div class="payment_list_item">
-                <img src="/assets/icon/crypto.svg" alt="" class="payment_list_item_img">
-                <div class="payment_list_item_text">криптовалюта</div>
-            </div>
-        </div>
-    </div>
+                                <!-- <button
+                                    class="header_dropdown_button"
+                                    type="button"
+                                    aria-label="Открыть раздел Тарифы"
+                                    aria-expanded="false">
+                                    <img
+                                        src="/assets/icon/arrow-bottom.svg"
+                                        alt
+                                        class="header_nav_link_img">
+                                </button> -->
 
-    <div class="faq">
-        <div class="faq_container">
-            <div class="faq_left">
-                <h2 class="faq_title">
-                    FAQs
-                </h2>
-            </div>
-            <div class="faq_right">
-                <div class="faq_list">
-                    <div class="faq_list_item">
-                        <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Можно ли протестировать сервис бесплатно?
-                            </div>
-                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
-                        </div>
-                        <div class="faq_list_item_text">
-                            Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы.
-                            Никаких скрытых платежей и привязки карт.
-                        </div>
-                    </div>
-                    <div class="faq_list_item">
-                        <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Из каких стран можно подключаться к интернету?
-                            </div>
-                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
-                        </div>
-                        <div class="faq_list_item_text">
-                            Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик,
-                            чтобы открывать любые нужные сайты и сервисы.
-                        </div>
-                    </div>
-                    <div class="faq_list_item">
-                        <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Как оплатить подписку из России?
-                            </div>
-                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
-                        </div>
-                        <div class="faq_list_item_text">
-                            Мы принимаем любые российские банковские карты (включая Мир), оплату по СБП и электронные
-                            кошельки.
-                        </div>
-                    </div>
-                    <div class="faq_list_item">
-                        <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                Видит ли кто-то, какие сайты я посещаю?
-                            </div>
-                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
-                        </div>
-                        <div class="faq_list_item_text">
-                            Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем,
-                            не записываем и никому не передаем историю ваших действий в интернете.
-                        </div>
-                    </div>
-                    <div class="faq_list_item">
-                        <div class="faq_list_item_top">
-                            <div class="faq_list_item_title">
-                                На скольких устройствах будет работать одна подписка?
-                            </div>
-                            <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
-                        </div>
-                        <div class="faq_list_item_text">
-                            Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на
-                            компьютерах и ноутбуках с Windows и macOs. Вы можете подключить все свои гаджеты
-                            одновременно.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <ul class="header_dropdown_menu">
+                                    <li>
+                                        <a href="/tarif.html">Все тарифы</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-    <div class="free_wrap">
-        <div class="free">
-            <div class="free_container">
-                <div class="free_left">
-                    <h1 class="free_title">Начните бесплатно сегодня</h1>
-                    <div class="free_text">
-                        Установите приложение и получите свободу и защиту в сети прямо сейчас
-                    </div>
-                    <div class="free_buttons">
-                        <button class="tur-button tur-button_fill">Начать</button>
-                    </div>
-                </div>
-                <div class="free_right">
-                    <img src="/assets/picture/start-free.svg" alt="" class="free_img">
-                </div>
-            </div>
-        </div>
-    </div>
+                            <!-- Решения -->
+                            <li class="header_nav_item header_dropdown">
+                                <button
+                                    class="header_dropdown_trigger"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <span>Решения</span>
 
-    <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_top">
-                <div class="footer_top_left">
-                    <div class="footer_top_left_icon">
-                        <img src="/assets/logo/Logo white.svg" alt="TURBOSET" class="footer_top_left_icon_img">
-                    </div>
-                    <h2 class="footer_top_left_title">Готовы начать?</h2>
-                    <p class="footer_top_left_text">Попробуйте сервис бесплатно в течение 3 дней или сразу
-                        переходите к тарифам для долгосрочной защиты</p>
-                    <div class="hero_buttons">
-                        <button class="tur-button tur-button_fill">Получить 3 дня бесплатно</button>
-                        <button class="tur-button">Выбрать тариф</button>
-                    </div>
-                </div>
-                <div class="footer_top_right">
-                    <div class="footer_top_list_wrap">
-                        <h3 class="footer_top_list_title">Решения</h3>
-                        <ul class="footer_top_list">
-                            <li class="footer_top_list_item">Для Android</li>
-                            <li class="footer_top_list_item">Для iPhone / iPad</li>
-                            <li class="footer_top_list_item"> Для Windows</li>
-                            <li class="footer_top_list_item"> Для macOS</li>
-                            <li class="footer_top_list_item"> Для Linux</li>
-                            <li class="footer_top_list_item"> Для Стриминга</li>
-                            <li class="footer_top_list_item"> Для Соцсетей </li>
-                            <li class="footer_top_list_item"> Для Игр</li>
+                                    <img
+                                        src="/assets/icon/arrow-bottom.svg"
+                                        alt
+                                        class="header_nav_link_img">
+                                </button>
+
+                                <ul class="header_dropdown_menu">
+
+                                    <li>
+                                        <a href="/android.html">Android</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/windows.html">Windows</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/pc.html">ПК</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/smartphone.html">Смартфоны</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/games.html">Игры</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/games-roblox.html">Roblox</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/netflix.html">Netflix</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/social.html">Социальные
+                                            сети</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/streaming.html">Стриминг</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/tik-tok.html">TikTok</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <!-- Подробнее -->
+                            <li class="header_nav_item header_dropdown">
+
+                                <button
+                                    class="header_dropdown_trigger"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <span>Подробнее</span>
+
+                                    <img
+                                        src="/assets/icon/arrow-bottom.svg"
+                                        alt
+                                        class="header_nav_link_img">
+                                </button>
+
+                                <ul class="header_dropdown_menu">
+
+                                    <li>
+                                        <a href="/article.html">Статьи</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/blog.html">Блог</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/security.html">Безопасность</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/security2.html">Защита
+                                            данных</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/server.html">Серверы</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/trail.html">Пробный период</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
                         </ul>
-                    </div>
-                    <div class="footer_top_list_wrap">
-                        <h3 class="footer_top_list_title">Подробнее</h3>
-                        <ul class="footer_top_list">
-                            <li class="footer_top_list_item">Блог</li>
-                            <li class="footer_top_list_item">Инструкции</li>
-                            <li class="footer_top_list_item"> FAQ</li>
-                            <li class="footer_top_list_item"> О нас</li>
-                            <li class="footer_top_list_item"> Серверы</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <ul class="footer_bottom_devices">
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/android-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">Android</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">MacOS</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/windows-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">Windows</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">MacOS</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/linux-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">Linux</p>
-                    </li>
-                </ul>
-                <div class="footer_bottom_setting">
-                    <p class="footer_bottom_prava_text">
-                        © 2026 TURBOSET. Все права защищены.
-                    </p>
-                    <nav class="footer_bottom_prava_links">
-                        <a href="/" class="footer_bottom_prava_link">Безлоговая политика</a>
-                        <a href="/" class="footer_bottom_prava_link">Условия предоставления услуг</a>
-                        <a href="/" class="footer_bottom_prava_link">Настройки конфиденциальности</a>
                     </nav>
-                    <div class="footer_bottom_soc">
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
+                    <div class="header_buttons">
+                        <a href="/sign-up.html" class="header_button">Войти</a>
+                        <button
+                            class="header_button header_button_fill">Получить</button>
                     </div>
                 </div>
-
-
             </div>
-            <p class="footer_bottom_text">
-                Сервис TURBOSET предоставляет инструменты для обеспечения информационной безопасности
-                и конфиденциальности бизнеса и частных пользователей. Мы уважаем законодательство всех юрисдикций
-                и не поощряем использование наших инструментов для нарушения авторских прав или местных законов.
-            </p>
-        </div>
-    </footer>
+        </header>
+        <main>
+            <div class="tarif">
+                <div class="tarif_container">
+                    <div class="tarif_top">
+                        <h2 class="tarif_title">Тарифы</h2>
+                        <div class="tarif_text">Никаких ограничений и скрытых
+                            переплат. Получите все функции сразу на нужный вам
+                            срок</div>
+                    </div>
+                    <div class="tarif_cards">
+                        <div class="tarif_card">
+                            <div class="tarif_card_header">
+                                <div class="tarif_period_wrap">
+                                    <div class="tarif_period">1 Месяц</div>
+                                    <div class="tarif_period_discount"
+                                        style="visibility: hidden;">-35%</div>
+                                </div>
+                                <h2 class="tarif_cost">300 P</h2>
+                            </div>
+                            <div class="tarif_card_center">
+                                <button
+                                    class="tur-button tur-button_fill">Начать</button>
+                                <div class="tarif_card_garantee"><img
+                                        src="/assets/icon/garantee.svg" alt>14
+                                    дней
+                                    гарантия
+                                    возврата</div>
+                            </div>
+                            <div class="tarif_card_list">
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Шифрование Reality и TLS
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    No-logs политика
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Мультиплатформа
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Быстрые сервера
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Поддержка
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tarif_card_wrap">
+                            <div class="tarif_card_select_user">Выбор
+                                пользователей</div>
+                            <div class="tarif_card">
+                                <div class="tarif_card_header">
+                                    <div class="tarif_period_wrap">
+                                        <div class="tarif_period">1 Месяц</div>
+                                        <div
+                                            class="tarif_period_discount">-25%</div>
+                                    </div>
+                                    <div class="tarif_cost_wrap">
+                                        <h2 class="tarif_cost">450 ₽</h2>
+                                        <div
+                                            class="tarif_cost_econom">Сэкономьте
+                                            150 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="tarif_card_center">
+                                    <button
+                                        class="tur-button tur-button_fill">Начать</button>
+                                    <div class="tarif_card_garantee"><img
+                                            src="/assets/icon/garantee.svg"
+                                            alt>14
+                                        дней
+                                        гарантия
+                                        возврата</div>
+                                </div>
+                                <div class="tarif_card_list">
+                                    <div class="tarif_card_list_item">
+                                        <img src="/assets/icon/check-black.svg"
+                                            alt
+                                            class="tarif_card_list_icon">
+                                        Шифрование Reality и TLS
+                                    </div>
+                                    <div class="tarif_card_list_item">
+                                        <img src="/assets/icon/check-black.svg"
+                                            alt
+                                            class="tarif_card_list_icon">
+                                        No-logs политика
+                                    </div>
+                                    <div class="tarif_card_list_item">
+                                        <img src="/assets/icon/check-black.svg"
+                                            alt
+                                            class="tarif_card_list_icon">
+                                        Мультиплатформа
+                                    </div>
+                                    <div class="tarif_card_list_item">
+                                        <img src="/assets/icon/check-black.svg"
+                                            alt
+                                            class="tarif_card_list_icon">
+                                        Быстрые сервера
+                                    </div>
+                                    <div class="tarif_card_list_item">
+                                        <img src="/assets/icon/check-black.svg"
+                                            alt
+                                            class="tarif_card_list_icon">
+                                        Поддержка
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tarif_card">
+                            <div class="tarif_card_header">
+                                <div class="tarif_period_wrap">
+                                    <div class="tarif_period">1 Месяц</div>
+                                    <div
+                                        class="tarif_period_discount">-35%</div>
+                                </div>
+                                <h2 class="tarif_cost">590 P</h2>
+                            </div>
+                            <div class="tarif_card_center">
+                                <button
+                                    class="tur-button tur-button_fill">Начать</button>
+                                <div class="tarif_card_garantee"><img
+                                        src="/assets/icon/garantee.svg" alt>14
+                                    дней
+                                    гарантия
+                                    возврата</div>
+                            </div>
+                            <div class="tarif_card_list">
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Шифрование Reality и TLS
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    No-logs политика
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Мультиплатформа
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Быстрые сервера
+                                </div>
+                                <div class="tarif_card_list_item">
+                                    <img src="/assets/icon/check-black.svg" alt
+                                        class="tarif_card_list_icon">
+                                    Поддержка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <script src="script.js"></script>
+                    <div class="tarif_footer">
+                        <div class="tarif_footer_card">
+                            <div class="tarif_footer_card_icon">
+                                <img src="/assets/picture/3Days.svg" alt
+                                    class="tarif_footer_card_img">
+                            </div>
+                            <h5 class="tarif_footer_card_text">
+                                3 дня бесплатного использования
+                            </h5>
+                        </div>
+                        <div class="tarif_footer_card">
+                            <div class="tarif_footer_card_icon">
+                                <img src="/assets/picture/14Days.svg" alt
+                                    class="tarif_footer_card_img">
+                            </div>
+                            <h5 class="tarif_footer_card_text">
+                                14 дней гарантия возврата средств
+                            </h5>
+                        </div>
+                        <div class="tarif_footer_card">
+                            <div class="tarif_footer_card_icon">
+                                <img
+                                    src="/assets/picture/Cancelsubscription.svg"
+                                    alt class="tarif_footer_card_img">
+                            </div>
+                            <h5 class="tarif_footer_card_text">
+                                Отмена подписки в любой момент
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</body>
+            <div class="payment">
+                <h2 class="payment_title">Оплачивайте как удобно вам</h2>
+                <div class="payment_list">
+                    <div class="payment_list_item">
+                        <img src="/assets/icon/mir.svg" alt
+                            class="payment_list_item_img">
+                        <div class="payment_list_item_text">карты РФ</div>
+                    </div>
+                    <div class="payment_list_item">
+                        <img src="/assets/icon/spb.svg" alt
+                            class="payment_list_item_img">
+                        <div class="payment_list_item_text">СБП</div>
+                    </div>
+                    <div class="payment_list_item">
+                        <img src="/assets/icon/stripe.svg" alt
+                            class="payment_list_item_img">
+                        <div class="payment_list_item_text">Stripe</div>
+                    </div>
+                    <div class="payment_list_item">
+                        <img src="/assets/icon/crypto.svg" alt
+                            class="payment_list_item_img">
+                        <div class="payment_list_item_text">криптовалюта</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq_container">
+                    <div class="faq_left">
+                        <h2 class="faq_title">
+                            FAQs
+                        </h2>
+                    </div>
+                    <div class="faq_right">
+                        <div class="faq_list">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <div class="faq_list_item_title">
+                                        Какая разница между тарифами?
+                                    </div>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <div class="faq_list_item_text">
+                                    Все тарифы абсолютно одинаковы по
+                                    возможностям и
+                                    скорости. Вы получаете полный доступ ко всем
+                                    функциям и серверам на любых устройствах, а
+                                    разница заключается только в длительности
+                                    подписки — чем дольше период, тем выгоднее
+                                    цена
+                                    за каждый месяц.
+                                </div>
+                            </div>
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <div class="faq_list_item_title">
+                                        Как можно оплатить подписку из России?
+                                    </div>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <div class="faq_list_item_text">
+                                    Мы полностью адаптированы для пользователей
+                                    из
+                                    РФ. Вы можете моментально и без комиссий
+                                    оплатить любой тариф любой российской
+                                    банковской
+                                    картой (включая карты Мир), через Систему
+                                    быстрых платежей (СБП) по QR-коду или с
+                                    помощью
+                                    электронных кошельков.
+                                </div>
+                            </div>
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <div class="faq_list_item_title">
+                                        Можно ли вернуть деньги, если мне не
+                                        понравится?
+                                    </div>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <div class="faq_list_item_text">
+                                    Да, мы гарантируем возврат средств. Чтобы вы
+                                    могли проверить качество работы без рисков,
+                                    у
+                                    нас действует период гарантированного
+                                    возврата
+                                    денег, если сервис вам не подошел. Также вы
+                                    всегда можете начать с бесплатного
+                                    3-дневного
+                                    теста.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="free_wrap">
+                <div class="free">
+                    <div class="free_container">
+                        <div class="free_left">
+                            <h1 class="free_title">Начните бесплатно
+                                сегодня</h1>
+                            <div class="free_text">
+                                Установите приложение и получите свободу и
+                                защиту в
+                                сети прямо сейчас
+                            </div>
+                            <div class="free_buttons">
+                                <button
+                                    class="tur-button tur-button_fill">Начать</button>
+                            </div>
+                        </div>
+                        <div class="free_right">
+                            <img src="/assets/picture/start-free.svg" alt
+                                class="free_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <div class="footer_top_left_icon">
+                            <img src="/assets/logo/Logo white.svg"
+                                alt="TURBOSET" class="footer_top_left_icon_img">
+                        </div>
+                        <h2 class="footer_top_left_title">Готовы начать?</h2>
+                        <p class="footer_top_left_text">Попробуйте сервис
+                            бесплатно в течение 3 дней или сразу
+                            переходите к тарифам для долгосрочной защиты</p>
+                        <div class="hero_buttons">
+                            <button class="tur-button tur-button_fill">Получить
+                                3 дня бесплатно</button>
+                            <button class="tur-button">Выбрать тариф</button>
+                        </div>
+                    </div>
+                    <div class="footer_top_right">
+                        <div class="footer_top_list_wrap">
+                            <h3 class="footer_top_list_title">Решения</h3>
+                            <ul class="footer_top_list">
+                                <li class="footer_top_list_item">Для
+                                    Android</li>
+                                <li class="footer_top_list_item">Для iPhone /
+                                    iPad</li>
+                                <li class="footer_top_list_item"> Для
+                                    Windows</li>
+                                <li class="footer_top_list_item"> Для macOS</li>
+                                <li class="footer_top_list_item"> Для Linux</li>
+                                <li class="footer_top_list_item"> Для
+                                    Стриминга</li>
+                                <li class="footer_top_list_item"> Для Соцсетей
+                                </li>
+                                <li class="footer_top_list_item"> Для Игр</li>
+                            </ul>
+                        </div>
+                        <div class="footer_top_list_wrap">
+                            <h3 class="footer_top_list_title">Подробнее</h3>
+                            <ul class="footer_top_list">
+                                <li class="footer_top_list_item">Блог</li>
+                                <li class="footer_top_list_item">Инструкции</li>
+                                <li class="footer_top_list_item"> FAQ</li>
+                                <li class="footer_top_list_item"> О нас</li>
+                                <li class="footer_top_list_item"> Серверы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <ul class="footer_bottom_devices">
+                        <li class="footer_bottom_device">
+                            <img src="/assets/icon/android-white.svg" alt
+                                class="footer_bottom_device_img">
+                            <p class="footer_bottom_device_text">Android</p>
+                        </li>
+                        <li class="footer_bottom_device">
+                            <img src="/assets/icon/apple-white.svg" alt
+                                class="footer_bottom_device_img">
+                            <p class="footer_bottom_device_text">MacOS</p>
+                        </li>
+                        <li class="footer_bottom_device">
+                            <img src="/assets/icon/windows-white.svg" alt
+                                class="footer_bottom_device_img">
+                            <p class="footer_bottom_device_text">Windows</p>
+                        </li>
+                        <li class="footer_bottom_device">
+                            <img src="/assets/icon/apple-white.svg" alt
+                                class="footer_bottom_device_img">
+                            <p class="footer_bottom_device_text">MacOS</p>
+                        </li>
+                        <li class="footer_bottom_device">
+                            <img src="/assets/icon/linux-white.svg" alt
+                                class="footer_bottom_device_img">
+                            <p class="footer_bottom_device_text">Linux</p>
+                        </li>
+                    </ul>
+                    <div class="footer_bottom_setting">
+                        <p class="footer_bottom_prava_text">
+                            © 2026 TURBOSET. Все права защищены.
+                        </p>
+                        <nav class="footer_bottom_prava_links">
+                            <a href="/"
+                                class="footer_bottom_prava_link">Безлоговая
+                                политика</a>
+                            <a href="/" class="footer_bottom_prava_link">Условия
+                                предоставления услуг</a>
+                            <a href="/"
+                                class="footer_bottom_prava_link">Настройки
+                                конфиденциальности</a>
+                        </nav>
+                        <div class="footer_bottom_soc">
+                            <a href="#" class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="#" class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="#" class="footer_bottom_soc_icon">
+
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="#" class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="#" class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="footer_bottom_text">
+                    Сервис TURBOSET предоставляет инструменты для обеспечения
+                    информационной безопасности
+                    и конфиденциальности бизнеса и частных пользователей. Мы
+                    уважаем законодательство всех юрисдикций
+                    и не поощряем использование наших инструментов для нарушения
+                    авторских прав или местных законов.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
 
 </html>

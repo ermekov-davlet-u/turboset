@@ -10,42 +10,163 @@
 
 <body>
     <header class="header">
-        <div class="header_container">
-            <div class="header_logo">
-                <a href="popup-welcome.html">
-                    <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
-                </a>
-            </div>
+            <div class="header_container">
+                <div class="header_logo">
+                    <a href="popup-welcome.html">
+                        <img src="/assets/logo/logo.svg" alt="TURBOSET"
+                            class="header_logo_img">
+                    </a>
+                </div>
 
-            <button class="header_burger" id="headerBurger" aria-label="Открыть меню">
-                <img src="/assets/icon/menu.svg" alt="">
-            </button>
+                <button class="header_burger" id="headerBurger"
+                    aria-label="Открыть меню">
+                    <img src="/assets/icon/menu.svg" alt>
+                </button>
 
-            <div class="header_right" id="headerRight">
-                <nav class="header_nav">
-                    <ul class="header_nav_list">
-                        <li class="header_nav_item"><a class="header_nav_link" href="/">Home</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/article.html">Статьи</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/blog.html">Блог</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/server.html">Сервер</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link"
-                                href="/security.html">Безопасность</a><img src="/assets/icon/arrow-bottom.svg" alt=""
-                                class="header_nav_link_img"></li>
-                        <li class="header_nav_item"><a class="header_nav_link" href="/tarif.html">Тариф</a><img
-                                src="/assets/icon/arrow-bottom.svg" alt="" class="header_nav_link_img"></li>
-                    </ul>
-                </nav>
-                <div class="header_buttons">
-                    <a href="/sign-up.html" class="header_button">Войти</a>
-                    <button class="header_button header_button_fill">Получить</button>
+                <div class="header_right" id="headerRight">
+                    <nav class="header_nav">
+                        <ul class="header_nav_list">
+
+                            <!-- Тарифы -->
+                            <li class="header_nav_item header_dropdown">
+                                <a class="header_nav_link" href="/tarif.html">
+                                    Тарифы
+                                </a>
+
+                                <!-- <button
+                                    class="header_dropdown_button"
+                                    type="button"
+                                    aria-label="Открыть раздел Тарифы"
+                                    aria-expanded="false">
+                                    <img
+                                        src="/assets/icon/arrow-bottom.svg"
+                                        alt
+                                        class="header_nav_link_img">
+                                </button> -->
+
+                                <ul class="header_dropdown_menu">
+                                    <li>
+                                        <a href="/tarif.html">Все тарифы</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Решения -->
+                            <li class="header_nav_item header_dropdown">
+                                <button
+                                    class="header_dropdown_trigger"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <span>Решения</span>
+
+                                    <img
+                                        src="/assets/icon/arrow-bottom.svg"
+                                        alt
+                                        class="header_nav_link_img">
+                                </button>
+
+                                <ul class="header_dropdown_menu">
+
+                                    <li>
+                                        <a href="/android.html">Android</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/windows.html">Windows</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/pc.html">ПК</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/smartphone.html">Смартфоны</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/games.html">Игры</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/games-roblox.html">Roblox</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/netflix.html">Netflix</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/social.html">Социальные
+                                            сети</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/streaming.html">Стриминг</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/tik-tok.html">TikTok</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <!-- Подробнее -->
+                            <li class="header_nav_item header_dropdown">
+
+                                <button
+                                    class="header_dropdown_trigger"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <span>Подробнее</span>
+
+                                    <img
+                                        src="/assets/icon/arrow-bottom.svg"
+                                        alt
+                                        class="header_nav_link_img">
+                                </button>
+
+                                <ul class="header_dropdown_menu">
+
+                                    <li>
+                                        <a href="/article.html">Статьи</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/blog.html">Блог</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="/security.html">Безопасность</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/security2.html">Защита
+                                            данных</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/server.html">Серверы</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/trail.html">Пробный период</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="header_buttons">
+                        <a href="/sign-up.html" class="header_button">Войти</a>
+                        <button
+                            class="header_button header_button_fill">Получить</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
     <div class="hero_wrap">
         <div class="hero dark">
             <div class="hero_container">
@@ -92,26 +213,26 @@
             </div>
             <h2 class="account_title">Один аккаунт на всех устройствах</h2>
             <div class="account_list">
-                <div class="account_list_item">
+                <a href="/android.html" class="account_list_item">
                     <img src="/assets/icon/android.svg" alt="" class="account_list_item_img">
                     <div class="account_list_item_text">Android</div>
-                </div>
-                <div class="account_list_item">
+                </a>
+                <a href="/windows.html" class="account_list_item">
                     <img src="/assets/icon/windows.svg" alt="" class="account_list_item_img">
                     <div class="account_list_item_text">Windows</div>
-                </div>
-                <div class="account_list_item">
+                </a>
+                <a href="/android.html" class="account_list_item">
                     <img src="/assets/icon/apple.svg" alt="" class="account_list_item_img">
                     <div class="account_list_item_text">MacOS</div>
-                </div>
-                <div class="account_list_item">
+                </a>
+                <a href="/android.html" class="account_list_item">
                     <img src="/assets/icon/linux.svg" alt="" class="account_list_item_img">
                     <div class="account_list_item_text">Linux</div>
-                </div>
-                <div class="account_list_item">
+                </a>
+                <a href="/android.html" class="account_list_item">
                     <img src="/assets/icon/apple.svg" alt="" class="account_list_item_img">
                     <div class="account_list_item_text">IOS</div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -382,109 +503,188 @@
     </div>
 
     <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_top">
-                <div class="footer_top_left">
-                    <div class="footer_top_left_icon">
-                        <img src="/assets/logo/Logo white.svg" alt="TURBOSET" class="footer_top_left_icon_img">
+            <div class="footer_container">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <div class="footer_top_left_icon">
+                            <img src="/assets/logo/Logo white.svg"
+                                alt="TURBOSET" class="footer_top_left_icon_img">
+                        </div>
+                        <h2 class="footer_top_left_title">Готовы начать?</h2>
+                        <p class="footer_top_left_text">Попробуйте сервис
+                            бесплатно в течение 3 дней или сразу
+                            переходите к тарифам для долгосрочной защиты</p>
+                        <div class="hero_buttons">
+                            <button class="tur-button tur-button_fill">Получить
+                                3 дня бесплатно</button>
+                            <button class="tur-button">Выбрать тариф</button>
+                        </div>
                     </div>
-                    <h2 class="footer_top_left_title">Готовы начать?</h2>
-                    <p class="footer_top_left_text">Попробуйте сервис бесплатно в течение 3 дней или сразу
-                        переходите к тарифам для долгосрочной защиты</p>
-                    <div class="hero_buttons">
-                        <button class="tur-button tur-button_fill">Получить 3 дня бесплатно</button>
-                        <button class="tur-button">Выбрать тариф</button>
+                    <div class="footer_top_right">
+                        <div class="footer_top_list_wrap">
+                            <h3 class="footer_top_list_title">Решения</h3>
+                            <ul class="footer_top_list">
+                                <li class="footer_top_list_item"><a
+                                        href="android.html"
+                                        class="footer_top_list_item">Для
+                                        Android</a></li>
+                                <li class="footer_top_list_item"><a
+                                        href="pc.html"
+                                        class="footer_top_list_item">Для iPhone
+                                        /
+                                        iPad</a></li>
+                                <li class="footer_top_list_item"> <a
+                                        href="windows.html"
+                                        class="footer_top_list_item">Для
+                                        Windows</a></li>
+                                <li class="footer_top_list_item"><a
+                                        href="pc.html"
+                                        class="footer_top_list_item"> Для
+                                        macOS</a></li>
+                                <li class="footer_top_list_item"> <a
+                                        href="pc.html"
+                                        class="footer_top_list_item">Для
+                                        Linux</a></li>
+                                <li class="footer_top_list_item"> <a
+                                        href="streaming.html"
+                                        class="footer_top_list_item">Для
+                                        Стриминга</a></li>
+                                <li class="footer_top_list_item"><a
+                                        href="/social.html"
+                                        class="footer_top_list_item"> Для
+                                        Соцсетей</a>
+                                </li>
+                                <li class="footer_top_list_item"><a
+                                        href="/games-roblox.html"
+                                        class="footer_top_list_item">
+                                        Для Игр</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_top_list_wrap">
+                            <h3 class="footer_top_list_title">Подробнее</h3>
+                            <ul class="footer_top_list">
+                                <li class="footer_top_list_item"><a
+                                        href="article.html"
+                                        class="footer_top_list_item">Блог</a></li>
+                                <li class="footer_top_list_item"><a href="/"
+                                        class="footer_top_list_item">Инструкции</a></li>
+                                <li class="footer_top_list_item"> <a href="/"
+                                        class="footer_top_list_item">FAQ</a></li>
+                                <li class="footer_top_list_item"><a href="/"
+                                        class="footer_top_list_item"> О
+                                        нас</a></li>
+                                <li class="footer_top_list_item"><a href="/"
+                                        class="footer_top_list_item">
+                                        Серверы</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="footer_top_right">
-                    <div class="footer_top_list_wrap">
-                        <h3 class="footer_top_list_title">Решения</h3>
-                        <ul class="footer_top_list">
-                            <li class="footer_top_list_item">Для Android</li>
-                            <li class="footer_top_list_item">Для iPhone / iPad</li>
-                            <li class="footer_top_list_item"> Для Windows</li>
-                            <li class="footer_top_list_item"> Для macOS</li>
-                            <li class="footer_top_list_item"> Для Linux</li>
-                            <li class="footer_top_list_item"> Для Стриминга</li>
-                            <li class="footer_top_list_item"> Для Соцсетей </li>
-                            <li class="footer_top_list_item"> Для Игр</li>
-                        </ul>
+                <div class="footer_bottom">
+                    <ul class="footer_bottom_devices">
+                        <li class="footer_bottom_device_li">
+                            <a href="/android.html"
+                                class="footer_bottom_device">
+
+                                <img src="/assets/icon/android-white.svg" alt
+                                    class="footer_bottom_device_img">
+                                <p class="footer_bottom_device_text">Android</p>
+                            </a>
+                        </li>
+                        <li class="footer_bottom_device_li">
+                            <a href="/android.html"
+                                class="footer_bottom_device">
+
+                                <img src="/assets/icon/apple-white.svg" alt
+                                    class="footer_bottom_device_img">
+                                <p class="footer_bottom_device_text">MacOS</p>
+                            </a>
+                        </li>
+                        <li class="footer_bottom_device_li">
+                            <a href="/windows.html"
+                                class="footer_bottom_device">
+
+                                <img src="/assets/icon/windows-white.svg" alt
+                                    class="footer_bottom_device_img">
+                                <p class="footer_bottom_device_text">Windows</p>
+                            </a>
+                        </li>
+                        <li class="footer_bottom_device_li">
+                            <a href="/android.html"
+                                class="footer_bottom_device">
+
+                                <img src="/assets/icon/apple-white.svg" alt
+                                    class="footer_bottom_device_img">
+                                <p class="footer_bottom_device_text">MacOS</p>
+                            </a>
+                        </li>
+                        <li class="footer_bottom_device_li">
+                            <a href="/android.html"
+                                class="footer_bottom_device">
+
+                                <img src="/assets/icon/linux-white.svg" alt
+                                    class="footer_bottom_device_img">
+                                <p class="footer_bottom_device_text">Linux</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer_bottom_setting">
+                        <p class="footer_bottom_prava_text">
+                            © 2026 TURBOSET. Все права защищены.
+                        </p>
+                        <nav class="footer_bottom_prava_links">
+                            <a href="/"
+                                class="footer_bottom_prava_link">Безлоговая
+                                политика</a>
+                            <a href="/" class="footer_bottom_prava_link">Условия
+                                предоставления услуг</a>
+                            <a href="/"
+                                class="footer_bottom_prava_link">Настройки
+                                конфиденциальности</a>
+                        </nav>
+                        <div class="footer_bottom_soc">
+                            <a href="/smartphone.html"
+                                class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="/social.html"
+                                class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="/social.html"
+                                class="footer_bottom_soc_icon">
+
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="/social.html"
+                                class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                            <a href="/social.html"
+                                class="footer_bottom_soc_icon">
+                                <img src="/assets/icon/google.svg" alt
+                                    class="footer_bottom_soc_icon_img">
+                            </a>
+                        </div>
                     </div>
-                    <div class="footer_top_list_wrap">
-                        <h3 class="footer_top_list_title">Подробнее</h3>
-                        <ul class="footer_top_list">
-                            <li class="footer_top_list_item">Блог</li>
-                            <li class="footer_top_list_item">Инструкции</li>
-                            <li class="footer_top_list_item"> FAQ</li>
-                            <li class="footer_top_list_item"> О нас</li>
-                            <li class="footer_top_list_item"> Серверы</li>
-                        </ul>
-                    </div>
+
                 </div>
+                <p class="footer_bottom_text">
+                    Сервис TURBOSET предоставляет инструменты для обеспечения
+                    информационной безопасности
+                    и конфиденциальности бизнеса и частных пользователей. Мы
+                    уважаем законодательство всех юрисдикций
+                    и не поощряем использование наших инструментов для нарушения
+                    авторских прав или местных законов.
+                </p>
             </div>
-            <div class="footer_bottom">
-                <ul class="footer_bottom_devices">
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/android-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">Android</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">MacOS</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/windows-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">Windows</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/apple-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">MacOS</p>
-                    </li>
-                    <li class="footer_bottom_device">
-                        <img src="/assets/icon/linux-white.svg" alt="" class="footer_bottom_device_img">
-                        <p class="footer_bottom_device_text">Linux</p>
-                    </li>
-                </ul>
-                <div class="footer_bottom_setting">
-                    <p class="footer_bottom_prava_text">
-                        © 2026 TURBOSET. Все права защищены.
-                    </p>
-                    <nav class="footer_bottom_prava_links">
-                        <a href="/" class="footer_bottom_prava_link">Безлоговая политика</a>
-                        <a href="/" class="footer_bottom_prava_link">Условия предоставления услуг</a>
-                        <a href="/" class="footer_bottom_prava_link">Настройки конфиденциальности</a>
-                    </nav>
-                    <div class="footer_bottom_soc">
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
+        </footer>
 
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                        <a href="#" class="footer_bottom_soc_icon">
-                            <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
-                        </a>
-                    </div>
-                </div>
-
-
-            </div>
-            <p class="footer_bottom_text">
-                Сервис TURBOSET предоставляет инструменты для обеспечения информационной безопасности
-                и конфиденциальности бизнеса и частных пользователей. Мы уважаем законодательство всех юрисдикций
-                и не поощряем использование наших инструментов для нарушения авторских прав или местных законов.
-            </p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
 </body>
 

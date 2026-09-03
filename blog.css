@@ -181,6 +181,18 @@
   list-style: none;
 }
 
+.table-contents_list_item a{
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(26, 28, 31, 1);
+  list-style: none;
+  text-decoration: none;
+}
+
 .article_card_content_period {
 }
 

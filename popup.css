@@ -77,12 +77,24 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+
+.close_btn{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 999;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .popup-welcome {
   /* width: 100vw;
   height: 100vh; */
   /* border-radius: 36px; */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
