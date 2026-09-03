@@ -2410,7 +2410,6 @@ color: rgba(26, 28, 31, 1);
 
 .article_menu {
     width: 596px;
-    height: 52px;
     gap: 8px;
     opacity: 1;
     padding: 4px;
@@ -2486,7 +2485,7 @@ color: rgba(26, 28, 31, 1);
 
 @media screen and (max-width: 648px) {
     .article_menu {
-        height: 72px;
+        /* height: 72px; */
     }
 }
 
