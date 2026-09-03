@@ -1,162 +1,319 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VPN для игр — стабильное подключение к игровым сервисам | TURBOSET</title>
+        <title>VPN для игр — стабильное подключение к игровым сервисам |
+            TURBOSET</title>
 
-    <meta name="description"
-        content="VPN для игр на ПК и мобильных устройствах. Стабильное подключение, доступ к игровым сервисам и серверы в разных странах с TURBOSET.">
+        <meta name="description"
+            content="VPN для игр на ПК и мобильных устройствах. Стабильное подключение, доступ к игровым сервисам и серверы в разных странах с TURBOSET.">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="blog.css">
 
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebPage",
-                "@id": "#webpage",
-                "name": "VPN для игр",
-                "description": "VPN для онлайн-игр со стабильным подключением к игровым сервисам и серверам в разных странах.",
-                "inLanguage": "ru-RU",
-                "isPartOf": {
-                    "@type": "WebSite",
-                    "name": "TURBOSET"
-                }
-            },
-            {
-                "@type": "Service",
-                "name": "VPN для игр",
-                "serviceType": "VPN",
-                "description": "VPN-сервис для доступа к игровым сервисам и стабильного подключения во время онлайн-игр.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "TURBOSET"
-                },
-                "areaServed": "Worldwide"
-            },
-            {
-                "@type": "ItemList",
-                "name": "Игровые платформы и сервисы",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Steam"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Roblox"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "PUBG"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Warzone"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Fortnite"
-                    }
-                ]
-            },
-            {
-                "@type": "ItemList",
-                "name": "Рекомендуемые локации для подключения",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Швейцария"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Можно ли протестировать сервис бесплатно?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Из каких стран можно подключаться к интернету?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать любые нужные сайты и сервисы."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Как оплатить подписку из России?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Мы принимаем любые российские банковские карты, включая Мир, оплату по СБП и электронные кошельки."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Видит ли кто-то, какие сайты я посещаю?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем, не записываем и никому не передаем историю ваших действий в интернете."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "На скольких устройствах будет работать одна подписка?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на компьютерах и ноутбуках с Windows и macOS."
-                        }
-                    }
-                ]
+        <!-- JSON-LD -->
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://turboset.example/#organization",
+            "name": "TURBOSET",
+            "url": "https://turboset.example/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://turboset.example/assets/logo/logo.svg"
             }
-        ]
-    }
-    </script>
-</head>
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://turboset.example/#website",
+            "url": "https://turboset.example/",
+            "name": "TURBOSET",
+            "inLanguage": "ru-RU",
+            "publisher": {
+                "@id": "https://turboset.example/#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://turboset.example/games.html#webpage",
+            "url": "https://turboset.example/games.html",
+            "name": "VPN для игр — стабильное подключение к игровым сервисам | TURBOSET",
+            "description": "VPN для игр на ПК и мобильных устройствах. Стабильное подключение, доступ к игровым сервисам и серверы в разных странах с TURBOSET.",
+            "inLanguage": "ru-RU",
+            "isPartOf": {
+                "@id": "https://turboset.example/#website"
+            },
+            "publisher": {
+                "@id": "https://turboset.example/#organization"
+            },
+            "about": {
+                "@id": "https://turboset.example/games.html#service"
+            },
+            "breadcrumb": {
+                "@id": "https://turboset.example/games.html#breadcrumb"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://turboset.example/games.html#service",
+            "name": "VPN для игр",
+            "serviceType": "VPN-сервис для онлайн-игр",
+            "description": "VPN-сервис для стабильного подключения к игровым сервисам, доступа к игровым серверам и защиты интернет-соединения во время онлайн-игр.",
+            "provider": {
+                "@id": "https://turboset.example/#organization"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Worldwide"
+            }
+        },
+        {
+            "@type": "ItemList",
+            "@id": "https://turboset.example/games.html#games",
+            "name": "Игры и игровые сервисы, доступные через VPN",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Steam"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Roblox"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "PUBG"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Warzone"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Fortnite"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Free Fire"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "name": "Mobile Legends"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 8,
+                    "name": "League of Legends"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 9,
+                    "name": "Valorant"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 10,
+                    "name": "Minecraft"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 11,
+                    "name": "Lost Ark"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 12,
+                    "name": "Destiny 2"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 13,
+                    "name": "World of Warcraft"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 14,
+                    "name": "Black Desert"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 15,
+                    "name": "Genshin Impact"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 16,
+                    "name": "Counter Strike 2"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 17,
+                    "name": "Pokémon Go"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 18,
+                    "name": "Dota 2"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 19,
+                    "name": "Final Fantasy"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 20,
+                    "name": "Overwatch"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 21,
+                    "name": "Diablo"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 22,
+                    "name": "Apex Legends"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 23,
+                    "name": "GTA Online"
+                }
+            ]
+        },
+        {
+            "@type": "ItemList",
+            "@id": "https://turboset.example/games.html#locations",
+            "name": "Рекомендуемые VPN-локации для игр",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Германия"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Нидерланды"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Финляндия"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Франция"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "США"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Польша"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://turboset.example/games.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Главная",
+                    "item": "https://turboset.example/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Решения",
+                    "item": "https://turboset.example/games.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Игры",
+                    "item": "https://turboset.example/games.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://turboset.example/games.html#faq",
+            "url": "https://turboset.example/games.html#faq",
+            "name": "Часто задаваемые вопросы о VPN для игр",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Зачем нужен VPN для игр?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "VPN помогает улучшить стабильность подключения, получить доступ к игровым сервисам и защитить интернет-соединение во время игры."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Повлияет ли VPN на пинг в играх?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Пинг зависит от расстояния до сервера и качества соединения. При выборе подходящей VPN-локации можно сохранить комфортную задержку для онлайн-игр."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Можно ли использовать VPN для Steam и игровых платформ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Да. VPN можно использовать с игровыми платформами и сервисами, включая Steam и другие онлайн-площадки."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Работает ли VPN на мобильных играх?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Да. VPN можно использовать на Android и iOS для мобильных игр и игровых приложений."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Можно ли играть через VPN на нескольких устройствах?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Да. VPN можно установить на компьютер, смартфон и другие поддерживаемые устройства."
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
+    </head>
 
+    <body class="server-body">
 
-<body class="server-body">
-
-    <!-- HEADER НЕ ТРОГАЕМ -->
-    <header class="header">
+        <!-- HEADER НЕ ТРОГАЕМ -->
+        <header class="header">
             <div class="header_container">
                 <div class="header_logo">
                     <a href="popup-welcome.html">
@@ -315,796 +472,834 @@
             </div>
         </header>
 
-    <main class="main">
+        <main class="main">
 
-        <!-- HERO -->
-        <section class="hero_wrap security_hero_wrap" aria-labelledby="game-hero-title">
+            <!-- HERO -->
+            <section class="hero_wrap security_hero_wrap"
+                aria-labelledby="game-hero-title">
 
-            <div class="hero security_hero">
+                <div class="hero security_hero">
 
-                <div class="hero_container">
+                    <div class="hero_container">
 
-                    <div class="hero_left">
+                        <div class="hero_left">
 
-                        <h1 class="hero_title" id="game-hero-title">
-                            Полный доступ к онлайн-играм и стабильное подключение с VPN для Игр
-                        </h1>
+                            <h1 class="hero_title" id="game-hero-title">
+                                Полный доступ к онлайн-играм и стабильное
+                                подключение с VPN для Игр
+                            </h1>
 
-                        <p class="hero_list">
-                            Играйте в любимые проекты с комфортом, подключайтесь к игровым сервисам
-                            и защищайте соединение во время онлайн-сессий. Выбирайте сервер
-                            в подходящей стране и используйте VPN на ПК и мобильных устройствах.
-                        </p>
+                            <p class="hero_list">
+                                Играйте в любимые проекты с комфортом,
+                                подключайтесь к игровым сервисам
+                                и защищайте соединение во время онлайн-сессий.
+                                Выбирайте сервер
+                                в подходящей стране и используйте VPN на ПК и
+                                мобильных устройствах.
+                            </p>
 
-                        <div class="hero_buttons">
+                            <div class="hero_buttons">
 
-                            <button class="tur-button tur-button_fill">
-                                Получить 3 дня бесплатно
-                            </button>
+                                <button class="tur-button tur-button_fill">
+                                    Получить 3 дня бесплатно
+                                </button>
 
-                            <button class="tur-button">
-                                Выбрать тариф
-                            </button>
+                                <button class="tur-button">
+                                    Выбрать тариф
+                                </button>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="hero_right">
 
+                            <img src="/assets/picture/game-hero.svg"
+                                alt="VPN для онлайн-игр" class="hero_img">
 
-                    <div class="hero_right">
-
-                        <img src="/assets/picture/game-hero.svg" alt="VPN для онлайн-игр" class="hero_img">
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </section>
 
-        </section>
+            <!-- ИГРОВЫЕ ПЛАТФОРМЫ -->
+            <section class="platform" aria-labelledby="platform-title">
 
+                <div class="platform_container">
 
-        <!-- ИГРОВЫЕ ПЛАТФОРМЫ -->
-        <section class="platform" aria-labelledby="platform-title">
+                    <header class="platform_header">
 
-            <div class="platform_container">
+                        <h2 class="platform_header_title" id="platform-title">
+                            Играйте в любимые игры через VPN
+                        </h2>
 
-                <header class="platform_header">
+                    </header>
 
-                    <h2 class="platform_header_title" id="platform-title">
-                        Играйте в любимые игры через VPN
-                    </h2>
+                    <ul class="game_list">
 
-                </header>
+                        <li class="game_list_item">
 
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Steam.svg"
+                                    alt="Steam" class="game_list_item_img">
+                            </div>
 
-                <ul class="game_list">
+                            <p class="game_list_item_text">
+                                Steam
+                            </p>
 
-                    <li class="game_list_item">
+                        </li>
 
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Steam.svg" alt="Steam" class="game_list_item_img">
-                        </div>
+                        <li class="game_list_item">
 
-                        <p class="game_list_item_text">
-                            Steam
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/rolbox.svg"
+                                    alt="Roblox" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Roblox
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/pubg.svg"
+                                    alt="PUBG" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                PUBG
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Warzone.svg"
+                                    alt="Warzone" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Warzone
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Fortnite.svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Fortnite
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Free Fire.svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Free Fire
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Mobile Legends.svg"
+                                    alt="Steam" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Mobile Legends
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img
+                                    src="./assets/streaming/League of Legends.svg"
+                                    alt="Roblox" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                League of Legends
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Valorant.svg"
+                                    alt="PUBG" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Valorant
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Minecraft.svg"
+                                    alt="Warzone" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Minecraft
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Lost Ark.svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Lost Ark
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Destiny 2.svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Destiny 2
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img
+                                    src="./assets/streaming/World of Warcraft.svg"
+                                    alt="Steam" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                World of Warcraft
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Black Desert.svg"
+                                    alt="Roblox" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Black Desert
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Genshin Impact.svg"
+                                    alt="PUBG" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Genshin Impact
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img
+                                    src="./assets/streaming/Counter Strike 2.svg"
+                                    alt="Warzone" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Counter Strike 2
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Pokémon Go .svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Pokémon Go
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Dota 2.svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Dota 2
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Final Fantasy.svg"
+                                    alt="Steam" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Final Fantasy
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Overwatch.svg"
+                                    alt="Roblox" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Overwatch
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Diablo.svg"
+                                    alt="PUBG" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Diablo
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/Apex Legends.svg"
+                                    alt="Warzone" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Apex Legends
+                            </p>
+
+                        </li>
+
+                        <li class="game_list_item">
+
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/GTA Online .svg"
+                                    alt="Fortnite" class="game_list_item_img">
+                            </div>
+
+                            <p class="game_list_item_text">
+                                Fortnite
+                            </p>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- ЛОКАЦИИ -->
+            <section class="location" aria-labelledby="location-title">
+
+                <div class="location_container">
+
+                    <header class="location_header">
+
+                        <h2 class="location_header_title" id="location-title">
+                            Рекомендуемые локации для игр
+                        </h2>
+
+                        <p class="location_header_text">
+                            Рекомендуемые локации для защиты от вылетов,
+                            стабильного доступа к мировым онлайн-играм
+                            на максимальной скорости
                         </p>
 
-                    </li>
+                    </header>
 
+                    <ul class="location_countries">
 
-                    <li class="game_list_item">
+                        <li class="location_countries_item">
 
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/rolbox.svg" alt="Roblox" class="game_list_item_img">
-                        </div>
+                            <div class="location_countries_item_flag">
 
-                        <p class="game_list_item_text">
-                            Roblox
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/pubg.svg" alt="PUBG" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            PUBG
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Warzone.svg" alt="Warzone" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Warzone
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Fortnite.svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Fortnite
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Free Fire.svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Free Fire
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Mobile Legends.svg" alt="Steam" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Mobile Legends
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/League of Legends.svg" alt="Roblox" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            League of Legends
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Valorant.svg" alt="PUBG" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Valorant
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Minecraft.svg" alt="Warzone" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Minecraft
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Lost Ark.svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Lost Ark
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Destiny 2.svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Destiny 2
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/World of Warcraft.svg" alt="Steam" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            World of Warcraft
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Black Desert.svg" alt="Roblox" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Black Desert
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Genshin Impact.svg" alt="PUBG" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Genshin Impact
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Counter Strike 2.svg" alt="Warzone" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Counter Strike 2 
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Pokémon Go .svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Pokémon Go 
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Dota 2.svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Dota 2
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Final Fantasy.svg" alt="Steam" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Final Fantasy
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Overwatch.svg" alt="Roblox" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Overwatch
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Diablo.svg" alt="PUBG" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Diablo
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/Apex Legends.svg" alt="Warzone" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Apex Legends
-                        </p>
-
-                    </li>
-
-
-                    <li class="game_list_item">
-
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/GTA Online .svg" alt="Fortnite" class="game_list_item_img">
-                        </div>
-
-                        <p class="game_list_item_text">
-                            Fortnite
-                        </p>
-
-                    </li>
-
-                </ul>
-            </div>
-
-        </section>
-
-
-        <!-- ЛОКАЦИИ -->
-        <section class="location" aria-labelledby="location-title">
-
-            <div class="location_container">
-
-                <header class="location_header">
-
-                    <h2 class="location_header_title" id="location-title">
-                        Рекомендуемые локации для игр
-                    </h2>
-
-                    <p class="location_header_text">
-                        Рекомендуемые локации для защиты от вылетов, стабильного доступа к мировым онлайн-играм
-                        на максимальной скорости
-                    </p>
-
-                </header>
-
-
-                <ul class="location_countries">
-
-                    <li class="location_countries_item">
-
-                        <div class="location_countries_item_flag">
-
-                            <img src="./assets/country/belium.svg" alt="Флаг Швейцарии"
-                                class="location_countries_item_flag_img">
-
-                        </div>
-
-                        <p class="location_countries_item_title">
-                            Германия
-                        </p>
-
-                    </li>
-
-
-                    <li class="location_countries_item">
-
-                        <div class="location_countries_item_flag">
-
-                            <img src="./assets/country/niderland.svg" alt="Флаг Швейцарии"
-                                class="location_countries_item_flag_img">
-
-                        </div>
-
-                        <p class="location_countries_item_title">
-                            Нидерланды
-                        </p>
-
-                    </li>
-
-
-                    <li class="location_countries_item">
-
-                        <div class="location_countries_item_flag">
-
-                            <img src="./assets/country/fin.svg" alt="Флаг Швейцарии"
-                                class="location_countries_item_flag_img">
-
-                        </div>
-
-                        <p class="location_countries_item_title">
-                            Финляндия
-                        </p>
-
-                    </li>
-
-
-                    <li class="location_countries_item">
-
-                        <div class="location_countries_item_flag">
-
-                            <img src="./assets/country/farche.svg" alt="Флаг Швейцарии"
-                                class="location_countries_item_flag_img">
-
-                        </div>
-
-                        <p class="location_countries_item_title">
-                            Франция
-                        </p>
-
-                    </li>
-
-
-                    <li class="location_countries_item">
-
-                        <div class="location_countries_item_flag">
-
-                            <img src="./assets/country/usa.svg" alt="Флаг Швейцарии"
-                                class="location_countries_item_flag_img">
-
-                        </div>
-
-                        <p class="location_countries_item_title">
-                            США
-                        </p>
-
-                    </li>
-
-                    <li class="location_countries_item">
-
-                        <div class="location_countries_item_flag">
-
-                            <img src="./assets/picture/polsha.svg" alt="Флаг Швейцарии"
-                                class="location_countries_item_flag_img">
-
-                        </div>
-
-                        <p class="location_countries_item_title">
-                            Польша
-                        </p>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </section>
-
-
-        <!-- ПРЕИМУЩЕСТВА -->
-        <section class="functions" aria-labelledby="functions-title">
-
-            <div class="functions_container">
-
-                <header class="functions_header">
-
-                    <h2 class="functions_title" id="functions-title">
-                        Что дает VPN для игр
-                    </h2>
-
-                    <p class="function_subtitle">
-                        Максимальную скорость для просмотра фильмов и сериалов в высоком качестве без зависаний.
-                        Запускайте в один клик любые мировые онлайн-кинотеатры
-                    </p>
-
-                </header>
-
-
-                <ul class="functions_cards">
-
-                    <li class="function_card">
-
-                        <div class="functions_card_top">
-
-                            <div class="functions_card_icon">
-
-                                <img src="/assets/icon/inet.svg" alt="" class="functions_card_icon_img">
+                                <img src="./assets/country/belium.svg"
+                                    alt="Флаг Швейцарии"
+                                    class="location_countries_item_flag_img">
 
                             </div>
 
-                        </div>
+                            <p class="location_countries_item_title">
+                                Германия
+                            </p>
 
-                        <h3 class="functions_card_title">
-                            Стабильное соединение
-                        </h3>
+                        </li>
 
-                        <p class="functions_card_text">
-                            Уменьшайте проблемы с подключением и поддерживайте комфортный игровой процесс
-                        </p>
+                        <li class="location_countries_item">
 
-                    </li>
+                            <div class="location_countries_item_flag">
 
-
-                    <li class="function_card">
-
-                        <div class="functions_card_top">
-
-                            <div class="functions_card_icon">
-
-                                <img src="/assets/icon/location.svg" alt="" class="functions_card_icon_img">
+                                <img src="./assets/country/niderland.svg"
+                                    alt="Флаг Швейцарии"
+                                    class="location_countries_item_flag_img">
 
                             </div>
 
-                        </div>
+                            <p class="location_countries_item_title">
+                                Нидерланды
+                            </p>
 
-                        <h3 class="functions_card_title">
-                            Доступ к игровым серверам
-                        </h3>
+                        </li>
 
-                        <p class="functions_card_text">
-                            Выбирайте VPN-локацию для подключения через разные регионы
-                        </p>
+                        <li class="location_countries_item">
 
-                    </li>
+                            <div class="location_countries_item_flag">
 
-
-                    <li class="function_card">
-
-                        <div class="functions_card_top">
-
-                            <div class="functions_card_icon">
-
-                                <img src="/assets/icon/gamepad.svg" alt="" class="functions_card_icon_img">
+                                <img src="./assets/country/fin.svg"
+                                    alt="Флаг Швейцарии"
+                                    class="location_countries_item_flag_img">
 
                             </div>
 
-                        </div>
+                            <p class="location_countries_item_title">
+                                Финляндия
+                            </p>
 
-                        <h3 class="functions_card_title">
-                            Онлайн-игры без ограничений
-                        </h3>
+                        </li>
 
-                        <p class="functions_card_text">
-                            Используйте игровые сервисы и сообщества через надежное подключение.
-                        </p>
+                        <li class="location_countries_item">
 
-                    </li>
+                            <div class="location_countries_item_flag">
 
-
-                    <li class="function_card">
-
-                        <div class="functions_card_top">
-
-                            <div class="functions_card_icon">
-
-                                <img src="/assets/icon/device.svg" alt="" class="functions_card_icon_img">
+                                <img src="./assets/country/farche.svg"
+                                    alt="Флаг Швейцарии"
+                                    class="location_countries_item_flag_img">
 
                             </div>
 
-                        </div>
+                            <p class="location_countries_item_title">
+                                Франция
+                            </p>
 
-                        <h3 class="functions_card_title">
-                            Работает на разных устройствах
-                        </h3>
+                        </li>
 
-                        <p class="functions_card_text">
-                            Сервис работает на разных устройствах и системах, поэтому им удобно пользоваться дома,
-                            на работе и в дороге
+                        <li class="location_countries_item">
+
+                            <div class="location_countries_item_flag">
+
+                                <img src="./assets/country/usa.svg"
+                                    alt="Флаг Швейцарии"
+                                    class="location_countries_item_flag_img">
+
+                            </div>
+
+                            <p class="location_countries_item_title">
+                                США
+                            </p>
+
+                        </li>
+
+                        <li class="location_countries_item">
+
+                            <div class="location_countries_item_flag">
+
+                                <img src="./assets/picture/polsha.svg"
+                                    alt="Флаг Швейцарии"
+                                    class="location_countries_item_flag_img">
+
+                            </div>
+
+                            <p class="location_countries_item_title">
+                                Польша
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- ПРЕИМУЩЕСТВА -->
+            <section class="functions" aria-labelledby="functions-title">
+
+                <div class="functions_container">
+
+                    <header class="functions_header">
+
+                        <h2 class="functions_title" id="functions-title">
+                            Что дает VPN для игр
+                        </h2>
+
+                        <p class="function_subtitle">
+                            Максимальную скорость для просмотра фильмов и
+                            сериалов в высоком качестве без зависаний.
+                            Запускайте в один клик любые мировые
+                            онлайн-кинотеатры
                         </p>
 
-                    </li>
+                    </header>
 
+                    <ul class="functions_cards">
 
-                    <li class="function_card function_card_last">
-
-                        <div class="function_card_left">
+                        <li class="function_card">
 
                             <div class="functions_card_top">
 
                                 <div class="functions_card_icon">
 
-                                    <img src="/assets/icon/lock.svg" alt="" class="functions_card_icon_img">
+                                    <img src="/assets/icon/inet.svg" alt
+                                        class="functions_card_icon_img">
 
                                 </div>
 
                             </div>
 
                             <h3 class="functions_card_title">
-                                Поможем, если возникнут вопросы
+                                Стабильное соединение
                             </h3>
 
                             <p class="functions_card_text">
-                                Если возникнут вопросы, можно быстро получить помощь
-                                и разобраться с настройками.
+                                Уменьшайте проблемы с подключением и
+                                поддерживайте комфортный игровой процесс
                             </p>
 
-                        </div>
+                        </li>
 
+                        <li class="function_card">
 
-                        <div class="function_card_right">
+                            <div class="functions_card_top">
 
-                            <img src="/assets/picture/support.svg" alt="Поддержка пользователей"
-                                class="function_card_right_img">
+                                <div class="functions_card_icon">
 
-                        </div>
+                                    <img src="/assets/icon/location.svg" alt
+                                        class="functions_card_icon_img">
 
-                    </li>
+                                </div>
 
-                </ul>
+                            </div>
 
-            </div>
+                            <h3 class="functions_card_title">
+                                Доступ к игровым серверам
+                            </h3>
 
-        </section>
+                            <p class="functions_card_text">
+                                Выбирайте VPN-локацию для подключения через
+                                разные регионы
+                            </p>
 
+                        </li>
 
-        <!-- FAQ -->
-        <section class="faq">
-            <div class="faq_container">
-                <div class="faq_left">
-                    <h2 class="faq_title">
-                        FAQs
-                    </h2>
+                        <li class="function_card">
+
+                            <div class="functions_card_top">
+
+                                <div class="functions_card_icon">
+
+                                    <img src="/assets/icon/gamepad.svg" alt
+                                        class="functions_card_icon_img">
+
+                                </div>
+
+                            </div>
+
+                            <h3 class="functions_card_title">
+                                Онлайн-игры без ограничений
+                            </h3>
+
+                            <p class="functions_card_text">
+                                Используйте игровые сервисы и сообщества через
+                                надежное подключение.
+                            </p>
+
+                        </li>
+
+                        <li class="function_card">
+
+                            <div class="functions_card_top">
+
+                                <div class="functions_card_icon">
+
+                                    <img src="/assets/icon/device.svg" alt
+                                        class="functions_card_icon_img">
+
+                                </div>
+
+                            </div>
+
+                            <h3 class="functions_card_title">
+                                Работает на разных устройствах
+                            </h3>
+
+                            <p class="functions_card_text">
+                                Сервис работает на разных устройствах и
+                                системах, поэтому им удобно пользоваться дома,
+                                на работе и в дороге
+                            </p>
+
+                        </li>
+
+                        <li class="function_card function_card_last">
+
+                            <div class="function_card_left">
+
+                                <div class="functions_card_top">
+
+                                    <div class="functions_card_icon">
+
+                                        <img src="/assets/icon/lock.svg" alt
+                                            class="functions_card_icon_img">
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="functions_card_title">
+                                    Поможем, если возникнут вопросы
+                                </h3>
+
+                                <p class="functions_card_text">
+                                    Если возникнут вопросы, можно быстро
+                                    получить помощь
+                                    и разобраться с настройками.
+                                </p>
+
+                            </div>
+
+                            <div class="function_card_right">
+
+                                <img src="/assets/picture/support.svg"
+                                    alt="Поддержка пользователей"
+                                    class="function_card_right_img">
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
                 </div>
-                <div class="faq_right">
-                    <div class="faq_list">
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Зачем нужен VPN для игр?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq">
+                <div class="faq_container">
+                    <div class="faq_left">
+                        <h2 class="faq_title">
+                            FAQs
+                        </h2>
+                    </div>
+                    <div class="faq_right">
+                        <div class="faq_list">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Зачем нужен VPN для игр?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    VPN помогает улучшить стабильность
+                                    подключения, получить доступ к игровым
+                                    сервисам
+                                    и защитить интернет-соединение во время
+                                    игры.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                VPN помогает улучшить стабильность подключения, получить доступ к игровым сервисам
-                                и защитить интернет-соединение во время игры.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Повлияет ли VPN на пинг в играх?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Повлияет ли VPN на пинг в играх?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Пинг зависит от расстояния до сервера и
+                                    качества соединения. При выборе подходящей
+                                    VPN-локации можно сохранить комфортную
+                                    задержку для онлайн-игр.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Пинг зависит от расстояния до сервера и качества соединения. При выборе подходящей
-                                VPN-локации можно сохранить комфортную задержку для онлайн-игр.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Можно ли использовать VPN для Steam и игровых платформ?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Можно ли использовать VPN для Steam и
+                                        игровых платформ?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Да. VPN можно использовать с игровыми
+                                    платформами и сервисами, включая Steam и
+                                    другие
+                                    онлайн-площадки.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Да. VPN можно использовать с игровыми платформами и сервисами, включая Steam и другие
-                                онлайн-площадки.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Работает ли VPN на мобильных играх?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Работает ли VPN на мобильных играх?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Да. VPN можно использовать на Android и iOS
+                                    для мобильных игр и игровых приложений.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Да. VPN можно использовать на Android и iOS для мобильных игр и игровых приложений.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Можно ли играть через VPN на нескольких устройствах?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Можно ли играть через VPN на нескольких
+                                        устройствах?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Да. VPN можно установить на компьютер,
+                                    смартфон и другие поддерживаемые устройства.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Да. VPN можно установить на компьютер, смартфон и другие поддерживаемые устройства.
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <!-- CTA -->
 
-        <!-- CTA -->
-
-
-        <section class="question">
-            <div class="question_container">
-                <div class="question_left">
-                    <h2 class="faq_title">
-                        Остались вопросы?
-                    </h2>
-                    <p class="question_left_subtitle">
-                        Помощь в чате Telegram или по E-mail
-                    </p>
-                </div>
-                <div class="question_right">
-                    <div class="question_cards">
-                        <div class="question_card">
-                            <div class="question_card_top">
-
-                                <div class="question_card_icon">
-                                    <img src="/assets/icon/markunread_mailbox.svg" alt="" class="question_card_img">
-                                </div>
-                                <h3 class="question_card_title">E-mail</h3>
-                            </div>
-                            <div class="question_card_bottom">
-                                <button class="tur-button tur-button_sub ">Написать на E-mail</button>
-                            </div>
-                        </div>
-                        <div class="question_card">
-                            <div class="question_card_top">
-
-                                <div class="question_card_icon">
-                                    <img src="/assets/icon/telegram.svg" alt="" class="question_card_img">
-                                </div>
-                                <h3 class="question_card_title">Telegram</h3>
-                            </div>
-                            <div class="question_card_bottom">
-                                <button class="tur-button tur-button_sub ">Написать на E-mail</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="free_wrap">
-            <div class="free">
-                <div class="free_container">
-                    <div class="free_left">
-                        <h2 class="free_title">Начните бесплатно сегодня</h2>
-                        <p class="free_text">
-                            Установите приложение и получите свободу и защиту в сети прямо сейчас
+            <section class="question">
+                <div class="question_container">
+                    <div class="question_left">
+                        <h2 class="faq_title">
+                            Остались вопросы?
+                        </h2>
+                        <p class="question_left_subtitle">
+                            Помощь в чате Telegram или по E-mail
                         </p>
-                        <div class="free_buttons">
-                            <button class="tur-button tur-button_fill">Начать</button>
+                    </div>
+                    <div class="question_right">
+                        <div class="question_cards">
+                            <div class="question_card">
+                                <div class="question_card_top">
+
+                                    <div class="question_card_icon">
+                                        <img
+                                            src="/assets/icon/markunread_mailbox.svg"
+                                            alt class="question_card_img">
+                                    </div>
+                                    <h3 class="question_card_title">E-mail</h3>
+                                </div>
+                                <div class="question_card_bottom">
+                                    <button
+                                        class="tur-button tur-button_sub ">Написать
+                                        на E-mail</button>
+                                </div>
+                            </div>
+                            <div class="question_card">
+                                <div class="question_card_top">
+
+                                    <div class="question_card_icon">
+                                        <img src="/assets/icon/telegram.svg" alt
+                                            class="question_card_img">
+                                    </div>
+                                    <h3
+                                        class="question_card_title">Telegram</h3>
+                                </div>
+                                <div class="question_card_bottom">
+                                    <button
+                                        class="tur-button tur-button_sub ">Написать
+                                        на E-mail</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="free_right">
-                        <img src="/assets/picture/start-free.svg" alt="" class="free_img">
+                </div>
+            </section>
+
+            <section class="free_wrap">
+                <div class="free">
+                    <div class="free_container">
+                        <div class="free_left">
+                            <h2 class="free_title">Начните бесплатно
+                                сегодня</h2>
+                            <p class="free_text">
+                                Установите приложение и получите свободу и
+                                защиту в сети прямо сейчас
+                            </p>
+                            <div class="free_buttons">
+                                <button
+                                    class="tur-button tur-button_fill">Начать</button>
+                            </div>
+                        </div>
+                        <div class="free_right">
+                            <img src="/assets/picture/start-free.svg" alt
+                                class="free_img">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </main>
+        </main>
 
+        <!-- FOOTER НЕ ТРОГАЕМ -->
 
-    <!-- FOOTER НЕ ТРОГАЕМ -->
-
-    <footer class="footer">
+        <footer class="footer">
             <div class="footer_container">
                 <div class="footer_top">
                     <div class="footer_top_left">
@@ -1288,6 +1483,6 @@
 
         <script src="script.js"></script>
 
-</body>
+    </body>
 
 </html>

@@ -1,113 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VPN для стриминга — TURBOSET</title>
-    <meta name="description"
-        content="TURBOSET — VPN для стриминга. Получайте доступ к контенту разных регионов, выбирайте серверы в разных странах и смотрите фильмы и сериалы без ограничений.">
+        <title>VPN для стриминга — TURBOSET</title>
+        <meta name="description"
+            content="TURBOSET — VPN для стриминга. Получайте доступ к контенту разных регионов, выбирайте серверы в разных странах и смотрите фильмы и сериалы без ограничений.">
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="VPN для стриминга — TURBOSET">
-    <meta property="og:description" content="Смотрите любимый контент без ограничений с VPN для стриминга от TURBOSET.">
-    <meta property="og:image" content="/assets/picture/straming.png">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="VPN для стриминга — TURBOSET">
+        <meta property="og:description"
+            content="Смотрите любимый контент без ограничений с VPN для стриминга от TURBOSET.">
+        <meta property="og:image" content="/assets/picture/straming.png">
 
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "@id": "https://turboset.example/#organization",
-                "name": "TURBOSET",
-                "url": "https://turboset.example/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://turboset.example/assets/logo/logo1.png"
-                }
-            },
-            {
-                "@type": "WebSite",
-                "@id": "https://turboset.example/#website",
-                "url": "https://turboset.example/",
-                "name": "TURBOSET",
-                "publisher": {
-                    "@id": "https://turboset.example/#organization"
-                }
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://turboset.example/streaming.html#webpage",
-                "url": "https://turboset.example/streaming.html",
-                "name": "VPN для стриминга — TURBOSET",
-                "description": "VPN для доступа к стриминговым платформам и контенту разных регионов.",
-                "isPartOf": {
-                    "@id": "https://turboset.example/#website"
-                },
-                "about": {
-                    "@id": "https://turboset.example/#organization"
-                }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://turboset.example/streaming.html#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Можно ли протестировать сервис бесплатно?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Из каких стран можно подключаться к интернету?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать нужные сайты и сервисы."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Как оплатить подписку из России?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Мы принимаем российские банковские карты, оплату по СБП и электронные кошельки."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Видит ли кто-то, какие сайты я посещаю?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем, не записываем и никому не передаем историю ваших действий в интернете."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "На скольких устройствах будет работать одна подписка?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на компьютерах и ноутбуках с Windows и macOS."
-                        }
-                    }
-                ]
+        <!-- JSON-LD микроразметка -->
+        <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://turboset.example/#organization",
+            "name": "TURBOSET",
+            "url": "https://turboset.example/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://turboset.example/assets/logo/logo1.png"
             }
-        ]
-    }
-    </script>
-</head>
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://turboset.example/#website",
+            "url": "https://turboset.example/",
+            "name": "TURBOSET",
+            "inLanguage": "ru-RU",
+            "publisher": {
+                "@id": "https://turboset.example/#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://turboset.example/streaming.html#webpage",
+            "url": "https://turboset.example/streaming.html",
+            "name": "VPN для стриминга — TURBOSET",
+            "description": "TURBOSET — VPN для стриминга. Получайте доступ к контенту разных регионов, выбирайте серверы в разных странах и смотрите фильмы и сериалы без ограничений.",
+            "inLanguage": "ru-RU",
+            "isPartOf": {
+                "@id": "https://turboset.example/#website"
+            },
+            "publisher": {
+                "@id": "https://turboset.example/#organization"
+            },
+            "about": {
+                "@id": "https://turboset.example/streaming.html#service"
+            },
+            "breadcrumb": {
+                "@id": "https://turboset.example/streaming.html#breadcrumb"
+            }
+        },
+        {
+            "@type": "Service",
+            "@id": "https://turboset.example/streaming.html#service",
+            "name": "VPN для стриминга TURBOSET",
+            "description": "VPN-сервис TURBOSET для доступа к стриминговым платформам и контенту разных регионов.",
+            "serviceType": "VPN для стриминга",
+            "provider": {
+                "@id": "https://turboset.example/#organization"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Worldwide"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://turboset.example/streaming.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Главная",
+                    "item": "https://turboset.example/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Стриминг",
+                    "item": "https://turboset.example/streaming.html"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://turboset.example/streaming.html#faq",
+            "url": "https://turboset.example/streaming.html#faq",
+            "name": "Часто задаваемые вопросы о VPN для стриминга",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Можно ли протестировать сервис бесплатно?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Из каких стран можно подключаться к интернету?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать любые нужные сайты и сервисы."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Как оплатить подписку из России?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Мы принимаем любые российские банковские карты, включая Мир, оплату по СБП и электронные кошельки."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Видит ли кто-то, какие сайты я посещаю?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем, не записываем и никому не передаем историю ваших действий в интернете."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "На скольких устройствах будет работать одна подписка?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на компьютерах и ноутбуках с Windows и macOS. Вы можете подключить все свои гаджеты одновременно."
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
+    </head>
 
-<body>
+    <body>
 
-   <header class="header">
+        <header class="header">
             <div class="header_container">
                 <div class="header_logo">
                     <a href="popup-welcome.html">
@@ -266,506 +309,568 @@
             </div>
         </header>
 
+        <main>
 
-    <main>
+            <!-- Hero -->
+            <section class="hero_wrap security_hero_wrap">
+                <div class="hero security_hero">
+                    <div class="hero_container">
 
-        <!-- Hero -->
-        <section class="hero_wrap security_hero_wrap">
-            <div class="hero security_hero">
-                <div class="hero_container">
+                        <div class="hero_left">
 
-                    <div class="hero_left">
+                            <h1 class="hero_title">
+                                Смотрите любимый контент без ограничений с VPN
+                                для стриминга
+                            </h1>
 
-                        <h1 class="hero_title">
-                            Смотрите любимый контент без ограничений с VPN для стриминга
-                        </h1>
+                            <p class="hero_list">
+                                Получайте доступ к популярным стриминговым
+                                платформам и
+                                смотрите фильмы, сериалы, шоу и видео в
+                                комфортном качестве.
+                                Подключайтесь к VPN-серверам в разных странах и
+                                выбирайте
+                                подходящую локацию для просмотра.
+                            </p>
 
-                        <p class="hero_list">
-                            Получайте доступ к популярным стриминговым платформам и
-                            смотрите фильмы, сериалы, шоу и видео в комфортном качестве.
-                            Подключайтесь к VPN-серверам в разных странах и выбирайте
-                            подходящую локацию для просмотра.
-                        </p>
+                            <div class="hero_buttons">
+                                <a href="/sign-up.html"
+                                    class="tur-button tur-button_fill">
+                                    Начать
+                                </a>
 
-                        <div class="hero_buttons">
-                            <a href="/sign-up.html" class="tur-button tur-button_fill">
-                                Начать
-                            </a>
+                                <a href="/tarif.html" class="tur-button">
+                                    Выбрать тариф
+                                </a>
+                            </div>
 
-                            <a href="/tarif.html" class="tur-button">
-                                Выбрать тариф
-                            </a>
+                        </div>
+
+                        <div class="hero_right">
+                            <img src="/assets/picture/straming.png"
+                                alt="VPN для стриминга" class="hero_img">
                         </div>
 
                     </div>
+                </div>
+            </section>
 
-                    <div class="hero_right">
-                        <img src="/assets/picture/straming.png" alt="VPN для стриминга" class="hero_img">
-                    </div>
+            <!-- Streaming platforms -->
+            <section class="platform" aria-labelledby="platform-title">
+                <div class="platform_container">
+
+                    <header class="platform_header">
+                        <h2 class="platform_header_title" id="platform-title">
+                            Стриминговые сервисы
+                        </h2>
+                    </header>
+
+                    <ul class="game_list">
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/youtube.png"
+                                    alt="YouTube" class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">YouTube</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/prime.png"
+                                    alt="Amazon Prime"
+                                    class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Amazon
+                                Prime</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/netflix.png"
+                                    alt="Netflix" class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Netflix</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/hbo.png"
+                                    alt="HBO Max" class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">HBO Max</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/moun.jpg"
+                                    alt="Paramount Plus"
+                                    class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Paramount
+                                Plus</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/peacock.png"
+                                    alt="Peacock TV" class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Peacock TV</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/dysnei.jpg"
+                                    alt="Disney Plus"
+                                    class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Disney Plus</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/player.png"
+                                    alt="BBC iPlayer"
+                                    class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">BBC iPlayer</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/hoststar.jpg"
+                                    alt="Hotstar" class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Hotstar</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/cron.jpg"
+                                    alt="Crunchyroll"
+                                    class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Crunchyroll</span>
+                        </li>
+
+                        <li class="game_list_item">
+                            <div class="game_list_item_icon">
+                                <img src="./assets/streaming/streaming.png"
+                                    alt="Stremio" class="game_list_item_img">
+                            </div>
+                            <span class="game_list_item_text">Stremio</span>
+                        </li>
+
+                    </ul>
 
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <!-- Locations -->
+            <section class="location" aria-labelledby="location-title">
 
-        <!-- Streaming platforms -->
-        <section class="platform" aria-labelledby="platform-title">
-            <div class="platform_container">
+                <div class="location_container">
 
-                <header class="platform_header">
-                    <h2 class="platform_header_title" id="platform-title">
-                        Стриминговые сервисы
-                    </h2>
-                </header>
+                    <header class="location_header">
 
-                <ul class="game_list">
+                        <h2 class="location_header_title" id="location-title">
+                            Рекомендуемые локации для стриминга
+                        </h2>
 
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/youtube.png" alt="YouTube" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">YouTube</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/prime.png" alt="Amazon Prime" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Amazon Prime</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/netflix.png" alt="Netflix" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Netflix</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/hbo.png" alt="HBO Max" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">HBO Max</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/moun.jpg" alt="Paramount Plus" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Paramount Plus</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/peacock.png" alt="Peacock TV" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Peacock TV</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/dysnei.jpg" alt="Disney Plus" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Disney Plus</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/player.png" alt="BBC iPlayer" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">BBC iPlayer</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/hoststar.jpg" alt="Hotstar" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Hotstar</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/cron.jpg" alt="Crunchyroll" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Crunchyroll</span>
-                    </li>
-
-                    <li class="game_list_item">
-                        <div class="game_list_item_icon">
-                            <img src="./assets/streaming/streaming.png" alt="Stremio" class="game_list_item_img">
-                        </div>
-                        <span class="game_list_item_text">Stremio</span>
-                    </li>
-
-                </ul>
-
-            </div>
-        </section>
-
-
-        <!-- Locations -->
-        <section class="location" aria-labelledby="location-title">
-
-            <div class="location_container">
-
-                <header class="location_header">
-
-                    <h2 class="location_header_title" id="location-title">
-                        Рекомендуемые локации для стриминга
-                    </h2>
-
-                    <p class="location_header_text">
-                        Рекомендуемые локации для быстрого подключения
-                        и стабильной работы стриминговых сервисов.
-                    </p>
-
-                </header>
-
-                <ul class="location_countries">
-
-                    <li class="location_countries_item">
-                        <div class="location_countries_item_flag">
-                            <img src="./assets/picture/usa.png" alt="Флаг США" class="location_countries_item_flag_img">
-                        </div>
-                        <span class="location_countries_item_title">США</span>
-                    </li>
-
-                    <li class="location_countries_item">
-                        <div class="location_countries_item_flag">
-                            <img src="./assets/picture/uk.png" alt="Флаг Великобритании"
-                                class="location_countries_item_flag_img">
-                        </div>
-                        <span class="location_countries_item_title">
-                            Великобритания
-                        </span>
-                    </li>
-
-                    <li class="location_countries_item">
-                        <div class="location_countries_item_flag">
-                            <img src="./assets/picture/canada.png" alt="Флаг Канады"
-                                class="location_countries_item_flag_img">
-                        </div>
-                        <span class="location_countries_item_title">Канада</span>
-                    </li>
-
-                    <li class="location_countries_item">
-                        <div class="location_countries_item_flag">
-                            <img src="./assets/picture/germany.png" alt="Флаг Германии"
-                                class="location_countries_item_flag_img">
-                        </div>
-                        <span class="location_countries_item_title">Германия</span>
-                    </li>
-
-                    <li class="location_countries_item">
-                        <div class="location_countries_item_flag">
-                            <img src="./assets/picture/france.png" alt="Флаг Франции"
-                                class="location_countries_item_flag_img">
-                        </div>
-                        <span class="location_countries_item_title">Франция</span>
-                    </li>
-
-                    <li class="location_countries_item">
-                        <div class="location_countries_item_flag">
-                            <img src="./assets/picture/polsha.png" alt="Флаг Нидерландов"
-                                class="location_countries_item_flag_img">
-                        </div>
-                        <span class="location_countries_item_title">
-                            Нидерланды
-                        </span>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </section>
-
-
-        <!-- Functions -->
-        <section class="functions" aria-labelledby="functions-title">
-
-            <div class="functions_container">
-
-                <header class="functions_header">
-
-                    <h2 class="functions_title" id="functions-title">
-                        Что дает VPN для стриминга
-                    </h2>
-
-                    <p class="function_subtitle">
-                        Максимальную скорость для просмотра фильмов и сериалов
-                        в высоком качестве без зависаний. Запускайте в один клик
-                        любые мировые онлайн-кинотеатры.
-                    </p>
-
-                </header>
-
-
-                <div class="functions_cards">
-
-                    <article class="function_card">
-
-                        <div class="functions_card_top">
-                            <div class="functions_card_icon">
-                                <img src="/assets/icon/location.svg" alt="" class="functions_card_icon_img">
-                            </div>
-                        </div>
-
-                        <h3 class="functions_card_title">
-                            Доступ к контенту разных регионов
-                        </h3>
-
-                        <p class="functions_card_text">
-                            Выбирайте сервер в нужной стране и получайте
-                            возможность смотреть доступный в регионе контент.
+                        <p class="location_header_text">
+                            Рекомендуемые локации для быстрого подключения
+                            и стабильной работы стриминговых сервисов.
                         </p>
 
-                    </article>
+                    </header>
 
+                    <ul class="location_countries">
 
-                    <article class="function_card">
-
-                        <div class="functions_card_top">
-                            <div class="functions_card_icon">
-                                <img src="/assets/icon/muvie.svg" alt="" class="functions_card_icon_img">
+                        <li class="location_countries_item">
+                            <div class="location_countries_item_flag">
+                                <img src="./assets/picture/usa.png"
+                                    alt="Флаг США"
+                                    class="location_countries_item_flag_img">
                             </div>
-                        </div>
+                            <span
+                                class="location_countries_item_title">США</span>
+                        </li>
 
-                        <h3 class="functions_card_title">
-                            Больше фильмов и сериалов
-                        </h3>
+                        <li class="location_countries_item">
+                            <div class="location_countries_item_flag">
+                                <img src="./assets/picture/uk.png"
+                                    alt="Флаг Великобритании"
+                                    class="location_countries_item_flag_img">
+                            </div>
+                            <span class="location_countries_item_title">
+                                Великобритания
+                            </span>
+                        </li>
 
-                        <p class="functions_card_text">
-                            Открывайте новые каталоги стриминговых платформ.
+                        <li class="location_countries_item">
+                            <div class="location_countries_item_flag">
+                                <img src="./assets/picture/canada.png"
+                                    alt="Флаг Канады"
+                                    class="location_countries_item_flag_img">
+                            </div>
+                            <span
+                                class="location_countries_item_title">Канада</span>
+                        </li>
+
+                        <li class="location_countries_item">
+                            <div class="location_countries_item_flag">
+                                <img src="./assets/picture/germany.png"
+                                    alt="Флаг Германии"
+                                    class="location_countries_item_flag_img">
+                            </div>
+                            <span
+                                class="location_countries_item_title">Германия</span>
+                        </li>
+
+                        <li class="location_countries_item">
+                            <div class="location_countries_item_flag">
+                                <img src="./assets/picture/france.png"
+                                    alt="Флаг Франции"
+                                    class="location_countries_item_flag_img">
+                            </div>
+                            <span
+                                class="location_countries_item_title">Франция</span>
+                        </li>
+
+                        <li class="location_countries_item">
+                            <div class="location_countries_item_flag">
+                                <img src="./assets/picture/polsha.png"
+                                    alt="Флаг Нидерландов"
+                                    class="location_countries_item_flag_img">
+                            </div>
+                            <span class="location_countries_item_title">
+                                Нидерланды
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- Functions -->
+            <section class="functions" aria-labelledby="functions-title">
+
+                <div class="functions_container">
+
+                    <header class="functions_header">
+
+                        <h2 class="functions_title" id="functions-title">
+                            Что дает VPN для стриминга
+                        </h2>
+
+                        <p class="function_subtitle">
+                            Максимальную скорость для просмотра фильмов и
+                            сериалов
+                            в высоком качестве без зависаний. Запускайте в один
+                            клик
+                            любые мировые онлайн-кинотеатры.
                         </p>
 
-                    </article>
+                    </header>
 
+                    <div class="functions_cards">
 
-                    <article class="function_card">
-
-                        <div class="functions_card_top">
-                            <div class="functions_card_icon">
-                                <img src="/assets/icon/play_circle.svg" alt="" class="functions_card_icon_img">
-                            </div>
-                        </div>
-
-                        <h3 class="functions_card_title">
-                            Стабильный просмотр
-                        </h3>
-
-                        <p class="functions_card_text">
-                            Комфортный просмотр видео без лишних проблем
-                            с подключением.
-                        </p>
-
-                    </article>
-
-
-                    <article class="function_card">
-
-                        <div class="functions_card_top">
-                            <div class="functions_card_icon">
-                                <img src="/assets/icon/device.svg" alt="" class="functions_card_icon_img">
-                            </div>
-                        </div>
-
-                        <h3 class="functions_card_title">
-                            Работает на разных устройствах
-                        </h3>
-
-                        <p class="functions_card_text">
-                            Сервис работает на разных устройствах и системах,
-                            поэтому им удобно пользоваться дома, на работе
-                            и в дороге.
-                        </p>
-
-                    </article>
-
-
-                    <article class="function_card function_card_last">
-
-                        <div class="function_card_left">
+                        <article class="function_card">
 
                             <div class="functions_card_top">
                                 <div class="functions_card_icon">
-                                    <img src="/assets/icon/support.svg" alt="" class="functions_card_icon_img">
+                                    <img src="/assets/icon/location.svg" alt
+                                        class="functions_card_icon_img">
                                 </div>
                             </div>
 
                             <h3 class="functions_card_title">
-                                Поможем, если возникнут вопросы
+                                Доступ к контенту разных регионов
                             </h3>
 
                             <p class="functions_card_text">
-                                Если возникнут вопросы, можно быстро получить
-                                помощь и разобраться с настройками.
+                                Выбирайте сервер в нужной стране и получайте
+                                возможность смотреть доступный в регионе
+                                контент.
                             </p>
 
-                        </div>
+                        </article>
 
-                        <div class="function_card_right">
-                            <img src="/assets/picture/support.png" alt="Поддержка пользователей TURBOSET"
-                                class="function_card_right_img">
-                        </div>
+                        <article class="function_card">
 
-                    </article>
+                            <div class="functions_card_top">
+                                <div class="functions_card_icon">
+                                    <img src="/assets/icon/muvie.svg" alt
+                                        class="functions_card_icon_img">
+                                </div>
+                            </div>
+
+                            <h3 class="functions_card_title">
+                                Больше фильмов и сериалов
+                            </h3>
+
+                            <p class="functions_card_text">
+                                Открывайте новые каталоги стриминговых платформ.
+                            </p>
+
+                        </article>
+
+                        <article class="function_card">
+
+                            <div class="functions_card_top">
+                                <div class="functions_card_icon">
+                                    <img src="/assets/icon/play_circle.svg" alt
+                                        class="functions_card_icon_img">
+                                </div>
+                            </div>
+
+                            <h3 class="functions_card_title">
+                                Стабильный просмотр
+                            </h3>
+
+                            <p class="functions_card_text">
+                                Комфортный просмотр видео без лишних проблем
+                                с подключением.
+                            </p>
+
+                        </article>
+
+                        <article class="function_card">
+
+                            <div class="functions_card_top">
+                                <div class="functions_card_icon">
+                                    <img src="/assets/icon/device.svg" alt
+                                        class="functions_card_icon_img">
+                                </div>
+                            </div>
+
+                            <h3 class="functions_card_title">
+                                Работает на разных устройствах
+                            </h3>
+
+                            <p class="functions_card_text">
+                                Сервис работает на разных устройствах и
+                                системах,
+                                поэтому им удобно пользоваться дома, на работе
+                                и в дороге.
+                            </p>
+
+                        </article>
+
+                        <article class="function_card function_card_last">
+
+                            <div class="function_card_left">
+
+                                <div class="functions_card_top">
+                                    <div class="functions_card_icon">
+                                        <img src="/assets/icon/support.svg" alt
+                                            class="functions_card_icon_img">
+                                    </div>
+                                </div>
+
+                                <h3 class="functions_card_title">
+                                    Поможем, если возникнут вопросы
+                                </h3>
+
+                                <p class="functions_card_text">
+                                    Если возникнут вопросы, можно быстро
+                                    получить
+                                    помощь и разобраться с настройками.
+                                </p>
+
+                            </div>
+
+                            <div class="function_card_right">
+                                <img src="/assets/picture/support.png"
+                                    alt="Поддержка пользователей TURBOSET"
+                                    class="function_card_right_img">
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </section>
 
-        </section>
-
-
-        <!-- FAQ -->
-        <section class="faq">
-            <div class="faq_container">
-                <div class="faq_left">
-                    <h2 class="faq_title">
-                        FAQs
-                    </h2>
-                </div>
-                <div class="faq_right">
-                    <div class="faq_list">
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Можно ли протестировать сервис бесплатно?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+            <!-- FAQ -->
+            <section class="faq">
+                <div class="faq_container">
+                    <div class="faq_left">
+                        <h2 class="faq_title">
+                            FAQs
+                        </h2>
+                    </div>
+                    <div class="faq_right">
+                        <div class="faq_list">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Можно ли протестировать сервис
+                                        бесплатно?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Да. Мы даем бесплатный пробный период, чтобы
+                                    вы могли оценить скорость и удобство
+                                    работы.
+                                    Никаких скрытых платежей и привязки карт.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство
-                                работы.
-                                Никаких скрытых платежей и привязки карт.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Из каких стран можно подключаться к интернету?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Из каких стран можно подключаться к
+                                        интернету?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Нам доступны серверы в десятках стран мира.
+                                    Вы сможете переключаться между ними в один
+                                    клик,
+                                    чтобы открывать любые нужные сайты и
+                                    сервисы.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один
-                                клик,
-                                чтобы открывать любые нужные сайты и сервисы.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Как оплатить подписку из России?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Как оплатить подписку из России?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Мы принимаем любые российские банковские
+                                    карты (включая Мир), оплату по СБП и
+                                    электронные
+                                    кошельки.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Мы принимаем любые российские банковские карты (включая Мир), оплату по СБП и
-                                электронные
-                                кошельки.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    Видит ли кто-то, какие сайты я посещаю?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        Видит ли кто-то, какие сайты я посещаю?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Нет. Наш сервис работает по строгой политике
+                                    конфиденциальности. Мы не сохраняем,
+                                    не записываем и никому не передаем историю
+                                    ваших действий в интернете.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем,
-                                не записываем и никому не передаем историю ваших действий в интернете.
-                            </p>
-                        </div>
-                        <div class="faq_list_item">
-                            <div class="faq_list_item_top">
-                                <h3 class="faq_list_item_title">
-                                    На скольких устройствах будет работать одна подписка?
-                                </h3>
-                                <img src="/assets/icon/arrowtop.svg" alt="" class="faq_list_item_img">
+                            <div class="faq_list_item">
+                                <div class="faq_list_item_top">
+                                    <h3 class="faq_list_item_title">
+                                        На скольких устройствах будет работать
+                                        одна подписка?
+                                    </h3>
+                                    <img src="/assets/icon/arrowtop.svg" alt
+                                        class="faq_list_item_img">
+                                </div>
+                                <p class="faq_list_item_text">
+                                    Одна подписка работает на всех ваших
+                                    устройствах: смартфонах iPhone и Android, а
+                                    также
+                                    на
+                                    компьютерах и ноутбуках с Windows и macOs.
+                                    Вы можете подключить все свои гаджеты
+                                    одновременно.
+                                </p>
                             </div>
-                            <p class="faq_list_item_text">
-                                Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также
-                                на
-                                компьютерах и ноутбуках с Windows и macOs. Вы можете подключить все свои гаджеты
-                                одновременно.
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <!-- CTA -->
 
-        <!-- CTA -->
-
-
-        <section class="question">
-            <div class="question_container">
-                <div class="question_left">
-                    <h2 class="faq_title">
-                        Остались вопросы?
-                    </h2>
-                    <p class="question_left_subtitle">
-                        Помощь в чате Telegram или по E-mail
-                    </p>
-                </div>
-                <div class="question_right">
-                    <div class="question_cards">
-                        <div class="question_card">
-                            <div class="question_card_top">
-
-                                <div class="question_card_icon">
-                                    <img src="/assets/icon/markunread_mailbox.svg" alt="" class="question_card_img">
-                                </div>
-                                <h3 class="question_card_title">E-mail</h3>
-                            </div>
-                            <div class="question_card_bottom">
-                                <button class="tur-button tur-button_sub ">Написать на E-mail</button>
-                            </div>
-                        </div>
-                        <div class="question_card">
-                            <div class="question_card_top">
-
-                                <div class="question_card_icon">
-                                    <img src="/assets/icon/telegram.svg" alt="" class="question_card_img">
-                                </div>
-                                <h3 class="question_card_title">Telegram</h3>
-                            </div>
-                            <div class="question_card_bottom">
-                                <button class="tur-button tur-button_sub ">Написать на E-mail</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="free_wrap">
-            <div class="free">
-                <div class="free_container">
-                    <div class="free_left">
-                        <h2 class="free_title">Начните бесплатно сегодня</h2>
-                        <p class="free_text">
-                            Установите приложение и получите свободу и защиту в сети прямо сейчас
+            <section class="question">
+                <div class="question_container">
+                    <div class="question_left">
+                        <h2 class="faq_title">
+                            Остались вопросы?
+                        </h2>
+                        <p class="question_left_subtitle">
+                            Помощь в чате Telegram или по E-mail
                         </p>
-                        <div class="free_buttons">
-                            <button class="tur-button tur-button_fill">Начать</button>
+                    </div>
+                    <div class="question_right">
+                        <div class="question_cards">
+                            <div class="question_card">
+                                <div class="question_card_top">
+
+                                    <div class="question_card_icon">
+                                        <img
+                                            src="/assets/icon/markunread_mailbox.svg"
+                                            alt class="question_card_img">
+                                    </div>
+                                    <h3 class="question_card_title">E-mail</h3>
+                                </div>
+                                <div class="question_card_bottom">
+                                    <button
+                                        class="tur-button tur-button_sub ">Написать
+                                        на E-mail</button>
+                                </div>
+                            </div>
+                            <div class="question_card">
+                                <div class="question_card_top">
+
+                                    <div class="question_card_icon">
+                                        <img src="/assets/icon/telegram.svg" alt
+                                            class="question_card_img">
+                                    </div>
+                                    <h3
+                                        class="question_card_title">Telegram</h3>
+                                </div>
+                                <div class="question_card_bottom">
+                                    <button
+                                        class="tur-button tur-button_sub ">Написать
+                                        на E-mail</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="free_right">
-                        <img src="/assets/picture/start-free.svg" alt="" class="free_img">
+                </div>
+            </section>
+
+            <section class="free_wrap">
+                <div class="free">
+                    <div class="free_container">
+                        <div class="free_left">
+                            <h2 class="free_title">Начните бесплатно
+                                сегодня</h2>
+                            <p class="free_text">
+                                Установите приложение и получите свободу и
+                                защиту в сети прямо сейчас
+                            </p>
+                            <div class="free_buttons">
+                                <button
+                                    class="tur-button tur-button_fill">Начать</button>
+                            </div>
+                        </div>
+                        <div class="free_right">
+                            <img src="/assets/picture/start-free.svg" alt
+                                class="free_img">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </main>
+        </main>
 
-
-    <footer class="footer">
+        <footer class="footer">
             <div class="footer_container">
                 <div class="footer_top">
                     <div class="footer_top_left">
@@ -949,6 +1054,6 @@
 
         <script src="script.js"></script>
 
-</body>
+    </body>
 
 </html>

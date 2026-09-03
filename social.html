@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -32,6 +31,7 @@
                 "@id": "https://turboset.example/#website",
                 "url": "https://turboset.example/",
                 "name": "TURBOSET",
+                "inLanguage": "ru-RU",
                 "publisher": {
                     "@id": "https://turboset.example/#organization"
                 }
@@ -41,56 +41,92 @@
                 "@id": "https://turboset.example/social.html#webpage",
                 "url": "https://turboset.example/social.html",
                 "name": "VPN для соцсетей — TURBOSET",
-                "description": "VPN для стабильного доступа к социальным сетям, защиты данных и комфортного общения.",
+                "description": "VPN для социальных сетей от TURBOSET. Стабильное подключение, защита данных и комфортное использование популярных социальных платформ.",
+                "inLanguage": "ru-RU",
                 "isPartOf": {
                     "@id": "https://turboset.example/#website"
                 },
+                "publisher": {
+                    "@id": "https://turboset.example/#organization"
+                },
                 "about": {
+                    "@id": "https://turboset.example/social.html#service"
+                },
+                "breadcrumb": {
+                    "@id": "https://turboset.example/social.html#breadcrumb"
+                }
+            },
+            {
+                "@type": "Service",
+                "@id": "https://turboset.example/social.html#service",
+                "name": "VPN для социальных сетей TURBOSET",
+                "serviceType": "VPN-сервис",
+                "description": "VPN-сервис TURBOSET для стабильного подключения к социальным сетям, защиты интернет-трафика и комфортного использования Instagram, TikTok, X, Reddit, Telegram и других платформ.",
+                "provider": {
                     "@id": "https://turboset.example/#organization"
                 }
             },
             {
+                "@type": "BreadcrumbList",
+                "@id": "https://turboset.example/social.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Главная",
+                        "item": "https://turboset.example/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Социальные сети",
+                        "item": "https://turboset.example/social.html"
+                    }
+                ]
+            },
+            {
                 "@type": "FAQPage",
                 "@id": "https://turboset.example/social.html#faq",
+                "url": "https://turboset.example/social.html#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "Можно ли протестировать сервис бесплатно?",
+                        "name": "Можно ли использовать VPN для Instagram, TikTok и других соцсетей?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
+                            "text": "Да. VPN помогает обеспечить более стабильное подключение к популярным социальным сетям, включая Instagram, TikTok, X (Twitter), Reddit, Telegram и другие платформы. Вы можете просматривать контент, общаться и использовать основные функции приложений через защищенное VPN-соединение."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Из каких стран можно подключаться к интернету?",
+                        "name": "VPN работает на смартфоне и компьютере одновременно?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать любые нужные сайты и сервисы."
+                            "text": "Да. VPN можно использовать на разных устройствах — смартфонах, планшетах и компьютерах. Установите приложение на нужные устройства, подключитесь к серверу и пользуйтесь социальными сетями через защищенное соединение."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Как оплатить подписку из России?",
+                        "name": "Повлияет ли VPN на скорость загрузки фото и видео?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Мы принимаем любые российские банковские карты, оплату по СБП и электронные кошельки."
+                            "text": "Скорость зависит от качества вашего интернет-соединения и выбранного VPN-сервера. Оптимизированные серверы помогают сохранить комфортную скорость для просмотра ленты, загрузки фотографий, публикации видео и общения онлайн."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Видит ли кто-то, какие сайты я посещаю?",
+                        "name": "Какие страны доступны для подключения?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем, не записываем и никому не передаем историю ваших действий в интернете."
+                            "text": "Вы можете выбрать сервер в подходящей стране из доступных локаций VPN. Выбор региона помогает подключаться к социальным сетям через разные точки доступа и использовать интернет более гибко."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "На скольких устройствах будет работать одна подписка?",
+                        "name": "Нужно ли настраивать VPN отдельно для каждого приложения?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на компьютерах и ноутбуках с Windows и macOS."
+                            "text": "Нет. После подключения VPN защищает интернет-соединение устройства, поэтому большинство приложений автоматически используют VPN-соединение. Достаточно выбрать сервер и открыть нужную социальную сеть."
                         }
                     }
                 ]

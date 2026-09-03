@@ -14,7 +14,6 @@
     <link rel="canonical" href="https://turboset.ru/smartphone.html">
     <link rel="stylesheet" href="style.css">
 
-    <!-- JSON-LD: организация и сайт -->
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -24,7 +23,10 @@
             "@id": "https://turboset.ru/#organization",
             "name": "TURBOSET",
             "url": "https://turboset.ru/",
-            "logo": "https://turboset.ru/assets/logo/logo1.svg"
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://turboset.ru/assets/logo/logo1.svg"
+            }
         },
         {
             "@type": "WebSite",
@@ -48,17 +50,58 @@
             "publisher": {
                 "@id": "https://turboset.ru/#organization"
             },
+            "breadcrumb": {
+                "@id": "https://turboset.ru/smartphone.html#breadcrumb"
+            },
             "inLanguage": "ru-RU"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://turboset.ru/smartphone.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Главная",
+                    "item": "https://turboset.ru/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Смартфоны",
+                    "item": "https://turboset.ru/smartphone.html"
+                }
+            ]
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "https://turboset.ru/#vpn-application",
+            "name": "TURBOSET VPN",
+            "applicationCategory": "SecurityApplication",
+            "operatingSystem": [
+                "Android",
+                "iOS",
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "publisher": {
+                "@id": "https://turboset.ru/#organization"
+            },
+            "url": "https://turboset.ru/",
+            "description": "VPN-сервис TURBOSET для безопасного подключения к интернету на разных устройствах."
         }
     ]
 }
-</script>
+    </script>
 
     <!-- JSON-LD: FAQ -->
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://turboset.ru/smartphone.html#faq",
+    "url": "https://turboset.ru/smartphone.html",
     "mainEntity": [
         {
             "@type": "Question",
@@ -103,7 +146,6 @@
     ]
 }
 </script>
-    ```
 
 </head>
 

@@ -6,10 +6,12 @@ html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VPN для игр — стабильное подключение к игровым сервисам | TURBOSET</title>
+    <title>VPN для Netflix — доступ к каталогам разных стран | TURBOSET</title>
 
     <meta name="description"
-        content="VPN для игр на ПК и мобильных устройствах. Стабильное подключение, доступ к игровым сервисам и серверы в разных странах с TURBOSET.">
+        content="VPN для Netflix от TURBOSET. Подключайтесь к серверам разных стран, получайте доступ к региональным каталогам и смотрите фильмы и сериалы в высоком качестве.">
+
+    <link rel="canonical" href="https://turboset.example/netflix.html">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blog.css">
@@ -20,130 +22,100 @@ html
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "Organization",
+                "@id": "https://turboset.example/#organization",
+                "name": "TURBOSET",
+                "url": "https://turboset.example/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://turboset.example/assets/logo/logo1.png"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://turboset.example/#website",
+                "url": "https://turboset.example/",
+                "name": "TURBOSET",
+                "inLanguage": "ru-RU",
+                "publisher": {
+                    "@id": "https://turboset.example/#organization"
+                }
+            },
+            {
                 "@type": "WebPage",
-                "@id": "#webpage",
-                "name": "VPN для игр",
-                "description": "VPN для онлайн-игр со стабильным подключением к игровым сервисам и серверам в разных странах.",
+                "@id": "https://turboset.example/netflix.html#webpage",
+                "url": "https://turboset.example/netflix.html",
+                "name": "VPN для Netflix — доступ к каталогам разных стран | TURBOSET",
+                "description": "VPN для Netflix от TURBOSET. Подключение к серверам разных стран, доступ к региональным каталогам и защищенное соединение.",
                 "inLanguage": "ru-RU",
                 "isPartOf": {
-                    "@type": "WebSite",
-                    "name": "TURBOSET"
+                    "@id": "https://turboset.example/#website"
+                },
+                "publisher": {
+                    "@id": "https://turboset.example/#organization"
+                },
+                "about": {
+                    "@id": "https://turboset.example/netflix.html#service"
+                },
+                "breadcrumb": {
+                    "@id": "https://turboset.example/netflix.html#breadcrumb"
                 }
             },
             {
                 "@type": "Service",
-                "name": "VPN для игр",
-                "serviceType": "VPN",
-                "description": "VPN-сервис для доступа к игровым сервисам и стабильного подключения во время онлайн-игр.",
+                "@id": "https://turboset.example/netflix.html#service",
+                "name": "VPN для Netflix TURBOSET",
+                "serviceType": "VPN-сервис",
+                "description": "VPN-сервис TURBOSET для подключения к серверам разных стран, защищенного интернет-соединения и использования Netflix через доступные региональные каталоги.",
                 "provider": {
-                    "@type": "Organization",
-                    "name": "TURBOSET"
-                },
-                "areaServed": "Worldwide"
+                    "@id": "https://turboset.example/#organization"
+                }
             },
             {
-                "@type": "ItemList",
-                "name": "Игровые платформы и сервисы",
+                "@type": "BreadcrumbList",
+                "@id": "https://turboset.example/netflix.html#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "name": "Steam"
+                        "name": "Главная",
+                        "item": "https://turboset.example/"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Roblox"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "PUBG"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Warzone"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Fortnite"
-                    }
-                ]
-            },
-            {
-                "@type": "ItemList",
-                "name": "Рекомендуемые локации для подключения",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Швейцария"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Швейцария"
+                        "name": "Netflix",
+                        "item": "https://turboset.example/netflix.html"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
+                "@id": "https://turboset.example/netflix.html#faq",
+                "url": "https://turboset.example/netflix.html#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "Можно ли протестировать сервис бесплатно?",
+                        "name": "Зачем нужен VPN для Netflix?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Да. Мы даем бесплатный пробный период, чтобы вы могли оценить скорость и удобство работы. Никаких скрытых платежей и привязки карт."
+                            "text": "VPN помогает получить доступ к Netflix через серверы в других регионах, а также обеспечивает защищенное соединение и возможность выбирать страну подключения."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Из каких стран можно подключаться к интернету?",
+                        "name": "Можно ли смотреть каталоги Netflix других стран?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Нам доступны серверы в десятках стран мира. Вы сможете переключаться между ними в один клик, чтобы открывать любые нужные сайты и сервисы."
+                            "text": "Да. При подключении к серверу в другой стране может отображаться каталог, доступный для этого региона. Наличие конкретных фильмов и сериалов зависит от политики Netflix и региона подключения."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Как оплатить подписку из России?",
+                        "name": "Сложно ли настроить VPN для Netflix?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Мы принимаем любые российские банковские карты, включая Мир, оплату по СБП и электронные кошельки."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Видит ли кто-то, какие сайты я посещаю?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Нет. Наш сервис работает по строгой политике конфиденциальности. Мы не сохраняем, не записываем и никому не передаем историю ваших действий в интернете."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "На скольких устройствах будет работать одна подписка?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Одна подписка работает на всех ваших устройствах: смартфонах iPhone и Android, а также на компьютерах и ноутбуках с Windows и macOS."
+                            "text": "Нет. Установите приложение, войдите в аккаунт, выберите подходящий сервер и подключитесь. После этого откройте Netflix и начните просмотр. Весь процесс обычно занимает не больше пары минут."
                         }
                     }
                 ]

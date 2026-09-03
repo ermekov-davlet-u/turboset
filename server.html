@@ -13,37 +13,75 @@
     <link rel="stylesheet" href="blog.css">
 
     <!-- JSON-LD микроразметка -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebPage",
-                "name": "Серверы TURBOSET",
-                "description": "200+ серверов TURBOSET в 13 странах для стабильного соединения, доступа к сервисам и защиты данных.",
-                "inLanguage": "ru-RU",
-                "isPartOf": {
-                    "@type": "WebSite",
-                    "name": "TURBOSET"
-                }
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "#website",
+            "name": "TURBOSET",
+            "inLanguage": "ru-RU"
+        },
+        {
+            "@type": "Organization",
+            "@id": "#organization",
+            "name": "TURBOSET",
+            "description": "Сервис для обеспечения безопасности и конфиденциальности интернет-соединения.",
+            "url": "/"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "#webpage",
+            "url": "/server.html",
+            "name": "Серверы TURBOSET — быстрые и безопасные локации",
+            "description": "200+ серверов TURBOSET в 13 странах. Выбирайте подходящие локации для стабильного соединения, доступа к сервисам и защиты данных.",
+            "inLanguage": "ru-RU",
+            "isPartOf": {
+                "@id": "#website"
             },
-            {
-                "@type": "Organization",
-                "name": "TURBOSET"
+            "about": {
+                "@id": "#service"
             },
-            {
-                "@type": "Service",
-                "name": "Серверы TURBOSET",
-                "description": "Сервис TURBOSET предоставляет доступ к серверам в различных странах для стабильного соединения и защиты данных.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "TURBOSET"
-                },
-                "areaServed": "Worldwide"
+            "breadcrumb": {
+                "@id": "#breadcrumb"
             }
-        ]
-    }
-    </script>
+        },
+        {
+            "@type": "Service",
+            "@id": "#service",
+            "name": "Серверы TURBOSET",
+            "description": "Доступ к 200+ серверам TURBOSET в 13 странах для стабильного соединения, доступа к сервисам, низкого пинга и защиты данных.",
+            "provider": {
+                "@id": "#organization"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Worldwide"
+            },
+            "serviceType": "VPN-сервис"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Главная",
+                    "item": "/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Серверы",
+                    "item": "/server.html"
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
 
 <body class="server-body">
