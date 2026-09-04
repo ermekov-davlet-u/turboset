@@ -1017,6 +1017,8 @@ body {
 }
 
 .btn_instruction {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .btn_instruction_img {
