@@ -674,6 +674,7 @@
 }
 
 .signup_btn {
+  background: transparent;
   width: 190px;
   height: 48px;
   gap: 8px;
@@ -1000,6 +1001,7 @@
     font-family: Inter;
     font-weight: 600;
     font-style: Semi Bold;
+
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0%;

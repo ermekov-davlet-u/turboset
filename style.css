@@ -2613,6 +2613,7 @@ body {
 .show_more {
   width: 189px;
   height: 48px;
+  text-decoration: none;
   padding: 12px 24px;
   gap: 8px;
   opacity: 1;
