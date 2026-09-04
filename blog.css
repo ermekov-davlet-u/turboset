@@ -70,7 +70,9 @@
   margin-top: 80px;
 }
 
-.breadcrumbs_item {
+.breadcrumbs_item a {
+  text-decoration: none;
+  color: #1a1c1f;
 }
 
 .blog_header {
@@ -181,7 +183,7 @@
   list-style: none;
 }
 
-.table-contents_list_item a{
+.table-contents_list_item a {
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
