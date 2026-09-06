@@ -93,3 +93,49 @@ document.querySelectorAll('.faq_list_item_top').forEach((item) => {
         faqItem.classList.toggle('active');
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.querySelector(".popup-welcome_wrap");
+    const popupContent = document.querySelector(".popup-welcome");
+    const closeButton = document.querySelector(".close_btn");
+
+    if (!popup || !popupContent) {
+        return;
+    }
+
+    // Открываем попап
+    popup.style.display = "flex";
+
+    // Запрещаем скролл основной страницы
+    document.body.style.overflow = "hidden";
+
+    // Закрытие попапа
+    function closePopup() {
+        popup.style.display = "none";
+
+        // Возвращаем скролл страницы
+        document.body.style.overflow = "";
+    }
+
+    // Кнопка закрытия
+    if (closeButton) {
+        closeButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            closePopup();
+        });
+    }
+
+    // Клик по затемнению
+    popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            closePopup();
+        }
+    });
+
+    // Закрытие через Escape
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closePopup();
+        }
+    });
+});
