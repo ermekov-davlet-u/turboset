@@ -103,11 +103,22 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Открываем попап
-    popup.style.display = "flex";
+    // Проверяем, показывался ли уже попап в этой сессии
+    if (sessionStorage.getItem("welcomePopupShown")) {
+        return;
+    }
 
-    // Запрещаем скролл основной страницы
-    document.body.style.overflow = "hidden";
+    // Запускаем таймер на 25 секунд (25000 миллисекунд)
+    setTimeout(() => {
+        // Открываем попап
+        popup.style.display = "flex";
+
+        // Запрещаем скролл основной страницы
+        document.body.style.overflow = "hidden";
+
+        // Отмечаем в sessionStorage, что попап был показан
+        sessionStorage.setItem("welcomePopupShown", "true");
+    }, 25000);
 
     // Закрытие попапа
     function closePopup() {
@@ -134,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Закрытие через Escape
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
+        if (event.key === "Escape" && popup.style.display === "flex") {
             closePopup();
         }
     });

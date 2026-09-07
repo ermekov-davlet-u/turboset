@@ -62,218 +62,216 @@
   font-display: swap;
 }
 .main-body {
-    position: relative;
+  position: relative;
 }
 
 /* Затемнение + внешний скролл */
 .popup-welcome_wrap {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
 
-    background: rgba(26, 28, 31, 0.4);
+  background: rgba(26, 28, 31, 0.4);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
 
-    padding: 24px;
+  padding: 24px;
 
-    overflow-y: auto;
-    overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Сам попап */
 .popup-welcome {
-    position: relative;
+  position: relative;
 
-    width: 100%;
-    max-width: 480px;
+  width: 100%;
+  max-width: 480px;
 
-    min-height: 700px;
-    height: auto;
+  min-height: 700px;
+  height: auto;
 
-    flex-shrink: 0;
+  flex-shrink: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 32px;
+  padding: 32px;
 
-    background: rgba(67, 45, 179, 1);
-    border-radius: 36px;
+  background: rgba(67, 45, 179, 1);
+  border-radius: 36px;
 
-    margin: auto;
+  margin: auto;
 }
 
 /* Контент */
 .popup-welcome_container {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 48px;
-    align-items: center;
+  gap: 48px;
+  align-items: center;
 }
 
 /* Картинка */
 .popup-welcome_icon {
-    width: 100%;
-    max-width: 530px;
+  width: 100%;
+  max-width: 530px;
 }
 
 .popup-welcome_img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Контент текста */
 .popup-welcome_content {
-    width: 100%;
+  width: 100%;
 
-    display: grid;
-    gap: 32px;
+  display: grid;
+  gap: 32px;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup-welcome_center {
-    display: grid;
-    gap: 20px;
+  display: grid;
+  gap: 20px;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .popup-welcome_title {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: 0;
-    text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .popup-welcome_text {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0;
-    text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .popup-welcome_footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .popup-welcome_button {
-    width: 303px;
-    min-height: 64px;
+  width: 303px;
+  min-height: 64px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    padding: 18px 32px;
+  padding: 18px 32px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
 
-    color: #1a1c1f;
+  color: #1a1c1f;
 
-    border: 1px solid rgba(26, 28, 31, 0.07);
-    background: rgba(191, 235, 20, 1);
+  border: 1px solid rgba(26, 28, 31, 0.07);
+  background: rgba(191, 235, 20, 1);
 
-    text-align: center;
+  text-align: center;
 }
 
 /* Крестик */
 .close_btn {
-    position: absolute;
-    background: transparent;
-    top: 16px;
-    border: none;
-    outline: none;
-    right: 16px;
+  position: absolute;
+  background: transparent;
+  top: 16px;
+  border: none;
+  outline: none;
+  right: 16px;
 
-    z-index: 10;
+  z-index: 10;
 
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 
-    display: flex;
+  display: flex;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .close_btn img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 /* ========================= */
 /* MOBILE */
 /* ========================= */
 
 @media screen and (max-width: 768px) {
+  .popup-welcome_wrap {
+    align-items: flex-start;
+    padding: 16px;
+  }
 
-    .popup-welcome_wrap {
-        align-items: flex-start;
-        padding: 16px;
-    }
+  .popup-welcome {
+    max-width: 100%;
 
-    .popup-welcome {
-        max-width: 100%;
+    min-height: 0;
+    height: auto;
 
-        min-height: 0;
-        height: auto;
+    padding: 32px 24px;
 
-        padding: 32px 24px;
+    border-radius: 24px;
 
-        border-radius: 24px;
+    margin: auto 0;
+  }
 
-        margin: auto 0;
-    }
+  .popup-welcome_container {
+    gap: 32px;
+  }
 
-    .popup-welcome_container {
-        gap: 32px;
-    }
+  .popup-welcome_title {
+    font-size: 32px;
+    line-height: 120%;
+  }
 
-    .popup-welcome_title {
-        font-size: 32px;
-        line-height: 120%;
-    }
+  .popup-welcome_text {
+    font-size: 16px;
+    line-height: 150%;
+  }
 
-    .popup-welcome_text {
-        font-size: 16px;
-        line-height: 150%;
-    }
+  .popup-welcome_button {
+    width: 261px;
+    min-height: 48px;
 
-    .popup-welcome_button {
-        width: 261px;
-        min-height: 48px;
+    padding: 12px 24px;
 
-        padding: 12px 24px;
-
-        font-size: 16px;
-    }
+    font-size: 16px;
+  }
 }
