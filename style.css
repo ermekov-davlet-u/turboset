@@ -3602,6 +3602,10 @@ body {
   gap: 24px;
 }
 
+.game_list_item a {
+  text-decoration: none;
+}
+
 .game_list_item_icon {
   width: 80px;
   height: 80px;
