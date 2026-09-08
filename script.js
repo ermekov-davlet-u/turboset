@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // E-mail
     emailButton?.addEventListener("click", () => {
-        window.location.href = "mailto:mysupvpn@gmail.com";
+        window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=mysupvpn@gmail.com";
     });
 
     // Telegram
