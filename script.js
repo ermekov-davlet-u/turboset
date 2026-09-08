@@ -150,3 +150,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const emailButton = document.getElementById("emailButton");
+    const telegramButton = document.getElementById("telegramButton");
+
+    // E-mail
+    emailButton?.addEventListener("click", () => {
+        window.location.href = "mailto:mysupvpn@gmail.com";
+    });
+
+    // Telegram
+    telegramButton?.addEventListener("click", () => {
+        window.open("https://t.me/suppvless", "_blank");
+    });
+});

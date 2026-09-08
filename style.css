@@ -2279,6 +2279,8 @@ body {
 }
 
 .footer_bottom_soc_icon_img {
+  width: 24px;
+  height: 24px;
 }
 
 .footer_bottom_text {
