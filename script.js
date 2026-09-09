@@ -151,6 +151,62 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+const SIGNUP_URL = '/sign-up.html';
+
+function normalizeCtaText(text) {
+    return text.replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+function isSignupCta(text) {
+    const normalized = normalizeCtaText(text);
+
+    if (!normalized) {
+        return false;
+    }
+
+    if (normalized.includes('вернуться') || normalized.includes('написать')) {
+        return false;
+    }
+
+    if (normalized.includes('получить код') || normalized.includes('получить новый код')) {
+        return false;
+    }
+
+    return (
+        normalized.startsWith('начать') ||
+        normalized.startsWith('скачать') ||
+        normalized.startsWith('получить') ||
+        normalized.includes('выбрать тариф')
+    );
+}
+
+function wireSignupButton(button) {
+    if (button.dataset.signupWired === 'true') {
+        return;
+    }
+
+    button.dataset.signupWired = 'true';
+    button.addEventListener('click', () => {
+        window.location.href = SIGNUP_URL;
+    });
+}
+
+function initSignupCtas() {
+    document.querySelectorAll('button.header_button_fill, button.tur-button, button.article_blog').forEach((button) => {
+        if (isSignupCta(button.textContent)) {
+            wireSignupButton(button);
+        }
+    });
+
+    document.querySelectorAll('a.tur-button, a.popup-welcome_button').forEach((link) => {
+        if (isSignupCta(link.textContent)) {
+            link.href = SIGNUP_URL;
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', initSignupCtas);
+
 document.addEventListener("DOMContentLoaded", () => {
     const emailButton = document.getElementById("emailButton");
     const telegramButton = document.getElementById("telegramButton");
