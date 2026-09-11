@@ -26,37 +26,42 @@
                             аккаунта</p>
                     </div>
                     <div class="signup_center">
-                        <div class="signup_btns">
-                            <button class="signup_btn ">Вход по коду</button>
-                            <button class="signup_btn signup_btn_fill">Вход по паролю</button>
-                        </div>
-                        <div class="signup_form_group">
-                            <label for="email" class="signup_form_label">Email*</label>
+                        <div class="signup_btns"> <button type="button" class="signup_btn js-login-tab"> Вход по коду
+                            </button> <button type="button" class="signup_btn signup_btn_fill js-login-tab"> Вход по
+                                паролю </button> </div> <!-- Email -->
+                        <div class="signup_form_group"> <label for="email" class="signup_form_label">Email*</label>
                             <input class="signup_form_inp" type="email" id="email" name="email"
                                 placeholder="Введите ваш Email">
-                        </div>
-                        <div class="signup_form_group">
-                            <div class="signup_form_group_header">
-                                <label for="email" class="signup_form_label">Пароль*</label>
-                                <p class="signup_form_group_header_forgot">Забыли пароль?</p>
-                            </div>
-                            <div class="signup_form_inp_wrap">
-                                <input class="signup_form_inp" type="password" id="password" name="password"
-                                    placeholder="Введите ваш пароль">
-                                <div class="signup_form_inp_icon">
-                                    <img src="/public/icon/seepass.svg" alt="" class="signup_form_inp_icon_img">
+                        </div> <!-- Вход по паролю -->
+                        <div class="login_mode login_mode_password">
+                            <div class="signup_form_group">
+                                <div class="signup_form_group_header"> <label for="password" class="signup_form_label">
+                                        Пароль* </label>
+                                    <p class="signup_form_group_header_forgot"> Забыли пароль? </p>
                                 </div>
-                                <!-- <div class="err_message">
-                                    <img src="./public/icon/error.svg" alt="" class="err_message_img">
-                                    <p class="err_message_text">Неверный пароль. Попробуйте ещё раз.</p>
-                                </div> -->
-                            </div>
+                                <div class="signup_form_inp_wrap"> <input class="signup_form_inp" type="password"
+                                        id="password" name="password" placeholder="Введите ваш пароль">
+                                    <div class="signup_form_inp_icon"> <img src="/public/icon/seepass.svg" alt=""
+                                            class="signup_form_inp_icon_img"> </div>
+                                </div>
+                            </div> <button type="button" class="signup_btn signup_btn_dark"> Войти </button>
+                        </div> <!-- Вход по коду -->
+                        <div class="login_mode login_mode_code" style="display: none;">
+                            <!-- <div class="signup_form_group"> <label class="signup_form_label"> Код из Email* </label>
+                                <div class="confirm_codes"> <input class="confirm_code_inp" type="text" maxlength="1"
+                                        inputmode="numeric"> <input class="confirm_code_inp" type="text" maxlength="1"
+                                        inputmode="numeric"> <input class="confirm_code_inp" type="text" maxlength="1"
+                                        inputmode="numeric"> <input class="confirm_code_inp" type="text" maxlength="1"
+                                        inputmode="numeric"> <input class="confirm_code_inp" type="text" maxlength="1"
+                                        inputmode="numeric"> <input class="confirm_code_inp" type="text" maxlength="1"
+                                        inputmode="numeric"> </div>
+                            </div>  -->
+                            <button type="button" class="signup_btn signup_btn_dark"> Получить код </button>
                         </div>
-                        <button class="signup_btn signup_btn_dark">Получить код</button>
                         <div class="signup_footer">
-                            <p class="signup_footer_text">Отправляя форму вы даете согласие на
-                            </p>
-                            <a href="/sign-up.html" class="signup_footer_link">обработку персональных данных</a>
+                            <p class="signup_footer_text"> Отправляя форму вы даете согласие на </p> <a
+                                href="/terms-of-service.html" class="signup_footer_link"> обработку персональных данных
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -72,5 +77,7 @@
         </div>
     </div>
 </body>
+
+<script src="./script.js"></script>
 
 </html>

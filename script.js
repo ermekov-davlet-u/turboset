@@ -2,20 +2,23 @@ const slider = document.querySelector('.freedom_cards'); const prevButton = docu
 const burger = document.getElementById('headerBurger');
 const headerRight = document.getElementById('headerRight');
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    headerRight.classList.toggle('active');
-    document.body.style.overflow = headerRight.classList.contains('active') ? 'hidden' : '';
-});
+if (burger) {
 
-// закрытие меню при клике на ссылку
-document.querySelectorAll('.header_nav_link').forEach(link => {
-    link.addEventListener('click', () => {
-        burger.classList.remove('active');
-        headerRight.classList.remove('active');
-        document.body.style.overflow = '';
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        headerRight.classList.toggle('active');
+        document.body.style.overflow = headerRight.classList.contains('active') ? 'hidden' : '';
     });
-});
+
+    // закрытие меню при клике на ссылку
+    document.querySelectorAll('.header_nav_link').forEach(link => {
+        link.addEventListener('click', () => {
+            burger.classList.remove('active');
+            headerRight.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+}
 
 // Dropdown меню
 document.querySelectorAll('.header_dropdown_trigger').forEach(trigger => {
@@ -222,24 +225,56 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+if (document.querySelector(".share_icon")) {
 
-document.querySelector(".share_icon").addEventListener("click", async (event) => {
-    event.preventDefault();
+    document.querySelector(".share_icon").addEventListener("click", async (event) => {
+        event.preventDefault();
 
-    const link = "https://turboset.co/blog.html";
+        const link = "https://turboset.co/blog.html";
 
-    try {
-        await navigator.clipboard.writeText(link);
+        try {
+            await navigator.clipboard.writeText(link);
 
-        const message = document.getElementById("copyMessage");
+            const message = document.getElementById("copyMessage");
 
-        message.classList.add("show");
+            message.classList.add("show");
 
-        setTimeout(() => {
-            message.classList.remove("show");
-        }, 2000);
+            setTimeout(() => {
+                message.classList.remove("show");
+            }, 2000);
 
-    } catch (error) {
-        console.error("Ошибка копирования:", error);
-    }
+        } catch (error) {
+            console.error("Ошибка копирования:", error);
+        }
+    });
+}
+
+
+const tabs = document.querySelectorAll('.js-login-tab');
+
+const passwordMode = document.querySelector('.login_mode_password');
+const codeMode = document.querySelector('.login_mode_code');
+
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+
+        // Вход по коду
+        if (index === 0) {
+            passwordMode.style.display = 'none';
+            codeMode.style.display = 'flex';
+
+            tabs[0].classList.add('signup_btn_fill');
+            tabs[1].classList.remove('signup_btn_fill');
+        }
+
+        // Вход по паролю
+        if (index === 1) {
+            codeMode.style.display = 'none';
+            passwordMode.style.display = 'flex';
+
+            tabs[1].classList.add('signup_btn_fill');
+            tabs[0].classList.remove('signup_btn_fill');
+        }
+
+    });
 });

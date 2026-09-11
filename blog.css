@@ -962,6 +962,13 @@
   letter-spacing: 0%;
 }
 
+.login_mode_password,
+.login_mode_code {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .confirm_code_inp {
 }
 
