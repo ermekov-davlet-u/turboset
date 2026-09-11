@@ -5,6 +5,8 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="robots" content="noindex, nofollow">
+
   <title>
     Happ — современное
     приложение для
@@ -1092,12 +1094,44 @@
               <div class="share_icon">
                 <img alt="" class="share_img" src="/assets/icon/black-link.svg" />
               </div>
-              <div class="share_icon">
-                <img alt="" class="share_img" src="/assets/icon/black-google.svg" />
+
+              <div id="copyMessage" class="copy-message">
+                Ссылка скопирована
               </div>
-              <div class="share_icon">
+
+              <style>
+                .copy-message {
+                  position: fixed;
+                  bottom: 30px;
+                  left: 50%;
+                  transform: translateX(-50%) translateY(20px);
+                  background: #222;
+                  color: #fff;
+                  padding: 10px 18px;
+                  border-radius: 8px;
+                  font-size: 14px;
+                  opacity: 0;
+                  visibility: hidden;
+                  transition: 0.3s ease;
+                  z-index: 9999;
+                }
+
+                .copy-message.show {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateX(-50%) translateY(0);
+                }
+              </style>
+
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mysupvpn@gmail.com" target="_blank"
+                class="share_icon">
                 <img alt="" class="share_img" src="/assets/icon/black-google.svg" />
-              </div>
+              </a>
+
+              <a href="https://t.me/suppvless" target="_blank" class="share_icon">
+                <img alt="" class="share_img" width="20" src="/assets/icon/tgdark.svg" />
+              </a>
+
             </div>
             <div class="share_right">
               <div class="share_blogs">
@@ -1174,7 +1208,7 @@
           <div class="hero_buttons">
             <a href="/sign-up.html" class="tur-button tur-button_fill">Получить
               3 дня бесплатно</a>
-            <button class="tur-button">Выбрать тариф</button>
+            <a href="/sign-up.html" class="tur-button">Выбрать тариф</a>
           </div>
         </div>
         <div class="footer_top_right">
@@ -1183,7 +1217,7 @@
             <ul class="footer_top_list">
               <li class="footer_top_list_item"><a href="android.html" class="footer_top_list_item">Для
                   Android</a></li>
-              <li class="footer_top_list_item"><a href="pc.html" class="footer_top_list_item">Для iPhone
+              <li class="footer_top_list_item"><a href="ios.html" class="footer_top_list_item">Для iPhone
                   /
                   iPad</a></li>
               <li class="footer_top_list_item"> <a href="windows.html" class="footer_top_list_item">Для
@@ -1266,21 +1300,12 @@
               конфиденциальности</a>
           </nav>
           <div class="footer_bottom_soc">
-            <a href="/smartphone.html" class="footer_bottom_soc_icon">
-              <img src="/assets/icon/google.svg" alt class="footer_bottom_soc_icon_img">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mysupvpn@gmail.com" target="_blank"
+              rel="noopener noreferrer" class="footer_bottom_soc_icon">
+              <img src="/assets/icon/google.svg" alt="" class="footer_bottom_soc_icon_img">
             </a>
-            <a href="/social.html" class="footer_bottom_soc_icon">
-              <img src="/assets/icon/google.svg" alt class="footer_bottom_soc_icon_img">
-            </a>
-            <a href="/social.html" class="footer_bottom_soc_icon">
-
-              <img src="/assets/icon/google.svg" alt class="footer_bottom_soc_icon_img">
-            </a>
-            <a href="/social.html" class="footer_bottom_soc_icon">
-              <img src="/assets/icon/google.svg" alt class="footer_bottom_soc_icon_img">
-            </a>
-            <a href="/social.html" class="footer_bottom_soc_icon">
-              <img src="/assets/icon/google.svg" alt class="footer_bottom_soc_icon_img">
+            <a href="https://t.me/suppvless" class="footer_bottom_soc_icon">
+              <img src="/assets/icon/tg.svg" alt class="footer_bottom_soc_icon_img">
             </a>
           </div>
         </div>

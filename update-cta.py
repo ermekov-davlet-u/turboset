@@ -50,7 +50,7 @@ SIMPLE = [
         '<a href="/sign-up.html" class="header_button header_button_fill">Получить</a>',
     ),
     (
-        '<button class="tur-button">Выбрать тариф</button>',
+        '<a href="/sign-up.html" class="tur-button">Выбрать тариф</a>',
         '<a href="/tarif.html" class="tur-button">Выбрать тариф</a>',
     ),
     (

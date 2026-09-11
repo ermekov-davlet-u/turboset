@@ -221,3 +221,25 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open("https://t.me/suppvless", "_blank");
     });
 });
+
+
+document.querySelector(".share_icon").addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    const link = "https://turboset.co/blog.html";
+
+    try {
+        await navigator.clipboard.writeText(link);
+
+        const message = document.getElementById("copyMessage");
+
+        message.classList.add("show");
+
+        setTimeout(() => {
+            message.classList.remove("show");
+        }, 2000);
+
+    } catch (error) {
+        console.error("Ошибка копирования:", error);
+    }
+});
