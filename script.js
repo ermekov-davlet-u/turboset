@@ -278,3 +278,54 @@ tabs.forEach((tab, index) => {
 
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("lkSidebar");
+    const overlay = document.getElementById("lkSidebarOverlay");
+    const openButton = document.getElementById("lkSidebarOpen");
+    const closeButton = document.getElementById("lkSidebarClose");
+
+    if (!sidebar) return;
+
+    function openSidebar() {
+        sidebar.classList.add("open");
+        document.body.classList.add("lk_sidebar_opened");
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove("open");
+        document.body.classList.remove("lk_sidebar_opened");
+    }
+
+    if (openButton) {
+        openButton.addEventListener("click", openSidebar);
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener("click", closeSidebar);
+    }
+
+    if (overlay) {
+        overlay.addEventListener("click", closeSidebar);
+    }
+
+    /*
+     * Закрытие по Escape
+     */
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeSidebar();
+        }
+    });
+
+    /*
+     * При переходе обратно на desktop
+     * убираем мобильное состояние.
+     */
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            closeSidebar();
+        }
+    });
+});
