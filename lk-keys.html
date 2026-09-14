@@ -17,9 +17,7 @@
         <!-- <div class="lk_sidebar_overlay" id="lkSidebarOverlay"></div> -->
 
         <button class="lk_sidebar_open" id="lkSidebarOpen" type="button">
-            <span></span>
-            <span></span>
-            <span></span>
+            <img src="/assets/icon/menu.svg" alt>
         </button>
         <div class="main_wrap">
             <div class="lk_sidebar_overlay" id="lkSidebarOverlay"></div>
@@ -170,7 +168,7 @@
                                         Скопировать
                                     </p>
                                 </button>
-                                <button class="lk_button ">
+                                <button class="lk_button " id="lkQrOpenBtn">
                                     <div class="lk_button_icon">
                                         <img src="/assets/icon/qr_code.svg" alt
                                             class="lk_button_icon_img">
@@ -193,7 +191,7 @@
                                         <img src="/assets/icon/wallet.svg" alt
                                             class="lk_button_icon_img">
                                     </div>
-                                    <p class="lk_button_text">
+                                    <p class="lk_button_text" id="lkSidebarOpenRight">
                                         Продлить
                                     </p>
                                 </button>
@@ -233,6 +231,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="lk_sidebar_overlay lk_sidebar_overlay_right" id="lkSidebarOverlayRight"></div>
+            <aside class="lk_sidebar lk_sidebar_right" id="lkSidebarRight">
+
+                <button class="lk_sidebar_close" id="lkSidebarRightClose"
+                    type="button">
+                    ×
+                </button>
+
+                <div class="lk_sidebar_logo">
+                    <p style="font-weight:600;">Панель</p>
+                </div>
+
+                <nav class="lk_sidebar_nav">
+                    <!-- контент правой панели будет добавлен позже -->
+                </nav>
+
+            </aside>
         </div>
 
         <div class="lk_modal_overlay" id="lk_modalOverlay">

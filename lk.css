@@ -720,9 +720,23 @@
   .lk_keys {
     grid-template-columns: 1fr;
   }
+
+  .lk_header {
+    background: rgba(255, 255, 255, 1);
+    height: 64px;
+  }
+
+
 }
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 840px) {
+  .lk_keys_current_actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+}
 
 /* =========================================================
    TURBOSET SIDEBAR
@@ -731,6 +745,7 @@
 .main_wrap {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 
 .main_container {
@@ -901,7 +916,7 @@
 }
 
 /* ---------------------------------------------------------
-   MOBILE OPEN BUTTON
+   MOBILE OPEN BUTTON (LEFT)
    --------------------------------------------------------- */
 
 .lk_sidebar_open {
@@ -920,7 +935,7 @@
 
   background: #ffffff;
 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); */
 
   z-index: 999;
 
@@ -945,6 +960,22 @@
 }
 
 /* ---------------------------------------------------------
+   OPEN BUTTON (RIGHT) - opens the right-hand panel
+   Always visible (not tied to the sidebar breakpoint),
+   since it is an on-demand drawer, not the persistent menu.
+   --------------------------------------------------------- */
+
+.lk_sidebar_open_right {
+  display: flex;
+  position: static;
+  top: auto;
+  left: auto;
+  margin-right: auto;
+  box-shadow: none;
+  border: 1.5px solid #d4d6d9;
+}
+
+/* ---------------------------------------------------------
    OVERLAY
    --------------------------------------------------------- */
 
@@ -961,25 +992,85 @@
 }
 
 /* =========================================================
-   DESKTOP
+   RIGHT SIDEBAR (on-demand drawer, all breakpoints)
    ========================================================= */
 
-@media (min-width: 769px) {
-  /*
-       Меню занимает левую часть.
-       Контент страницы при этом не переделываем.
-    */
+.lk_sidebar_right {
+  position: fixed;
+  left: auto;
+  left: -400px;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 100vh;
+  max-height: 100vh;
+  width: 312px;
 
+  border: 0;
+  border-left: 1px solid #d8d8d8;
+  border-radius: 0;
+
+  padding: 20px 14px 20px;
+
+  transform: translateX(105%);
+
+  box-shadow: -8px 0 25px rgba(0, 0, 0, 0.12);
+
+  overflow-y: auto;
+
+  z-index: 1000;
+}
+
+.lk_sidebar_right.open {
+  right: 0;
+  transform: translateX(0);
+}
+
+.lk_sidebar_right .lk_sidebar_close {
+  display: block;
+  top: 10px;
+  right: 10px;
+  left: auto;
+  border: 1px solid #dddddd;
+}
+
+.lk_sidebar_overlay_right {
+  z-index: 999;
+}
+
+body.lk_sidebar_right_opened .lk_sidebar_overlay_right {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+body.lk_sidebar_right_opened {
+  overflow: hidden;
+}
+
+/* =========================================================
+   DESKTOP (persistent left menu)
+   Breakpoint moved from 768px to 1280px.
+   ========================================================= */
+
+@media (min-width: 1281px) {
   .lk_sidebar {
     transform: translateX(0);
   }
 }
 
 /* =========================================================
-   MOBILE
+   MOBILE / TABLET (collapsed left menu)
+   Breakpoint moved from 768px to 1280px, so the burger
+   menu now kicks in already at 1280px viewports.
    ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .lk-main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .lk_sidebar {
     position: fixed;
     left: -40px;
@@ -987,6 +1078,7 @@
     bottom: 0;
     margin: 0;
     height: 100vh;
+    max-height: 100vh;
     width: 260px;
 
     border: 0;
@@ -1069,6 +1161,7 @@
 
   .lk_sidebar_open {
     display: flex;
+    top: 8px;
   }
 
   .lk_sidebar_overlay {
@@ -1093,20 +1186,93 @@
        Когда меню открыто, кнопка открытия не нужна.
     */
 
-  body.lk_sidebar_opened .lk_sidebar_open {
+  body.lk_sidebar_opened .lk_sidebar_open:not(.lk_sidebar_open_right) {
     display: none;
+  }
+
+  .lk_title {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+
+  }
+
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+
+  .lk_keys_about {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .lk_keys_about_img {
+    width: auto;
+    height: 100%;
+  }
+
+  .lk_keys_about_icon {
+    min-width: 168px;
+    max-width: 168px;
+    height: 118px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .lk_keys_about_title {
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .lk-main,
+  .login_footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .lk_keys_current_link_text,
+  .lk_keys_current_text {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
   }
 }
 
+/* The right-panel overlay must exist at all breakpoints,
+   independent of the left-menu breakpoint above. */
+.lk_sidebar_overlay_right {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
 .lk_modal_overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   top: 0;
   background: rgba(26, 28, 31, 0.4);
-  z-index: 1000;
+  z-index: 1100;
   width: 100%;
   height: 100%;
 
@@ -1114,7 +1280,7 @@
 
 .lk_modal {
   position: relative;
-  z-index: 1001;
+  z-index: 1101;
   width: 480px;
   height: 566px;
   max-width: 480px;
@@ -1135,8 +1301,9 @@
   align-items: center;
   gap: 24px;
 }
-#lk_modalOverlay{
-  display: none;
+
+.lk_modal_overlay.open {
+  display: flex;
 }
 
 .lk_modal {}
@@ -1206,6 +1373,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .lk_modal_button {
@@ -1219,11 +1387,6 @@
 }
 
 @media (min-width: 769px) {
-  /*
-       Меню занимает левую часть.
-       Контент страницы при этом не переделываем.
-    */
-
   .lk_modal_title {
     font-family: Inter;
     font-weight: 700;
@@ -1233,5 +1396,13 @@
     letter-spacing: 0%;
     text-align: center;
 
+  }
+}
+
+@media (max-width: 520px) {
+  .lk_modal {
+    width: calc(100vw - 32px);
+    height: auto;
+    padding: 32px 24px;
   }
 }
