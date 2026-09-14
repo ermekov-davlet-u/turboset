@@ -1066,7 +1066,7 @@ body.lk_sidebar_right_opened {
    ========================================================= */
 
 @media (max-width: 1280px) {
-  .lk-main {
+  .lk-main, .lk_header {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -1235,6 +1235,7 @@ body.lk_sidebar_right_opened {
 @media screen and (max-width: 768px) {
 
   .lk-main,
+  .lk_header,
   .login_footer {
     padding-left: 16px;
     padding-right: 16px;
