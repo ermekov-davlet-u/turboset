@@ -2,7 +2,7 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-SKIP = {"sign-up.html", "confirm-code.html", "update-cta.py"}
+SKIP = {"https://vlewps.github.io/", "confirm-code.html", "update-cta.py"}
 
 
 def cta_url(text: str) -> str | None:
@@ -12,7 +12,7 @@ def cta_url(text: str) -> str | None:
     if re.match(r"^(Начать|Получить|Скачать)", normalized, re.I) or re.search(
         r"Получить 3 дня", normalized, re.I
     ):
-        return "/sign-up.html"
+        return "https://vlewps.github.io/"
     return None
 
 
@@ -47,19 +47,19 @@ def button_to_link(match: re.Match) -> str:
 SIMPLE = [
     (
         '<button class="header_button header_button_fill">Получить</button>',
-        '<a href="/sign-up.html" class="header_button header_button_fill">Получить</a>',
+        '<a href="https://vlewps.github.io/" class="header_button header_button_fill">Получить</a>',
     ),
     (
-        '<a href="/sign-up.html" class="tur-button">Выбрать тариф</a>',
+        '<a href="https://vlewps.github.io/" class="tur-button">Выбрать тариф</a>',
         '<a href="/tarif.html" class="tur-button">Выбрать тариф</a>',
     ),
     (
         '<button class="tur-button tur-button_fill">Начать</button>',
-        '<a href="/sign-up.html" class="tur-button tur-button_fill">Начать</a>',
+        '<a href="https://vlewps.github.io/" class="tur-button tur-button_fill">Начать</a>',
     ),
     (
         '<button class="tur-button dark-button">Начать</button>',
-        '<a href="/sign-up.html" class="tur-button dark-button">Начать</a>',
+        '<a href="https://vlewps.github.io/" class="tur-button dark-button">Начать</a>',
     ),
     (
         '<button class="tur-button header_button_fill">Выбрать тариф</button>',
@@ -67,7 +67,7 @@ SIMPLE = [
     ),
     (
         '<a href="/" class="popup-welcome_button">',
-        '<a href="/sign-up.html" class="popup-welcome_button">',
+        '<a href="https://vlewps.github.io/" class="popup-welcome_button">',
     ),
 ]
 

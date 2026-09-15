@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const SIGNUP_URL = '/sign-up.html';
+const SIGNUP_URL = 'https://vlewps.github.io/';
 
 function normalizeCtaText(text) {
     return text.replace(/\s+/g, ' ').trim().toLowerCase();
@@ -332,109 +332,109 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ============================================================
-     LEFT SIDEBAR (burger menu, collapses at <=1280px)
-     ============================================================ */
-  var leftOpenBtn = document.getElementById('lkSidebarOpen');
-  var leftCloseBtn = document.getElementById('lkSidebarClose');
-  var leftOverlay = document.getElementById('lkSidebarOverlay');
-  var leftSidebar = document.getElementById('lkSidebar');
+    /* ============================================================
+       LEFT SIDEBAR (burger menu, collapses at <=1280px)
+       ============================================================ */
+    var leftOpenBtn = document.getElementById('lkSidebarOpen');
+    var leftCloseBtn = document.getElementById('lkSidebarClose');
+    var leftOverlay = document.getElementById('lkSidebarOverlay');
+    var leftSidebar = document.getElementById('lkSidebar');
 
-  function openLeftSidebar() {
-    if (!leftSidebar) return;
-    leftSidebar.classList.add('open');
-    document.body.classList.add('lk_sidebar_opened');
-  }
-
-  function closeLeftSidebar() {
-    if (!leftSidebar) return;
-    leftSidebar.classList.remove('open');
-    document.body.classList.remove('lk_sidebar_opened');
-  }
-
-  if (leftOpenBtn) {
-    leftOpenBtn.addEventListener('click', openLeftSidebar);
-  }
-  if (leftCloseBtn) {
-    leftCloseBtn.addEventListener('click', closeLeftSidebar);
-  }
-  if (leftOverlay) {
-    leftOverlay.addEventListener('click', closeLeftSidebar);
-  }
-
-  /* ============================================================
-     RIGHT SIDEBAR (on-demand drawer, opens via header button)
-     ============================================================ */
-  var rightOpenBtn = document.getElementById('lkSidebarOpenRight');
-  var rightCloseBtn = document.getElementById('lkSidebarRightClose');
-  var rightOverlay = document.getElementById('lkSidebarOverlayRight');
-  var rightSidebar = document.getElementById('lkSidebarRight');
-
-  function openRightSidebar() {
-    if (!rightSidebar) return;
-    rightSidebar.classList.add('open');
-    document.body.classList.add('lk_sidebar_right_opened');
-  }
-
-  function closeRightSidebar() {
-    if (!rightSidebar) return;
-    rightSidebar.classList.remove('open');
-    document.body.classList.remove('lk_sidebar_right_opened');
-  }
-
-  if (rightOpenBtn) {
-    rightOpenBtn.addEventListener('click', openRightSidebar);
-  }
-  if (rightCloseBtn) {
-    rightCloseBtn.addEventListener('click', closeRightSidebar);
-  }
-  if (rightOverlay) {
-    rightOverlay.addEventListener('click', closeRightSidebar);
-  }
-
-  /* ============================================================
-     QR MODAL
-     ============================================================ */
-  var qrOpenBtn = document.getElementById('lkQrOpenBtn');
-  var modalOverlay = document.getElementById('lk_modalOverlay');
-  var modalCloseIcon = document.getElementById('lk_modalClose');
-  var modalCloseBtn = document.getElementById('modalCloseBtn');
-
-  function openModal() {
-    if (!modalOverlay) return;
-    modalOverlay.classList.add('open');
-  }
-
-  function closeModal() {
-    if (!modalOverlay) return;
-    modalOverlay.classList.remove('open');
-  }
-
-  if (qrOpenBtn) {
-    qrOpenBtn.addEventListener('click', openModal);
-  }
-  if (modalCloseIcon) {
-    modalCloseIcon.addEventListener('click', closeModal);
-  }
-  if (modalCloseBtn) {
-    modalCloseBtn.addEventListener('click', closeModal);
-  }
-  if (modalOverlay) {
-    // close when clicking the dark backdrop, not the modal card itself
-    modalOverlay.addEventListener('click', function (e) {
-      if (e.target === modalOverlay) {
-        closeModal();
-      }
-    });
-  }
-
-  // Esc closes whichever panel/modal is open
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      closeLeftSidebar();
-      closeRightSidebar();
-      closeModal();
+    function openLeftSidebar() {
+        if (!leftSidebar) return;
+        leftSidebar.classList.add('open');
+        document.body.classList.add('lk_sidebar_opened');
     }
-  });
+
+    function closeLeftSidebar() {
+        if (!leftSidebar) return;
+        leftSidebar.classList.remove('open');
+        document.body.classList.remove('lk_sidebar_opened');
+    }
+
+    if (leftOpenBtn) {
+        leftOpenBtn.addEventListener('click', openLeftSidebar);
+    }
+    if (leftCloseBtn) {
+        leftCloseBtn.addEventListener('click', closeLeftSidebar);
+    }
+    if (leftOverlay) {
+        leftOverlay.addEventListener('click', closeLeftSidebar);
+    }
+
+    /* ============================================================
+       RIGHT SIDEBAR (on-demand drawer, opens via header button)
+       ============================================================ */
+    var rightOpenBtn = document.getElementById('lkSidebarOpenRight');
+    var rightCloseBtn = document.getElementById('lkSidebarRightClose');
+    var rightOverlay = document.getElementById('lkSidebarOverlayRight');
+    var rightSidebar = document.getElementById('lkSidebarRight');
+
+    function openRightSidebar() {
+        if (!rightSidebar) return;
+        rightSidebar.classList.add('open');
+        document.body.classList.add('lk_sidebar_right_opened');
+    }
+
+    function closeRightSidebar() {
+        if (!rightSidebar) return;
+        rightSidebar.classList.remove('open');
+        document.body.classList.remove('lk_sidebar_right_opened');
+    }
+
+    if (rightOpenBtn) {
+        rightOpenBtn.addEventListener('click', openRightSidebar);
+    }
+    if (rightCloseBtn) {
+        rightCloseBtn.addEventListener('click', closeRightSidebar);
+    }
+    if (rightOverlay) {
+        rightOverlay.addEventListener('click', closeRightSidebar);
+    }
+
+    /* ============================================================
+       QR MODAL
+       ============================================================ */
+    var qrOpenBtn = document.getElementById('lkQrOpenBtn');
+    var modalOverlay = document.getElementById('lk_modalOverlay');
+    var modalCloseIcon = document.getElementById('lk_modalClose');
+    var modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    function openModal() {
+        if (!modalOverlay) return;
+        modalOverlay.classList.add('open');
+    }
+
+    function closeModal() {
+        if (!modalOverlay) return;
+        modalOverlay.classList.remove('open');
+    }
+
+    if (qrOpenBtn) {
+        qrOpenBtn.addEventListener('click', openModal);
+    }
+    if (modalCloseIcon) {
+        modalCloseIcon.addEventListener('click', closeModal);
+    }
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeModal);
+    }
+    if (modalOverlay) {
+        // close when clicking the dark backdrop, not the modal card itself
+        modalOverlay.addEventListener('click', function (e) {
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+    }
+
+    // Esc closes whichever panel/modal is open
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            closeLeftSidebar();
+            closeRightSidebar();
+            closeModal();
+        }
+    });
 
 });

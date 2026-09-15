@@ -676,6 +676,7 @@
 .signup_btn {
   background: transparent;
   width: 190px;
+  text-decoration: none;
   height: 48px;
   gap: 8px;
   opacity: 1;
