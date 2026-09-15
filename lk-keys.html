@@ -156,11 +156,11 @@
                                     Заменить
                                 </p>
                             </button>
-                            <button class="lk_button lk_button_black ">
+                            <button class="lk_button lk_button_black " id="lkSidebarOpenRight">
                                 <div class="lk_button_icon">
                                     <img src="/assets/icon/wallet.svg" alt class="lk_button_icon_img">
                                 </div>
-                                <p class="lk_button_text" id="lkSidebarOpenRight">
+                                <p class="lk_button_text">
                                     Продлить
                                 </p>
                             </button>
@@ -203,9 +203,105 @@
             <div class="lk_sidebar_logo">
                 <p style="font-weight:600;">Панель</p>
             </div>
-            <nav class="lk_sidebar_nav">
-                <!-- контент правой панели будет добавлен позже -->
-            </nav>
+            <div class="panel">
+                <div class="panel_current_key_wrap">
+
+                    <div class="panel_current_key">
+                        <div class="panel_current_key_header">
+                            <p class="panel_current_key_text">
+                                Текущий ключ
+                            </p>
+                        </div>
+                        <div class="panel_current_key_content">
+                            <div class="panel_current_key_location">
+                                <p class="panel_current_key_location_title">Локация</p>
+                                <div class="panel_current_key_country">
+                                    <div class="panel_current_key_country_icon">
+                                        <img src="/assets/country/belium.svg" alt=""
+                                            class="panel_current_key_country_img">
+                                    </div>
+                                    Германия
+                                </div>
+                            </div>
+                            <div class="panel_current_key_date">
+                                <p class="panel_current_key_date_label">Дней осталось</p>
+                                <p class="panel_current_key_date_value">30 дней</p>
+                            </div>
+                        </div>
+                        <div class="payment_type_notice">
+                            <div class="payment_type_notice_icon">
+                                <img src="/assets/icon/notice.svg" alt="" class="payment_type_notice_img">
+                            </div>
+                            <div class="payment_type_notice_content">
+                                <p class="payment_type_notice_title">
+                                    Внимание
+                                </p>
+                                <p class="payment_type_notice_text">
+                                    После замены текущий ключ нужно обновить на всех ваших устройствах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel_current_key">
+                        <div class="panel_current_key_header">
+                            <p class="panel_current_key_text">
+                                Выберите локацию нового ключа
+                            </p>
+                        </div>
+
+                        <div class="lk_search">
+                            <img src="/assets/icon/search.svg" alt="" class="lk_search_img">
+                            <input type="text" class="lk_search_imp" placeholder="Поиск локации">
+                        </div>
+                        <div class="payment_type_content">
+                            <ul class="payment_type_list">
+                                <li class="payment_type_list_item">
+                                    <div class="payment_type_list_circle"></div>
+                                    <div class="payment_type_list_icon">
+                                        <img src="/assets/icon/spb.svg" alt="" class="payment_type_list_img">
+                                    </div>
+                                    <p class="payment_type_list_text">СБП</p>
+                                </li>
+                                <li class="payment_type_list_item">
+                                    <div class="payment_type_list_circle"></div>
+                                    <div class="payment_type_list_icon">
+                                        <img src="/assets/icon/mir.svg" alt="" class="payment_type_list_img">
+                                    </div>
+                                    <p class="payment_type_list_text">Карты банков РФ</p>
+                                </li>
+                                <li class="payment_type_list_item">
+                                    <div class="payment_type_list_circle"></div>
+                                    <div class="payment_type_list_icon">
+                                        <img src="/assets/icon/cripto.svg" alt="" class="payment_type_list_img">
+                                    </div>
+                                    <p class="payment_type_list_text">Криптовалюта</p>
+                                </li>
+                                <li class="payment_type_list_item">
+                                    <div class="payment_type_list_circle"></div>
+                                    <div class="payment_type_list_icon">
+                                        <img src="/assets/icon/stripe.svg" alt="" class="payment_type_list_img">
+                                    </div>
+                                    <p class="payment_type_list_text">Иностранные карты (Stripe)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="location_more">
+                            Показать все локации
+                            <img src="/assets/icon/keyboard_arrow_down.svg" alt="" class="location_more_img">
+                        </p>
+                    </div>
+                </div>
+                <a href="/lk-keys.html" class="lk_button lk_button_fill" style="margin-top: 32px;">
+                    <div class="lk_button_icon">
+                        <img src="/assets/icon/refresh.svg" alt="" class="lk_button_icon_img">
+                    </div>
+                    <p class="lk_button_text">
+                        Заменить ключ
+                    </p>
+                </a>
+
+                <p class="panel_notice"><img src="/assets/icon/timelapse.svg" alt="" class="panel_notice_img"> Замену
+                    ключа можно делать не чаще 1 раза в минуту</p>
         </aside>
     </div>
     <div class="lk_modal_overlay" id="lk_modalOverlay">

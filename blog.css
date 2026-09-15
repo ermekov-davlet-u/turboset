@@ -576,6 +576,9 @@
 .login_header {
   width: 1280px;
   height: 72px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
   max-width: 100%;
   opacity: 1;
   display: flex;
@@ -953,7 +956,7 @@
   opacity: 1;
   border-radius: 8px;
   border-width: 1px;
-  border: 1px solid rgba(26, 28, 31, 1);
+  border: 1px solid #d4d6d9;
   font-family: Inter;
   font-weight: 400;
   font-style: Regular;
@@ -1012,5 +1015,21 @@
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0%;
+  }
+  .confirm_codes {
+    justify-content: center;
+    width: 100%;
+  }
+  .confirm_code_inp {
+    width: 40px;
+    height: 48px;
+    padding-top: 12px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    gap: 8px;
+    opacity: 1;
+    border-radius: 8px;
+    border-width: 1px;
   }
 }
