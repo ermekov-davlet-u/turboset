@@ -131,10 +131,10 @@ body {
   top: 0;
   z-index: 1000;
   background: #fff;
-
+  padding: 0 var(--container-padding);
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  /* padding: 0; */
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@ body {
 }
 
 .header_container {
-  width: var(--site-content-width);
+  width: 100%;
   max-width: var(--container-max-width);
   height: 72px;
   display: flex;
@@ -485,6 +485,17 @@ body {
 
   .hero {
     max-width: var(--site-content-width);
+  }
+
+  .header_container{
+    height: 64px;
+  }
+  .header_logo_img{
+    height: 32px;
+    width: auto;
+  }
+  .header_right.active{
+    top: 64px;
   }
 }
 

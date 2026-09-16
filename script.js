@@ -457,3 +457,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+
+function copyBlogLink() {
+    navigator.clipboard.writeText('https://turboset.co/blog.html')
+        .then(() => {
+            const message = document.getElementById('copyMessage');
+
+            message.classList.add('show');
+
+            setTimeout(() => {
+                message.classList.remove('show');
+            }, 2000);
+        });
+}
