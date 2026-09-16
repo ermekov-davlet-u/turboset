@@ -168,7 +168,8 @@
                                 </div>
                             </div>
 
-                            <button href="confirm-code.html" type="button" class="signup_btn signup_btn_dark"> Сменить
+                            <button data-panel="qr" type="button" style="width: 186px;"
+                                class="signup_btn signup_btn_dark"> Сменить
                                 пароль
                             </button>
                         </div>
@@ -231,28 +232,42 @@
         <div class="lk_modal" id="lk_modal">
             <div class="lk_modal_content">
                 <div class="lk_modal-header">
-                    <h2 class="lk_modal_title">Экспорт по QR-коду</h2>
+                    <h2 class="lk_modal_title">Введите код из письма</h2>
                     <span class="lk_modal_close" id="lk_modalClose">&times;</span>
                 </div>
-                <div class="lk_modal_body">
-                    <div class="lk_modal_qr_code">
-                        <!-- <img src="/assets/picture/qr-code.png" alt="QR-код" class="lk_modal_qr_code_img"> -->
-                    </div>
-                </div>
                 <p class="lk_modal_text">
-                    Отсканируйте QR-код камерой смартфона, чтобы
-                    мгновенно
-                    подключить это устройство к сервису
+                    Мы отправили 6-значный код подтверждения на ваш адрес электронной почты:
                 </p>
+                <div class="signup_center">
+                    <button class="confirm_email ">email@gmail.com</button>
+
+                    <div class="signup_form_group">
+                        <div class="confirm">
+                            <div class="confirm_codes">
+                                <input type="text" class="confirm_code_inp">
+                                <input type="text" class="confirm_code_inp">
+                                <input type="text" class="confirm_code_inp">
+                                <input type="text" class="confirm_code_inp">
+                                <input type="text" class="confirm_code_inp">
+                                <input type="text" class="confirm_code_inp">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="lk_modal_footer">
-                <button class="lk_button lk_button_black" id="modalCloseBtn">
-                    <span class="lk_button_text">
-                        Закрыть
-                    </span>
+            <div class="lk_modal_footer" style="padding: 0;">
+                <button class="lk_button" id="modalCloseBtn">
+                    <p class="lk_button_text">
+                        Отмена
+                    </p>
                 </button>
-                <p class="modal_footer_text">Скопировать ключ
-                    текстом</p>
+                <button class="lk_button lk_button_black lk_button_danger " style="" id="modalCloseBtn">
+                    <p class="lk_button_text">
+                        Удалить аккаунт
+                    </p>
+                </button>
+
             </div>
         </div>
     </div>

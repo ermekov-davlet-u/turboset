@@ -114,7 +114,7 @@
                                 <p class="use_devices_list_date_value">10 авг 2026</p>
                             </div>
                             <div class="use_devices_list_but">
-                                <button class="lk_button">
+                                <button class="lk_button" data-panel="qr">
                                     <p class="lk_button_text">Отвязать</p>
                                 </button>
                             </div>
@@ -199,28 +199,41 @@
         <div class="lk_modal" id="lk_modal">
             <div class="lk_modal_content">
                 <div class="lk_modal-header">
-                    <h2 class="lk_modal_title">Экспорт по QR-коду</h2>
+                    <h2 class="lk_modal_title">Отвязать устройство?</h2>
                     <span class="lk_modal_close" id="lk_modalClose">&times;</span>
                 </div>
                 <div class="lk_modal_body">
-                    <div class="lk_modal_qr_code">
-                        <!-- <img src="/assets/picture/qr-code.png" alt="QR-код" class="lk_modal_qr_code_img"> -->
-                    </div>
+                    <ul class="use_devices_list">
+                        <li class="use_devices_list_item">
+                            <div class="use_devices_list_dev">
+                                <div class="use_devices_list_dev_icon">
+                                    <img src="/assets/icon/apple.svg" alt="" class="use_devices_list_dev_img">
+                                </div>
+                                <div class="use_devices_list_dev_name">
+                                    <p class="use_devices_list_dev_name_title">iPhone</p>
+                                    <p class="use_devices_list_dev_name_text">iOS 17 INCY</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <p class="lk_modal_text">
-                    Отсканируйте QR-код камерой смартфона, чтобы
-                    мгновенно
-                    подключить это устройство к сервису
+                    После отвязки это устройство потеряет доступ к VPN. Чтобы подключить его снова, потребуется добавить
+                    ключ заново.
                 </p>
             </div>
             <div class="lk_modal_footer">
-                <button class="lk_button lk_button_black" id="modalCloseBtn">
+                <button class="lk_button" id="modalCloseBtn">
                     <span class="lk_button_text">
-                        Закрыть
+                        Отмена
                     </span>
                 </button>
-                <p class="modal_footer_text">Скопировать ключ
-                    текстом</p>
+                <button class="lk_button lk_button_black" id="modalCloseBtn">
+                    <span class="lk_button_text">
+                        Отвязать
+                    </span>
+                </button>
+
             </div>
         </div>
     </div>
