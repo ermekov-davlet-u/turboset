@@ -1144,7 +1144,7 @@ body.lk_sidebar_right_opened {
    menu now kicks in already at 1280px viewports.
    ========================================================= */
 .lk_sidebar_opened .lk_sidebar_close {
-  right: 9px;
+  right: 16px;
   display: block;
 }
 @media (max-width: 1280px) {
@@ -1198,11 +1198,11 @@ body.lk_sidebar_right_opened {
   .lk_sidebar_close {
     display: none;
 
-    top: 9px;
+    top: 16px;
     right: -44px;
 
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 
     border: 1px solid #dddddd;
 
