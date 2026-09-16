@@ -873,6 +873,17 @@
   padding: 0 8px;
 }
 
+.lk_sidebar_right .lk_sidebar_logo {
+  height: auto;
+
+  display: flex;
+  align-items: center;
+
+  margin: 10px 0;
+  height: 28px;
+  padding: 0;
+}
+
 .lk_sidebar_logo a {
   display: flex;
   align-items: center;
@@ -1071,6 +1082,7 @@
   height: 100vh;
   max-height: 100vh;
   width: 416px;
+  max-width: 100%;
 
   border: 0;
   border-left: 1px solid #d8d8d8;
@@ -1085,6 +1097,7 @@
   overflow-y: auto;
 
   z-index: 1000;
+  padding-top: 0;
 }
 
 .lk_sidebar_right.open {
@@ -1130,7 +1143,10 @@ body.lk_sidebar_right_opened {
    Breakpoint moved from 768px to 1280px, so the burger
    menu now kicks in already at 1280px viewports.
    ========================================================= */
-
+.lk_sidebar_opened .lk_sidebar_close {
+  right: 9px;
+  display: block;
+}
 @media (max-width: 1280px) {
   .lk-main,
   .lk_header {
@@ -1170,9 +1186,9 @@ body.lk_sidebar_right_opened {
   }
 
   .lk_sidebar_logo {
-    height: 58px;
+    /* height: 58px; */
 
-    padding: 0 7px;
+    padding: 0 8px;
   }
 
   .lk_sidebar_logo img {
@@ -1180,7 +1196,7 @@ body.lk_sidebar_right_opened {
   }
 
   .lk_sidebar_close {
-    display: block;
+    display: none;
 
     top: 9px;
     right: -44px;
@@ -1193,6 +1209,7 @@ body.lk_sidebar_right_opened {
     background: #ffffff;
 
     font-size: 22px;
+    z-index: 999;
   }
 
   .lk_sidebar_item {
@@ -1293,6 +1310,12 @@ body.lk_sidebar_right_opened {
 
   .lk_keys_about_title {
   }
+}
+
+.panel_current_link .lk_keys_current_link_text {
+  white-space: normal;
+  word-break: break-all;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2275,4 +2298,63 @@ body.lk_sidebar_right_opened {
     align-items: flex-start;
     gap: 32px;
   }
+}
+
+.no_device {
+  gap: 32px;
+  opacity: 1;
+  border-radius: 16px;
+  color: #1a1c1f;
+  display: flex;
+  flex-direction: column;
+}
+.no_device_header {
+  gap: 16px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no_device_title {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.no_device_header_text {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #616366;
+}
+.no_device_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no_device_content_icon {
+  opacity: 1;
+  border-radius: 8px;
+}
+.no_device_content_img {
+  width: 100%;
+}
+.no_device_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.no_device_footer .lk_button {
+  width: auto;
+  width: 244px;
 }
