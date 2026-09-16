@@ -24,18 +24,18 @@
         <aside class="lk_sidebar" id="lkSidebar">
             <div class="lk_sidebar_logo">
                 <a href="/">
-                    <img src="/assets/logo/logo.svg" alt="TURBOSET">
+                    <img src="/assets/logo/lk-logo.svg" alt="TURBOSET">
                 </a>
             </div>
             <button class="lk_sidebar_close" id="lkSidebarClose" type="button">
                 ×
             </button>
             <nav class="lk_sidebar_nav">
-                <a href="/lk-keys.html" class="lk_sidebar_item">
+                <a href="/lk-keys.html" class="lk_sidebar_item active">
                     <img src="/assets/icon/key.svg" alt>
                     <span>Мои ключи</span>
                 </a>
-                <a href="/lk-devices.html" class="lk_sidebar_item active">
+                <a href="/lk-devices.html" class="lk_sidebar_item">
                     <img src="/assets/icon/dark-device.svg" alt>
                     <span>Мои устройства</span>
                 </a>
@@ -83,83 +83,115 @@
             </header>
             <main class="lk-main" style="background-color: #F2F2F2;">
                 <h4 class="lk_title">
-                    Мои устройства
+                    Аккаунт
                 </h4>
 
-                <div class="lk_device_top">
-                    <p class="lk_device_top_text">Устройства добавленные к конфигурации</p>
-                    <a href="" class="lk_device_top_link"> Как добавить устройство?<img
-                            src="/assets/icon/arrow_outward.svg" alt="" class="lk_device_top_link"></a>
+                <div class="use_devices">
+                    <div class="form_group ">
+                        <div class="form_group_header">
+                            <p class="form_group_title" title="E-mail (Имя пользователя)">E-mail (Имя пользователя)</p>
+                            <div class="form_group_tag">
+                                <p class="form_group_tag_text">Нельзя изменить</p>
+                            </div>
+                        </div>
+                        <div class="signup_form_group">
+
+                            <input class="signup_form_inp" type="email" id="email" name="email"
+                                placeholder="Введите ваш Email">
+                        </div>
+                    </div>
+                    <hr class="lk_account_line">
+                    <div class="form_group">
+                        <div class="form_group_header">
+                            <p class="form_group_title">Сменить пароль</p>
+                        </div>
+                        <div class="lk_account_form_group_wrap">
+                            <div class="signup_form_group">
+                                <div class="signup_form_group_header"> <label for="password" class="signup_form_label">
+                                        Текущий пароль </label>
+                                </div>
+                                <div class="signup_form_inp_wrap"> <input class="signup_form_inp" type="text"
+                                        id="password" name="password" placeholder="Введите пароль">
+                                    <div class="signup_form_inp_icon"> <img src="/assets/icon/seepass.svg" alt=""
+                                            class="signup_form_inp_icon_img"> </div>
+                                </div>
+                            </div>
+                            <div class="signup_form_group">
+                                <div class="signup_form_group_header"> <label for="password" class="signup_form_label">
+                                        Новый пароль </label>
+                                </div>
+                                <div class="signup_form_inp_wrap"> <input class="signup_form_inp" type="text"
+                                        id="password" name="password" placeholder="Введите новый пароль">
+                                    <div class="signup_form_inp_icon"> <img src="/assets/icon/seepass.svg" alt=""
+                                            class="signup_form_inp_icon_img"> </div>
+                                </div>
+                                <div class="signup_form_group_info">
+                                    <ul class="signup_form_group_info_list">
+                                        <li class="signup_form_group_info_list_item">
+                                            <div class="signup_form_group_info_list_icon">
+                                                <img src="/assets/icon/check-black.svg" alt=""
+                                                    class="signup_form_group_info_list_img">
+                                            </div>
+                                            <p class="signup_form_group_info_list_text">
+                                                Минимум 8 символов
+                                            </p>
+                                        </li>
+                                        <li class="signup_form_group_info_list_item">
+                                            <div class="signup_form_group_info_list_icon">
+                                                <img src="/assets/icon/check-black.svg" alt=""
+                                                    class="signup_form_group_info_list_img">
+                                            </div>
+                                            <p class="signup_form_group_info_list_text">
+                                                Заглавные и строчные буквы
+                                            </p>
+                                        </li>
+                                        <li class="signup_form_group_info_list_item">
+                                            <div class="signup_form_group_info_list_icon">
+                                                <img src="/assets/icon/check-black.svg" alt=""
+                                                    class="signup_form_group_info_list_img">
+                                            </div>
+                                            <p class="signup_form_group_info_list_text">
+                                                Цифры и специальные символы
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="signup_form_group">
+                                <div class="signup_form_group_header"> <label for="password" class="signup_form_label">
+                                        Подтвердите новый пароль </label>
+                                </div>
+                                <div class="signup_form_inp_wrap"> <input class="signup_form_inp" type="password"
+                                        id="password" name="password" placeholder="Введите новый пароль">
+                                    <div class="signup_form_inp_icon"> <img src="/assets/icon/seepass.svg" alt=""
+                                            class="signup_form_inp_icon_img"> </div>
+                                </div>
+                            </div>
+
+                            <button href="confirm-code.html" type="button" class="signup_btn signup_btn_dark"> Сменить
+                                пароль
+                            </button>
+                        </div>
+
+
+                    </div>
                 </div>
 
-                <div class="use_devices">
-                    <div class="use_devices_header">
-                        <p class="use_devices_header_title">Используемые устройства: <span
-                                class="use_devices_header_title_count">3 из 3</span></p>
-                        <hr class="use_devices_header_line">
+                <div class="use_devices" style="margin-top: 16px;">
+                    <div class="delete_acc">
+                        <div class="delete_acc_header">
+                            <h6 class="delete_acc_title">Удалить аккаунт</h6>
+                        </div>
+                        <div class="delete_acc_content">
+                            <p class="delete_acc_text">После удаления аккаунта восстановление будет невозможно.  Все
+                                данные и ключи будут удалены.</p>
+                            <div class="delete_acc_btn_wrap">
+                                <button class="lk_button">
+                                    <p class="lk_button_text">Удалить аккаунт</p>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="use_devices_list">
-                        <li class="use_devices_list_item">
-                            <div class="use_devices_list_dev">
-                                <div class="use_devices_list_dev_icon">
-                                    <img src="/assets/icon/apple.svg" alt="" class="use_devices_list_dev_img">
-                                </div>
-                                <div class="use_devices_list_dev_name">
-                                    <p class="use_devices_list_dev_name_title">iPhone</p>
-                                    <p class="use_devices_list_dev_name_text">iOS 17 INCY</p>
-                                </div>
-                            </div>
-                            <div class="use_devices_list_date">
-                                <p class="use_devices_list_date_label">Последнее использование</p>
-                                <p class="use_devices_list_date_value">10 авг 2026</p>
-                            </div>
-                            <div class="use_devices_list_but">
-                                <button class="lk_button">
-                                    <p class="lk_button_text">Отвязать</p>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="use_devices_list_item">
-                            <div class="use_devices_list_dev">
-                                <div class="use_devices_list_dev_icon">
-                                    <img src="/assets/icon/windows.svg" alt="" class="use_devices_list_dev_img">
-                                </div>
-                                <div class="use_devices_list_dev_name">
-                                    <p class="use_devices_list_dev_name_title">Windows</p>
-                                    <p class="use_devices_list_dev_name_text">Windows 11 Happ</p>
-                                </div>
-                            </div>
-                            <div class="use_devices_list_date">
-                                <p class="use_devices_list_date_label">Последнее использование</p>
-                                <p class="use_devices_list_date_value">15 мин назад</p>
-                            </div>
-                            <div class="use_devices_list_but">
-                                <button class="lk_button">
-                                    <p class="lk_button_text">Отвязать</p>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="use_devices_list_item">
-                            <div class="use_devices_list_dev">
-                                <div class="use_devices_list_dev_icon">
-                                    <img src="/assets/icon/android.svg" alt="" class="use_devices_list_dev_img">
-                                </div>
-                                <div class="use_devices_list_dev_name">
-                                    <p class="use_devices_list_dev_name_title">Android</p>
-                                    <p class="use_devices_list_dev_name_text">Android 16 Happ</p>
-                                </div>
-                            </div>
-                            <div class="use_devices_list_date">
-                                <p class="use_devices_list_date_label">Последнее использование</p>
-                                <p class="use_devices_list_date_value">Только что</p>
-                            </div>
-                            <div class="use_devices_list_but">
-                                <button class="lk_button">
-                                    <p class="lk_button_text">Отвязать</p>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
 
 

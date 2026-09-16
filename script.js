@@ -333,108 +333,127 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
 
     /* ============================================================
-       LEFT SIDEBAR (burger menu, collapses at <=1280px)
+       RIGHT PANEL
        ============================================================ */
-    var leftOpenBtn = document.getElementById('lkSidebarOpen');
-    var leftCloseBtn = document.getElementById('lkSidebarClose');
-    var leftOverlay = document.getElementById('lkSidebarOverlay');
-    var leftSidebar = document.getElementById('lkSidebar');
 
-    function openLeftSidebar() {
-        if (!leftSidebar) return;
-        leftSidebar.classList.add('open');
-        document.body.classList.add('lk_sidebar_opened');
-    }
-
-    function closeLeftSidebar() {
-        if (!leftSidebar) return;
-        leftSidebar.classList.remove('open');
-        document.body.classList.remove('lk_sidebar_opened');
-    }
-
-    if (leftOpenBtn) {
-        leftOpenBtn.addEventListener('click', openLeftSidebar);
-    }
-    if (leftCloseBtn) {
-        leftCloseBtn.addEventListener('click', closeLeftSidebar);
-    }
-    if (leftOverlay) {
-        leftOverlay.addEventListener('click', closeLeftSidebar);
-    }
-
-    /* ============================================================
-       RIGHT SIDEBAR (on-demand drawer, opens via header button)
-       ============================================================ */
-    var rightOpenBtn = document.getElementById('lkSidebarOpenRight');
+    var rightSidebar = document.getElementById('lkSidebarRight');
     var rightCloseBtn = document.getElementById('lkSidebarRightClose');
     var rightOverlay = document.getElementById('lkSidebarOverlayRight');
-    var rightSidebar = document.getElementById('lkSidebarRight');
 
     function openRightSidebar() {
         if (!rightSidebar) return;
+
         rightSidebar.classList.add('open');
+
+        if (rightOverlay) {
+            rightOverlay.classList.add('open');
+        }
+
         document.body.classList.add('lk_sidebar_right_opened');
     }
 
     function closeRightSidebar() {
         if (!rightSidebar) return;
+
         rightSidebar.classList.remove('open');
+
+        if (rightOverlay) {
+            rightOverlay.classList.remove('open');
+        }
+
         document.body.classList.remove('lk_sidebar_right_opened');
     }
 
-    if (rightOpenBtn) {
-        rightOpenBtn.addEventListener('click', openRightSidebar);
-    }
-    if (rightCloseBtn) {
-        rightCloseBtn.addEventListener('click', closeRightSidebar);
-    }
-    if (rightOverlay) {
-        rightOverlay.addEventListener('click', closeRightSidebar);
-    }
 
     /* ============================================================
-       QR MODAL
+       ПРОДЛИТЬ
        ============================================================ */
-    var qrOpenBtn = document.getElementById('lkQrOpenBtn');
+
+    var extendButton = document.querySelector('[data-panel="extend"]');
+
+    if (extendButton) {
+        extendButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            openRightSidebar();
+        });
+    }
+
+
+    /* ============================================================
+       ЗАКРЫТИЕ
+       ============================================================ */
+
+    if (rightCloseBtn) {
+        rightCloseBtn.addEventListener('click', function () {
+            closeRightSidebar();
+        });
+    }
+
+    if (rightOverlay) {
+        rightOverlay.addEventListener('click', function () {
+            closeRightSidebar();
+        });
+    }
+
+
+    /* ============================================================
+       ESC
+       ============================================================ */
+
+    document.addEventListener('keydown', function (event) {
+
+        if (event.key === 'Escape') {
+            closeRightSidebar();
+        }
+
+    });
+
+
+    /* ============================================================
+       QR
+       ============================================================ */
+
+    var qrOpenBtn = document.querySelector('[data-panel="qr"]');
     var modalOverlay = document.getElementById('lk_modalOverlay');
     var modalCloseIcon = document.getElementById('lk_modalClose');
     var modalCloseBtn = document.getElementById('modalCloseBtn');
 
     function openModal() {
         if (!modalOverlay) return;
+
         modalOverlay.classList.add('open');
     }
 
     function closeModal() {
         if (!modalOverlay) return;
+
         modalOverlay.classList.remove('open');
     }
 
     if (qrOpenBtn) {
-        qrOpenBtn.addEventListener('click', openModal);
-    }
-    if (modalCloseIcon) {
-        modalCloseIcon.addEventListener('click', closeModal);
-    }
-    if (modalCloseBtn) {
-        modalCloseBtn.addEventListener('click', closeModal);
-    }
-    if (modalOverlay) {
-        // close when clicking the dark backdrop, not the modal card itself
-        modalOverlay.addEventListener('click', function (e) {
-            if (e.target === modalOverlay) {
-                closeModal();
-            }
+        qrOpenBtn.addEventListener('click', function (event) {
+            event.preventDefault();
+            openModal();
         });
     }
 
-    // Esc closes whichever panel/modal is open
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-            closeLeftSidebar();
-            closeRightSidebar();
-            closeModal();
-        }
-    });
+    if (modalCloseIcon) {
+        modalCloseIcon.addEventListener('click', closeModal);
+    }
+
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeModal);
+    }
+
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', function (event) {
+
+            if (event.target === modalOverlay) {
+                closeModal();
+            }
+
+        });
+    }
 
 });
+
