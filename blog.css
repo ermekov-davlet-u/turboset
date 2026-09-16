@@ -975,9 +975,21 @@
 .confirm_code_inp {
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
   .signup_header_title {
     font-size: 24px;
+  }
+
+  .blog_title{
+    font-size: 40px;
+  }
+
+  .blog_content_title{
+    font-size: 32px;
+  }
+
+  .blog_content_subtitle, .blog_content_table_title{
+    font-size: 20px;
   }
 }
 
@@ -985,6 +997,14 @@
   .signup {
     padding: 24px;
   }
+
+  .user{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  
 
   .signup_container {
     width: 100%;
