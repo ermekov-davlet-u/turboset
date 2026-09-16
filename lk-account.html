@@ -168,8 +168,7 @@
                                 </div>
                             </div>
 
-                            <button data-panel="qr" type="button" style="width: 186px;"
-                                class="signup_btn signup_btn_dark"> Сменить
+                            <button type="button" style="width: 186px;" class="signup_btn signup_btn_dark"> Сменить
                                 пароль
                             </button>
                         </div>
@@ -187,7 +186,7 @@
                             <p class="delete_acc_text">После удаления аккаунта восстановление будет невозможно.  Все
                                 данные и ключи будут удалены.</p>
                             <div class="delete_acc_btn_wrap">
-                                <button class="lk_button">
+                                <button class="lk_button" data-panel="qr">
                                     <p class="lk_button_text">Удалить аккаунт</p>
                                 </button>
                             </div>
@@ -232,6 +231,41 @@
         <div class="lk_modal" id="lk_modal">
             <div class="lk_modal_content">
                 <div class="lk_modal-header">
+                    <h2 class="lk_modal_title">Вы уверены, что хотите удалить аккаунт?</h2>
+                    <span class="lk_modal_close" id="lk_modalClose">&times;</span>
+                </div>
+                <div class="error_message">
+                    <p class="error_message_par">
+                        <img src="/assets/icon/error-mess.svg" alt="" class="error_message_par_img">Восстановление
+                        данных невозможно
+                    </p>
+                    <p class="error_message_par">
+                        <img src="/assets/icon/error-mess.svg" alt="" class="error_message_par_img">Все ключи и
+                        устройства будут удалены
+                    </p>
+                </div>
+            </div>
+            <div class="lk_modal_footer" style="padding: 0;">
+                <button class="lk_button" id="modalCloseBtn">
+                    <p class="lk_button_text">
+                        Отмена
+                    </p>
+                </button>
+                <a href="lk-account-deleted.html" class="lk_button lk_button_black lk_button_danger "
+                    id="modalCloseBtn">
+                    <p class="lk_button_text">
+                        Удалить аккаунт
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="lk_modal_overlay" id="lk_modalOverlay">
+        <div class="lk_modal" id="lk_modal">
+            <div class="lk_modal_content">
+                <div class="lk_modal-header">
                     <h2 class="lk_modal_title">Введите код из письма</h2>
                     <span class="lk_modal_close" id="lk_modalClose">&times;</span>
                 </div>
@@ -270,7 +304,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 <script src="script.js?v=2"></script>

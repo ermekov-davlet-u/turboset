@@ -668,13 +668,6 @@
   letter-spacing: 0%;
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.lk_keys_current_header_btns {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .lk_keys_current_period_value_img {
@@ -1578,7 +1571,6 @@ body.lk_sidebar_right_opened {
   opacity: 1;
   border-radius: 100px;
   background: #cc293f;
-  border: none;
 }
 .use_devices_list {
   gap: 16px;
@@ -2190,7 +2182,7 @@ body.lk_sidebar_right_opened {
   opacity: 1;
   border-bottom-width: 2px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 .form_group_title {
@@ -2249,19 +2241,14 @@ body.lk_sidebar_right_opened {
   align-items: center;
 }
 .signup_form_group_info_list_icon {
+}
+.signup_form_group_info_list_img {
   width: 12px;
   height: 12px;
   gap: 10px;
   opacity: 1;
   border-radius: 100px;
   background: #d4d6d9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.signup_form_group_info_list_img {
-  width: 8px;
-  height: 8px;
 }
 .signup_form_group_info_list_text {
   font-family: Inter;
@@ -2474,31 +2461,4 @@ body.lk_sidebar_right_opened {
   angle: 0 deg;
   opacity: 1;
   border-radius: 100px;
-}
-
-.delete_title {
-  font-family: Inter;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 40px;
-  line-height: 120%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #1a1c1f;
-}
-.delete_text {
-  font-family: Inter;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #1a1c1f;
-}
-
-@media screen and (max-width: 768px) {
-  .delete_title {
-    font-size: 32px;
-  }
 }
