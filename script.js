@@ -178,8 +178,7 @@ function isSignupCta(text) {
     return (
         normalized.startsWith('начать') ||
         normalized.startsWith('скачать') ||
-        normalized.startsWith('получить') ||
-        normalized.includes('выбрать тариф')
+        normalized.startsWith('получить')
     );
 }
 
