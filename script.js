@@ -230,7 +230,7 @@ if (document.querySelector(".share_icon")) {
     document.querySelector(".share_icon").addEventListener("click", async (event) => {
         event.preventDefault();
 
-        const link = "https://turboset.co/blog.html";
+        const link = "https://turboset.co/blog";
 
         try {
             await navigator.clipboard.writeText(link);
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function copyBlogLink() {
-    navigator.clipboard.writeText('https://turboset.co/blog.html')
+    navigator.clipboard.writeText('https://turboset.co/blog')
         .then(() => {
             const message = document.getElementById('copyMessage');
 

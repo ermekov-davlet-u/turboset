@@ -2,13 +2,13 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-SKIP = {"https://vlewps.github.io/", "confirm-code.html", "update-cta.py"}
+SKIP = {"https://vlewps.github.io/", "confirm-code", "update-cta.py"}
 
 
 def cta_url(text: str) -> str | None:
     normalized = re.sub(r"\s+", " ", text.strip())
     if re.match(r"^Выбрать тариф$", normalized, re.I):
-        return "/tarif.html"
+        return "/tarif"
     if re.match(r"^(Начать|Получить|Скачать)", normalized, re.I) or re.search(
         r"Получить 3 дня", normalized, re.I
     ):
@@ -51,7 +51,7 @@ SIMPLE = [
     ),
     (
         '<a href="https://vlewps.github.io/" class="tur-button">Выбрать тариф</a>',
-        '<a href="/tarif.html" class="tur-button">Выбрать тариф</a>',
+        '<a href="/tarif" class="tur-button">Выбрать тариф</a>',
     ),
     (
         '<button class="tur-button tur-button_fill">Начать</button>',
@@ -63,7 +63,7 @@ SIMPLE = [
     ),
     (
         '<button class="tur-button header_button_fill">Выбрать тариф</button>',
-        '<a href="/tarif.html" class="tur-button header_button_fill">Выбрать тариф</a>',
+        '<a href="/tarif" class="tur-button header_button_fill">Выбрать тариф</a>',
     ),
     (
         '<a href="/" class="popup-welcome_button">',
@@ -76,7 +76,7 @@ BTN_RE = re.compile(r"<button([^>]*)>(.*?)</button>", re.DOTALL)
 
 def main() -> None:
     for name in os.listdir(ROOT):
-        if not name.endswith(".html") or name in SKIP:
+        if not name.endswith("") or name in SKIP:
             continue
 
         path = os.path.join(ROOT, name)

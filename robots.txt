@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /privacy-settings
+Disallow: /terms-of-service
+Disallow: /no-logs-policy
