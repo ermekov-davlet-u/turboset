@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -15,99 +14,107 @@
     <link rel="stylesheet" href="/blog.css?v=3">
     <meta content="Недавние статьи TURBOSET об инструментах, безопасности, VPN и современных технологиях."
         name="description" />
-    <script type="application/ld+json">
-   {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Недавние статьи",
-  "description": "Недавние статьи TURBOSET об инструментах, безопасности, VPN и современных технологиях.",
-  "inLanguage": "ru-RU"
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://turboset.co/#organization",
+            "name": "TURBOSET",
+            "url": "https://turboset.co/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://turboset.co/assets/logo/logo.svg"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://turboset.co/#website",
+            "url": "https://turboset.co/",
+            "name": "TURBOSET",
+            "inLanguage": "ru-RU",
+            "publisher": {
+                "@id": "https://turboset.co/#organization"
+            }
+        },
+        {
+            "@type": "CollectionPage",
+            "@id": "https://turboset.co/article#webpage",
+            "url": "https://turboset.co/article",
+            "name": "Недавние статьи — TURBOSET",
+            "description": "Недавние статьи TURBOSET об инструментах, безопасности, VPN и современных технологиях.",
+            "inLanguage": "ru-RU",
+            "isPartOf": {
+                "@id": "https://turboset.co/#website"
+            },
+            "publisher": {
+                "@id": "https://turboset.co/#organization"
+            },
+            "breadcrumb": {
+                "@id": "https://turboset.co/article#breadcrumb"
+            },
+            "mainEntity": {
+                "@id": "https://turboset.co/article#itemlist"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://turboset.co/article#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Главная",
+                    "item": "https://turboset.co/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Статьи",
+                    "item": "https://turboset.co/article"
+                }
+            ]
+        },
+        {
+            "@type": "ItemList",
+            "@id": "https://turboset.co/article#itemlist",
+            "name": "Недавние статьи TURBOSET",
+            "numberOfItems": 1,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://turboset.co/blog",
+                    "item": {
+                        "@type": "BlogPosting",
+                        "@id": "https://turboset.co/blog#article",
+                        "url": "https://turboset.co/blog",
+                        "headline": "Happ — современное приложение для работы с прокси-серверами",
+                        "datePublished": "2026-07-18",
+                        "dateModified": "2026-07-18",
+                        "articleSection": "Инструменты",
+                        "inLanguage": "ru-RU",
+                        "author": {
+                            "@type": "Organization",
+                            "@id": "https://turboset.co/#organization",
+                            "name": "TURBOSET"
+                        },
+                        "publisher": {
+                            "@id": "https://turboset.co/#organization"
+                        },
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://turboset.co/blog"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
 }
-  </script>
-    <script type="application/ld+json">
-   {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Недавние статьи TURBOSET",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "BlogPosting",
-        "headline": "Happ — современное приложение для работы с прокси-серверами",
-        "datePublished": "2026-07-18",
-        "author": {
-          "@type": "Person",
-          "name": "Full name"
-        },
-        "articleSection": "Инструменты",
-        "inLanguage": "ru-RU"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "BlogPosting",
-        "headline": "Happ — современное приложение для работы с прокси-серверами",
-        "datePublished": "2026-07-18",
-        "author": {
-          "@type": "Person",
-          "name": "Full name"
-        },
-        "articleSection": "Инструменты",
-        "inLanguage": "ru-RU"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "BlogPosting",
-        "headline": "Happ — современное приложение для работы с прокси-серверами",
-        "datePublished": "2026-07-18",
-        "author": {
-          "@type": "Person",
-          "name": "Full name"
-        },
-        "articleSection": "Инструменты",
-        "inLanguage": "ru-RU"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "BlogPosting",
-        "headline": "Happ — современное приложение для работы с прокси-серверами",
-        "datePublished": "2026-07-18",
-        "author": {
-          "@type": "Person",
-          "name": "Full name"
-        },
-        "articleSection": "Инструменты",
-        "inLanguage": "ru-RU"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "BlogPosting",
-        "headline": "Happ — современное приложение для работы с прокси-серверами",
-        "datePublished": "2026-07-18",
-        "author": {
-          "@type": "Person",
-          "name": "Full name"
-        },
-        "articleSection": "Инструменты",
-        "inLanguage": "ru-RU"
-      }
-    }
-  ]
-}
-  </script>
+</script>
+
 </head>
 
 <body>
@@ -226,10 +233,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                <li>
-                                    <a href="/security2">Защита
-                                        данных</a>
-                                </li>
+                                
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -519,7 +523,7 @@
         </div>
     </footer>
 
-    <script src="script.js?v=4"></script>
+    <script src="/script.js?v=5"></script>
     </script>
 </body>
 
