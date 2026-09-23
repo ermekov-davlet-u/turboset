@@ -7,16 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
-
+    <link rel="preload" href="/assets/picture/smartphone1.svg" as="image" type="image/svg+xml">
     <title>TURBOSET</title>
-
     <meta name="description"
         content="VPN для Android и iOS от TURBOSET. Защитите интернет-соединение, выбирайте сервер в нужной стране и пользуйтесь сайтами и приложениями безопасно из любой сети.">
-
-    <link rel="canonical" href="https://turboset.ru/smartphone">
+    <link rel="canonical" href="https://turboset.co/windows">
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
-
     <!-- JSON-LD: организация и сайт -->
     <script type="application/ld+json">
 {
@@ -24,32 +21,32 @@
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://turboset.ru/#organization",
+            "@id": "https://turboset.co/#organization",
             "name": "TURBOSET",
-            "url": "https://turboset.ru/",
-            "logo": "https://turboset.ru/assets/logo/logo.svg"
+            "url": "https://turboset.co/",
+            "logo": "https://turboset.co/assets/logo/logo.svg"
         },
         {
             "@type": "WebSite",
-            "@id": "https://turboset.ru/#website",
-            "url": "https://turboset.ru/",
+            "@id": "https://turboset.co/#website",
+            "url": "https://turboset.co/",
             "name": "TURBOSET",
             "publisher": {
-                "@id": "https://turboset.ru/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "inLanguage": "ru-RU"
         },
         {
             "@type": "WebPage",
-            "@id": "https://turboset.ru/smartphone#webpage",
-            "url": "https://turboset.ru/smartphone",
+            "@id": "https://turboset.co/smartphone#webpage",
+            "url": "https://turboset.co/smartphone",
             "name": "VPN для смартфона — безопасный интернет на Android и iOS",
             "description": "VPN для Android и iOS от TURBOSET. Защитите интернет-соединение, выбирайте сервер в нужной стране и пользуйтесь интернетом безопасно из любой сети.",
             "isPartOf": {
-                "@id": "https://turboset.ru/#website"
+                "@id": "https://turboset.co/#website"
             },
             "publisher": {
-                "@id": "https://turboset.ru/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "inLanguage": "ru-RU"
         }
@@ -106,15 +103,13 @@
     ]
 }
 </script>
-
 </head>
 
 <body>
-
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -226,7 +221,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -248,10 +243,7 @@
             </div>
         </div>
     </header>
-
     <main>
-
-        <!-- Hero -->
         <section class="hero_wrap security_hero_wrap" aria-labelledby="hero-title">
             <div class="hero security_hero">
                 <div class="hero_container">
@@ -283,7 +275,8 @@
                     </div>
 
                     <div class="hero_right">
-                        <img src="/assets/picture/smartphone1.svg" alt="VPN TURBOSET на смартфоне" class="hero_img">
+                        <img src="/assets/picture/smartphone1.svg" alt="VPN TURBOSET на смартфоне" class="hero_img"
+                            fetchpriority="high" decoding="async">
                     </div>
 
                 </div>

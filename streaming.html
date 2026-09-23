@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
+    <link rel="preload" href="/assets/picture/straming.png" as="image" type="image/png">
     <title>TURBOSET</title>
     <meta name="description"
         content="TURBOSET — VPN для стриминга. Получайте доступ к контенту разных регионов, выбирайте серверы в разных странах и смотрите фильмы и сериалы без ограничений.">
 
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
-
+    <link rel="canonical" href="https://turboset.co/streaming">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="VPN для стриминга — TURBOSET">
@@ -154,7 +155,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -266,7 +267,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -326,7 +327,8 @@
                     </div>
 
                     <div class="hero_right">
-                        <img src="/assets/picture/straming.png" alt="VPN для стриминга" class="hero_img">
+                        <img src="/assets/picture/straming.png" alt="VPN для стриминга" class="hero_img"
+                            fetchpriority="high" decoding="async">
                     </div>
 
                 </div>

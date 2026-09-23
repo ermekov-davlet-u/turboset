@@ -9,13 +9,204 @@
     <title>TURBOSET</title>
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://turboset.co/#organization",
+                    "name": "TURBOSET",
+                    "url": "https://turboset.co/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://turboset.co/assets/logo/logo.svg"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://turboset.co/#website",
+                    "url": "https://turboset.co/",
+                    "name": "TURBOSET",
+                    "inLanguage": "ru-RU",
+                    "publisher": {
+                        "@id": "https://turboset.co/#organization"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://turboset.co/tarif/#webpage",
+                    "url": "https://turboset.co/tarif/",
+                    "name": "Тарифы TURBOSET — VPN",
+                    "description": "Тарифы TURBOSET. VPN с защищенным соединением, быстрыми серверами, поддержкой нескольких платформ и 14-дневной гарантией возврата средств.",
+                    "inLanguage": "ru-RU",
+                    "isPartOf": {
+                        "@id": "https://turboset.co/#website"
+                    },
+                    "publisher": {
+                        "@id": "https://turboset.co/#organization"
+                    },
+                    "breadcrumb": {
+                        "@id": "https://turboset.co/tarif/#breadcrumb"
+                    },
+                    "mainEntity": {
+                        "@id": "https://turboset.co/tarif/#offers"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://turboset.co/tarif/#breadcrumb",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Главная",
+                            "item": "https://turboset.co/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Тарифы",
+                            "item": "https://turboset.co/tarif/"
+                        }
+                    ]
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://turboset.co/tarif/#offers",
+                    "name": "Тарифы TURBOSET",
+                    "numberOfItems": 3,
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://turboset.co/tarif/#1-month",
+                                "name": "TURBOSET VPN — 1 месяц",
+                                "description": "Подписка TURBOSET VPN на 1 месяц.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "TURBOSET"
+                                },
+                                "offers": {
+                                    "@type": "Offer",
+                                    "url": "https://turboset.co/tarif/",
+                                    "priceCurrency": "RUB",
+                                    "price": "300",
+                                    "availability": "https://schema.org/InStock",
+                                    "seller": {
+                                        "@id": "https://turboset.co/#organization"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://turboset.co/tarif/#2-months",
+                                "name": "TURBOSET VPN — 2 месяца",
+                                "description": "Подписка TURBOSET VPN на 2 месяца.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "TURBOSET"
+                                },
+                                "offers": {
+                                    "@type": "Offer",
+                                    "url": "https://turboset.co/tarif/",
+                                    "priceCurrency": "RUB",
+                                    "price": "450",
+                                    "availability": "https://schema.org/InStock",
+                                    "seller": {
+                                        "@id": "https://turboset.co/#organization"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://turboset.co/tarif/#3-months",
+                                "name": "TURBOSET VPN — 3 месяца",
+                                "description": "Подписка TURBOSET VPN на 3 месяца.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "TURBOSET"
+                                },
+                                "offers": {
+                                    "@type": "Offer",
+                                    "url": "https://turboset.co/tarif/",
+                                    "priceCurrency": "RUB",
+                                    "price": "590",
+                                    "availability": "https://schema.org/InStock",
+                                    "seller": {
+                                        "@id": "https://turboset.co/#organization"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://turboset.co/tarif/#service",
+                    "name": "TURBOSET VPN",
+                    "serviceType": "VPN",
+                    "description": "VPN-сервис TURBOSET для защищенного интернет-соединения, конфиденциальности и использования интернета на различных устройствах.",
+                    "provider": {
+                        "@id": "https://turboset.co/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Worldwide"
+                    }
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://turboset.co/tarif/#faq",
+                    "url": "https://turboset.co/tarif/#faq",
+                    "name": "Часто задаваемые вопросы о тарифах TURBOSET",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Какая разница между тарифами?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Все тарифы имеют одинаковые возможности и скорость. Пользователь получает доступ ко всем функциям и серверам на любых поддерживаемых устройствах. Отличается только длительность подписки и стоимость."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Как можно оплатить подписку из России?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Оплатить подписку можно российской банковской картой, включая карты Мир, через Систему быстрых платежей (СБП) или другими доступными способами оплаты."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Можно ли вернуть деньги за подписку?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "TURBOSET предоставляет гарантию возврата средств в течение указанного гарантийного периода. Также доступен бесплатный 3-дневный тестовый период."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        </script>
 </head>
 
 <body>
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -127,7 +318,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>

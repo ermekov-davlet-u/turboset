@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
+    <link rel="preload" href="/assets/picture/game-hero.svg" as="image" type="image/svg+xml">
     <title>
         TURBOSET</title>
 
     <meta name="description"
         content="VPN для игр на ПК и мобильных устройствах. Стабильное подключение, доступ к игровым сервисам и серверы в разных странах с TURBOSET.">
-
+    <link rel="canonical" href="https://turboset.co/games">
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
 
@@ -23,52 +24,52 @@
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://turboset.example/#organization",
+            "@id": "https://turboset.co/#organization",
             "name": "TURBOSET",
-            "url": "https://turboset.example/",
+            "url": "https://turboset.co/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://turboset.example/assets/logo/logo.svg"
+                "url": "https://turboset.co/assets/logo/logo.svg"
             }
         },
         {
             "@type": "WebSite",
-            "@id": "https://turboset.example/#website",
-            "url": "https://turboset.example/",
+            "@id": "https://turboset.co/#website",
+            "url": "https://turboset.co/",
             "name": "TURBOSET",
             "inLanguage": "ru-RU",
             "publisher": {
-                "@id": "https://turboset.example/#organization"
+                "@id": "https://turboset.co/#organization"
             }
         },
         {
             "@type": "WebPage",
-            "@id": "https://turboset.example/games#webpage",
-            "url": "https://turboset.example/games",
+            "@id": "https://turboset.co/games#webpage",
+            "url": "https://turboset.co/games",
             "name": "VPN для игр — стабильное подключение к игровым сервисам | TURBOSET",
             "description": "VPN для игр на ПК и мобильных устройствах. Стабильное подключение, доступ к игровым сервисам и серверы в разных странах с TURBOSET.",
             "inLanguage": "ru-RU",
             "isPartOf": {
-                "@id": "https://turboset.example/#website"
+                "@id": "https://turboset.co/#website"
             },
             "publisher": {
-                "@id": "https://turboset.example/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "about": {
-                "@id": "https://turboset.example/games#service"
+                "@id": "https://turboset.co/games#service"
             },
             "breadcrumb": {
-                "@id": "https://turboset.example/games#breadcrumb"
+                "@id": "https://turboset.co/games#breadcrumb"
             }
         },
         {
             "@type": "Service",
-            "@id": "https://turboset.example/games#service",
+            "@id": "https://turboset.co/games#service",
             "name": "VPN для игр",
             "serviceType": "VPN-сервис для онлайн-игр",
             "description": "VPN-сервис для стабильного подключения к игровым сервисам, доступа к игровым серверам и защиты интернет-соединения во время онлайн-игр.",
             "provider": {
-                "@id": "https://turboset.example/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "areaServed": {
                 "@type": "Place",
@@ -77,7 +78,7 @@
         },
         {
             "@type": "ItemList",
-            "@id": "https://turboset.example/games#games",
+            "@id": "https://turboset.co/games#games",
             "name": "Игры и игровые сервисы, доступные через VPN",
             "itemListElement": [
                 {
@@ -199,7 +200,7 @@
         },
         {
             "@type": "ItemList",
-            "@id": "https://turboset.example/games#locations",
+            "@id": "https://turboset.co/games#locations",
             "name": "Рекомендуемые VPN-локации для игр",
             "itemListElement": [
                 {
@@ -236,32 +237,32 @@
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://turboset.example/games#breadcrumb",
+            "@id": "https://turboset.co/games#breadcrumb",
             "itemListElement": [
                 {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Главная",
-                    "item": "https://turboset.example/"
+                    "item": "https://turboset.co/"
                 },
                 {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Решения",
-                    "item": "https://turboset.example/games"
+                    "item": "https://turboset.co/games"
                 },
                 {
                     "@type": "ListItem",
                     "position": 3,
                     "name": "Игры",
-                    "item": "https://turboset.example/games"
+                    "item": "https://turboset.co/games"
                 }
             ]
         },
         {
             "@type": "FAQPage",
-            "@id": "https://turboset.example/games#faq",
-            "url": "https://turboset.example/games#faq",
+            "@id": "https://turboset.co/games#faq",
+            "url": "https://turboset.co/games#faq",
             "name": "Часто задаваемые вопросы о VPN для игр",
             "mainEntity": [
                 {
@@ -317,7 +318,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -429,7 +430,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -493,7 +494,8 @@
 
                     <div class="hero_right">
 
-                        <img src="/assets/picture/game-hero.svg" alt="VPN для онлайн-игр" class="hero_img">
+                        <img src="/assets/picture/game-hero.svg" alt="VPN для онлайн-игр" class="hero_img"
+                            fetchpriority="high" decoding="async">
 
                     </div>
 

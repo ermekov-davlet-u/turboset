@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
+    <link rel="preload" href="/assets/picture/social.png" as="image" type="image/png">
     <title>TURBOSET</title>
 
     <meta name="description"
@@ -21,52 +22,52 @@
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://turboset.example/#organization",
+            "@id": "https://turboset.co/#organization",
             "name": "TURBOSET",
-            "url": "https://turboset.example/",
+            "url": "https://turboset.co/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://turboset.example/assets/logo/logo1.png"
+                "url": "https://turboset.co/assets/logo/logo1.png"
             }
         },
         {
             "@type": "WebSite",
-            "@id": "https://turboset.example/#website",
-            "url": "https://turboset.example/",
+            "@id": "https://turboset.co/#website",
+            "url": "https://turboset.co/",
             "name": "TURBOSET",
             "inLanguage": "ru-RU",
             "publisher": {
-                "@id": "https://turboset.example/#organization"
+                "@id": "https://turboset.co/#organization"
             }
         },
         {
             "@type": "WebPage",
-            "@id": "https://turboset.example/social#webpage",
-            "url": "https://turboset.example/social",
+            "@id": "https://turboset.co/social#webpage",
+            "url": "https://turboset.co/social",
             "name": "VPN для TikTok — TURBOSET",
             "description": "VPN для TikTok от TURBOSET. Стабильный доступ к TikTok, просмотр и публикация видео, работа с региональным контентом и дополнительная защита интернет-соединения.",
             "inLanguage": "ru-RU",
             "isPartOf": {
-                "@id": "https://turboset.example/#website"
+                "@id": "https://turboset.co/#website"
             },
             "publisher": {
-                "@id": "https://turboset.example/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "about": {
-                "@id": "https://turboset.example/social#service"
+                "@id": "https://turboset.co/social#service"
             },
             "breadcrumb": {
-                "@id": "https://turboset.example/social#breadcrumb"
+                "@id": "https://turboset.co/social#breadcrumb"
             }
         },
         {
             "@type": "Service",
-            "@id": "https://turboset.example/social#service",
+            "@id": "https://turboset.co/social#service",
             "name": "VPN для TikTok TURBOSET",
             "description": "VPN-сервис TURBOSET для стабильного доступа к TikTok, просмотра и публикации видео, использования регионального контента и повышения конфиденциальности интернет-соединения.",
             "serviceType": "VPN для TikTok",
             "provider": {
-                "@id": "https://turboset.example/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "areaServed": {
                 "@type": "Place",
@@ -75,26 +76,26 @@
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://turboset.example/social#breadcrumb",
+            "@id": "https://turboset.co/social#breadcrumb",
             "itemListElement": [
                 {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Главная",
-                    "item": "https://turboset.example/"
+                    "item": "https://turboset.co/"
                 },
                 {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Социальные сети",
-                    "item": "https://turboset.example/social"
+                    "item": "https://turboset.co/social"
                 }
             ]
         },
         {
             "@type": "FAQPage",
-            "@id": "https://turboset.example/social#faq",
-            "url": "https://turboset.example/social#faq",
+            "@id": "https://turboset.co/social#faq",
+            "url": "https://turboset.co/social#faq",
             "name": "Часто задаваемые вопросы о VPN для TikTok",
             "mainEntity": [
                 {
@@ -134,7 +135,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -246,7 +247,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -305,7 +306,8 @@
                     </div>
 
                     <div class="hero_right">
-                        <img src="/assets/picture/social.png" alt="VPN для социальных сетей" class="hero_img">
+                        <img src="/assets/picture/social.png" alt="VPN для социальных сетей" class="hero_img"
+                            fetchpriority="high" decoding="async">
                     </div>
 
                 </div>

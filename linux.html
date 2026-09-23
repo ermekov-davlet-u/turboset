@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
+    <link rel="preload" href="/assets/picture/linux.png" as="image" type="image/png">
     <title>TURBOSET</title>
 
     <meta name="description"
         content="VPN для Linux от TURBOSET. Защитите интернет-соединение на Linux, выбирайте сервер в нужной стране и пользуйтесь сайтами и сервисами безопасно из любой сети.">
 
-    <link rel="canonical" href="https://turboset.ru/linux">
+    <link rel="canonical" href="https://turboset.co/linux">
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
 
@@ -23,32 +24,32 @@
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://turboset.ru/#organization",
+            "@id": "https://turboset.co/#organization",
             "name": "TURBOSET",
-            "url": "https://turboset.ru/",
-            "logo": "https://turboset.ru/assets/logo/logo.svg"
+            "url": "https://turboset.co/",
+            "logo": "https://turboset.co/assets/logo/logo.svg"
         },
         {
             "@type": "WebSite",
-            "@id": "https://turboset.ru/#website",
-            "url": "https://turboset.ru/",
+            "@id": "https://turboset.co/#website",
+            "url": "https://turboset.co/",
             "name": "TURBOSET",
             "publisher": {
-                "@id": "https://turboset.ru/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "inLanguage": "ru-RU"
         },
         {
             "@type": "WebPage",
-            "@id": "https://turboset.ru/linux#webpage",
-            "url": "https://turboset.ru/linux",
+            "@id": "https://turboset.co/linux#webpage",
+            "url": "https://turboset.co/linux",
             "name": "VPN для Linux — безопасный интернет на Linux",
             "description": "VPN для Linux от TURBOSET. Защитите интернет-соединение на Linux, выбирайте сервер в нужной стране и пользуйтесь интернетом безопасно из любой сети.",
             "isPartOf": {
-                "@id": "https://turboset.ru/#website"
+                "@id": "https://turboset.co/#website"
             },
             "publisher": {
-                "@id": "https://turboset.ru/#organization"
+                "@id": "https://turboset.co/#organization"
             },
             "inLanguage": "ru-RU"
         }
@@ -113,7 +114,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -225,7 +226,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -281,7 +282,8 @@
                     </div>
 
                     <div class="hero_right">
-                        <img src="/assets/picture/linux.png" alt="VPN TURBOSET на смартфоне" class="hero_img">
+                        <img src="/assets/picture/linux.png" alt="VPN TURBOSET на ПК" class="hero_img"
+                            fetchpriority="high" decoding="async">
                     </div>
 
                 </div>

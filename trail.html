@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
-
+<link rel="preload" href="/assets/picture/trail.svg" as="image" type="image/svg+xml">
 <title>TURBOSET</title>
 
 <meta name="description"
@@ -22,52 +22,52 @@
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://turboset.example/#organization",
+                "@id": "https://turboset.co/#organization",
                 "name": "TURBOSET",
-                "url": "https://turboset.example/",
+                "url": "https://turboset.co/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://turboset.example/assets/logo/logo1.png"
+                    "url": "https://turboset.co/assets/logo/logo1.png"
                 }
             },
             {
                 "@type": "WebSite",
-                "@id": "https://turboset.example/#website",
-                "url": "https://turboset.example/",
+                "@id": "https://turboset.co/#website",
+                "url": "https://turboset.co/",
                 "name": "TURBOSET",
                 "inLanguage": "ru-RU",
                 "publisher": {
-                    "@id": "https://turboset.example/#organization"
+                    "@id": "https://turboset.co/#organization"
                 }
             },
             {
                 "@type": "WebPage",
-                "@id": "https://turboset.example/trail#webpage",
-                "url": "https://turboset.example/trail",
+                "@id": "https://turboset.co/trail#webpage",
+                "url": "https://turboset.co/trail",
                 "name": "3 дня бесплатно — VPN TURBOSET",
                 "description": "Попробуйте VPN TURBOSET бесплатно в течение 3 дней. Полный доступ к функциям, шифрование трафика, защита приватности и серверы в 13 странах.",
                 "inLanguage": "ru-RU",
                 "isPartOf": {
-                    "@id": "https://turboset.example/#website"
+                    "@id": "https://turboset.co/#website"
                 },
                 "publisher": {
-                    "@id": "https://turboset.example/#organization"
+                    "@id": "https://turboset.co/#organization"
                 },
                 "about": {
-                    "@id": "https://turboset.example/trail#service"
+                    "@id": "https://turboset.co/trail#service"
                 },
                 "breadcrumb": {
-                    "@id": "https://turboset.example/trail#breadcrumb"
+                    "@id": "https://turboset.co/trail#breadcrumb"
                 }
             },
             {
                 "@type": "Service",
-                "@id": "https://turboset.example/trail#service",
+                "@id": "https://turboset.co/trail#service",
                 "name": "Пробный период VPN TURBOSET",
                 "description": "Бесплатный трехдневный пробный период VPN TURBOSET с полным доступом к функциям сервиса, шифрованием трафика, защитой приватности и VPN-серверами в 13 странах.",
                 "serviceType": "VPN-сервис",
                 "provider": {
-                    "@id": "https://turboset.example/#organization"
+                    "@id": "https://turboset.co/#organization"
                 },
                 "areaServed": {
                     "@type": "Place",
@@ -76,26 +76,26 @@
             },
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://turboset.example/trail#breadcrumb",
+                "@id": "https://turboset.co/trail#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Главная",
-                        "item": "https://turboset.example/"
+                        "item": "https://turboset.co/"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Пробный период",
-                        "item": "https://turboset.example/trail"
+                        "item": "https://turboset.co/trail"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://turboset.example/trail#faq",
-                "url": "https://turboset.example/trail#faq",
+                "@id": "https://turboset.co/trail#faq",
+                "url": "https://turboset.co/trail#faq",
                 "name": "Часто задаваемые вопросы о пробном периоде TURBOSET",
                 "mainEntity": [
                     {
@@ -150,7 +150,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -262,7 +262,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -317,7 +317,7 @@
                     </div>
                 </div>
                 <div class="hero_right">
-                    <img src="/assets/picture/trail.svg" alt="" class="hero_img">
+                    <img src="/assets/picture/trail.svg" alt="" class="hero_img" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </div>

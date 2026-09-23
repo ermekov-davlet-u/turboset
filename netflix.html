@@ -7,11 +7,11 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
     <title> TURBOSET</title>
-
+    <link rel="preload" href="/assets/picture/netflix.svg" as="image" type="image/svg+xml">
     <meta name="description"
         content="VPN для Netflix от TURBOSET. Подключайтесь к серверам разных стран, получайте доступ к региональным каталогам и смотрите фильмы и сериалы в высоком качестве.">
 
-    <link rel="canonical" href="https://turboset.example/netflix">
+    <link rel="canonical" href="https://turboset.co/netflix">
 
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
@@ -23,76 +23,76 @@
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://turboset.example/#organization",
+                "@id": "https://turboset.co/#organization",
                 "name": "TURBOSET",
-                "url": "https://turboset.example/",
+                "url": "https://turboset.co/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://turboset.example/assets/logo/logo1.png"
+                    "url": "https://turboset.co/assets/logo/logo1.png"
                 }
             },
             {
                 "@type": "WebSite",
-                "@id": "https://turboset.example/#website",
-                "url": "https://turboset.example/",
+                "@id": "https://turboset.co/#website",
+                "url": "https://turboset.co/",
                 "name": "TURBOSET",
                 "inLanguage": "ru-RU",
                 "publisher": {
-                    "@id": "https://turboset.example/#organization"
+                    "@id": "https://turboset.co/#organization"
                 }
             },
             {
                 "@type": "WebPage",
-                "@id": "https://turboset.example/netflix#webpage",
-                "url": "https://turboset.example/netflix",
+                "@id": "https://turboset.co/netflix#webpage",
+                "url": "https://turboset.co/netflix",
                 "name": "VPN для Netflix — доступ к каталогам разных стран | TURBOSET",
                 "description": "VPN для Netflix от TURBOSET. Подключение к серверам разных стран, доступ к региональным каталогам и защищенное соединение.",
                 "inLanguage": "ru-RU",
                 "isPartOf": {
-                    "@id": "https://turboset.example/#website"
+                    "@id": "https://turboset.co/#website"
                 },
                 "publisher": {
-                    "@id": "https://turboset.example/#organization"
+                    "@id": "https://turboset.co/#organization"
                 },
                 "about": {
-                    "@id": "https://turboset.example/netflix#service"
+                    "@id": "https://turboset.co/netflix#service"
                 },
                 "breadcrumb": {
-                    "@id": "https://turboset.example/netflix#breadcrumb"
+                    "@id": "https://turboset.co/netflix#breadcrumb"
                 }
             },
             {
                 "@type": "Service",
-                "@id": "https://turboset.example/netflix#service",
+                "@id": "https://turboset.co/netflix#service",
                 "name": "VPN для Netflix TURBOSET",
                 "serviceType": "VPN-сервис",
                 "description": "VPN-сервис TURBOSET для подключения к серверам разных стран, защищенного интернет-соединения и использования Netflix через доступные региональные каталоги.",
                 "provider": {
-                    "@id": "https://turboset.example/#organization"
+                    "@id": "https://turboset.co/#organization"
                 }
             },
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://turboset.example/netflix#breadcrumb",
+                "@id": "https://turboset.co/netflix#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Главная",
-                        "item": "https://turboset.example/"
+                        "item": "https://turboset.co/"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Netflix",
-                        "item": "https://turboset.example/netflix"
+                        "item": "https://turboset.co/netflix"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://turboset.example/netflix#faq",
-                "url": "https://turboset.example/netflix#faq",
+                "@id": "https://turboset.co/netflix#faq",
+                "url": "https://turboset.co/netflix#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -132,7 +132,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -244,7 +244,7 @@
                                     <a href="/security">Безопасность</a>
                                 </li>
 
-                                
+
 
                                 <li>
                                     <a href="/server">Серверы</a>
@@ -305,7 +305,8 @@
 
                     <div class="hero_right">
 
-                        <img src="/assets/picture/netflix.svg" alt="VPN для онлайн-игр" class="hero_img">
+                        <img src="/assets/picture/netflix.svg" alt="VPN для онлайн-игр" class="hero_img"
+                            fetchpriority="high" decoding="async">
 
                     </div>
 

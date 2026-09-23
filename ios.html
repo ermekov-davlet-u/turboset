@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="/assets/logo/sim-logo.svg">
+    <link rel="preload" href="/assets/picture/ios.png" as="image" type="image/png">
     <title>TURBOSET</title>
 
     <meta name="description"
         content="VPN для iOS от TURBOSET. Защитите интернет-соединение на iPhone, выбирайте сервер в нужной стране и пользуйтесь сайтами и сервисами безопасно из любой сети.">
 
-    <link rel="canonical" href="https://turboset.ru/ios">
+    <link rel="canonical" href="https://turboset.co/ios">
     <link rel="stylesheet" href="/style.css?v=3">
     <link rel="stylesheet" href="/blog.css?v=3">
 
@@ -113,7 +114,7 @@
     <header class="header">
         <div class="header_container">
             <div class="header_logo">
-                <a href="index">
+                <a href="/">
                     <img src="/assets/logo/logo.svg" alt="TURBOSET" class="header_logo_img">
                 </a>
             </div>
@@ -265,7 +266,8 @@
                     </div>
 
                     <div class="hero_right">
-                        <img src="/assets/picture/ios.png" alt="VPN TURBOSET на iPhone" class="hero_img">
+                        <img src="/assets/picture/ios.png" alt="VPN TURBOSET на iPhone" class="hero_img"
+                            fetchpriority="high" decoding="async">
                     </div>
 
                 </div>
