@@ -1,4 +1,16 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
 User-agent: *
+Allow: /
 Disallow: /privacy-settings
 Disallow: /terms-of-service
 Disallow: /no-logs-policy
+
+Sitemap: https://turboset.co/sitemap.xml
