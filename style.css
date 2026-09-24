@@ -487,14 +487,14 @@ body {
     max-width: var(--site-content-width);
   }
 
-  .header_container{
+  .header_container {
     height: 64px;
   }
-  .header_logo_img{
+  .header_logo_img {
     height: 32px;
     width: auto;
   }
-  .header_right.active{
+  .header_right.active {
     top: 64px;
   }
 }
@@ -2190,11 +2190,17 @@ body {
 .free_right {
   /* max-width: 50%; */
   height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
 }
 
 .free_img {
   max-width: 100%;
   height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
 }
 
 .footer {
@@ -3836,6 +3842,7 @@ body {
 
 .location_countries_item_flag_img {
   border-radius: 8px;
+  width: 100%;
 }
 
 .location_countries_item_title {
