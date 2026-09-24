@@ -773,6 +773,7 @@ body {
 .security_card_bottom,
 .security_card_bottom_img {
   width: 100%;
+  display: block;
 }
 
 .security_card_bottom_text {
