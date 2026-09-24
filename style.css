@@ -3710,7 +3710,7 @@ body {
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 48px;
+  font-size: var(--title-font-size);
   line-height: 120%;
   letter-spacing: 0%;
   text-align: center;
