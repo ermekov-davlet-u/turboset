@@ -51,7 +51,7 @@ SIMPLE = [
     ),
     (
         '<a href="https://vlewps.github.io/" class="tur-button">Выбрать тариф</a>',
-        '<a href="/tarif" class="tur-button">Выбрать тариф</a>',
+        '<a href="/tarif/" class="tur-button">Выбрать тариф</a>',
     ),
     (
         '<button class="tur-button tur-button_fill">Начать</button>',
@@ -63,7 +63,7 @@ SIMPLE = [
     ),
     (
         '<button class="tur-button header_button_fill">Выбрать тариф</button>',
-        '<a href="/tarif" class="tur-button header_button_fill">Выбрать тариф</a>',
+        '<a href="/tarif/" class="tur-button header_button_fill">Выбрать тариф</a>',
     ),
     (
         '<a href="/" class="popup-welcome_button">',
