@@ -229,7 +229,7 @@ if (document.querySelector(".share_icon")) {
     document.querySelector(".share_icon").addEventListener("click", async (event) => {
         event.preventDefault();
 
-        const link = "https://turboset.co/blog";
+        const link = "https://turboset.co/article/happ-sovremennoe-prilozhenie-dlya-raboty-s-proksi-serverami/";
 
         try {
             await navigator.clipboard.writeText(link);
