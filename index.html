@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="preload" href="/assets/picture/hero1.webp" as="image" type="image/svg+xml" fetchpriority="high">
 
     <link rel="icon" type="image/svg" href="/assets/logo/sim-logo.svg">
+    <link rel="preload" href="/assets/picture/hero1.webp" as="image" type="image/svg+xml" fetchpriority="high">
 
     <title>TURBOSET</title>
 
-    <link rel="stylesheet" href="/style.css?v=7">
+
+    <link rel="preload" href="/style.css?v=7" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="/style.css?v=7">
+    </noscript>
+
     <!-- <link rel="stylesheet" href="/blog.css?v=3"> -->
     <link rel="stylesheet" href="/popup.css">
     <script type="application/ld+json">
@@ -285,7 +291,7 @@
                     </div>
                 </div>
                 <div class="hero_right">
-                    <img src="/assets/picture/hero1.webp" alt="" class="hero_img" fetchpriority="high" decoding="async">
+                    <img src="/assets/picture/hero1.webp" alt="" class="hero_img" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -1105,11 +1111,11 @@
     <div class="popup-welcome_wrap">
         <div class="popup-welcome">
             <button type="button" class="close_btn" aria-label="Закрыть">
-                <img src="./assets/icon/close_small.svg" alt class="close_img">
+                <img src="/assets/icon/close_small.svg" alt class="close_img">
             </button>
             <div class="popup-welcome_container">
                 <div class="popup-welcome_icon">
-                    <img src="./assets/picture/Welcome.webp" alt class="popup-welcome_img">
+                    <img src="/assets/picture/Welcome.webp" alt class="popup-welcome_img">
                 </div>
                 <div class="popup-welcome_content">
                     <div class="popup-welcome_center">
@@ -1131,7 +1137,7 @@
         </div>
     </div>
 
-    <script src="/script.js?v=5"></script>
+    <script src="/script.js?v=5" defer></script>
 
 </body>
 
