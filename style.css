@@ -1262,7 +1262,7 @@ body {
     flex-direction: column;
   }
 
-  .function_card_last img {
+  .function_card_last .function_card_right img {
     display: none;
   }
 
