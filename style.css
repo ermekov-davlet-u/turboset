@@ -29,6 +29,7 @@ body {
   --main-text: 24px;
   --main-sub-text: 32px;
   --all-container-padding: 80px;
+  --all-container-bottom-padding: 80px;
   --site-max-width: 1920px;
   --container-max-width: 1920px;
   --container-padding: 80px;
@@ -40,11 +41,18 @@ body {
     --title-font-size: 36px;
     --main-title: 40px;
     --all-container-padding: 64px;
+    --all-container-bottom-padding: 64px;
     --main-text: 20px;
     --main-sub-text: 24px;
     --container-vertical-padding: 64px;
     --container-padding: 24px;
     --site-content-width: calc(100vw - (var(--container-padding) * 2));
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --all-container-bottom-padding: 48px;
   }
 }
 @font-face {
@@ -1453,7 +1461,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   overflow: hidden;
-  padding-bottom: 80px;
+  padding-bottom: var(--all-container-bottom-padding);
 }
 .footer_top_left,
 .location_hero_left_content {
@@ -1520,14 +1528,14 @@ body {
 }
 .footer_bottom {
   padding: 24px 0 0;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #2d2f33;
+  border-top: 1px solid #2d2f33;
 }
 .footer_bottom_devices {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #2d2f33;
   padding-bottom: 24px;
 }
 .footer_bottom_device,
@@ -2223,7 +2231,7 @@ body {
 }
 .countries_list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 80px;
 }
 .countries_item {
@@ -2841,9 +2849,8 @@ body {
   }
   .server_hero_icon,
   .server_hero_icon img {
-    height: 390px !important;
+    /* height: 390px !important; */
     width: auto !important;
-    max-width: 1000px;
   }
   .server_hero_icon {
     height: 390px;
@@ -2934,6 +2941,35 @@ body {
   }
   .location_countries {
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 570px) {
+  .server_hero_icon {
+    overflow: hidden;
+  }
+
+  .server_hero_icon img {
+    height: 260px !important;
+    width: auto !important;
+    min-height: 260px !important;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .server_hero_icon {
+    overflow: hidden;
+    height: 280px;
+  }
+
+  .server_hero_icon img {
+    height: 180px !important;
+    width: auto !important;
+    min-height: 180px !important;
+    max-width: 1000px;
+  }
+  .server_hero_footer {
+    padding-top: 90px;
   }
 }
 .hero_subtitle {

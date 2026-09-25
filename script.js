@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function copyBlogLink() {
-    navigator.clipboard.writeText('https://turboset.co/blog')
+    navigator.clipboard.writeText('https://turboset.co/article/happ-sovremennoe-prilozhenie-dlya-raboty-s-proksi-serverami/')
         .then(() => {
             const message = document.getElementById('copyMessage');
 
