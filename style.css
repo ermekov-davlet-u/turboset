@@ -74,32 +74,6 @@
   font-display: swap;
 }
 
-/*roboto*/
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/assets/font/roboto/static/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/assets/font/roboto/static/Roboto-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/assets/font/roboto/static/Roboto-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 @font-face {
   font-family: "Roboto";
   src: url("/assets/font/roboto/static/Roboto-Bold.woff2") format("woff2");
