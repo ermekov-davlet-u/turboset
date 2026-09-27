@@ -8,7 +8,7 @@ SKIP = {"https://vlewps.github.io/", "confirm-code", "update-cta.py"}
 def cta_url(text: str) -> str | None:
     normalized = re.sub(r"\s+", " ", text.strip())
     if re.match(r"^Выбрать тариф$", normalized, re.I):
-        return "/tarif"
+        return "/tarif/"
     if re.match(r"^(Начать|Получить|Скачать)", normalized, re.I) or re.search(
         r"Получить 3 дня", normalized, re.I
     ):
